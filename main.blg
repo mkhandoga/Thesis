@@ -1,0 +1,40 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'main.blg'
+[34] biber-darwin:313> INFO - === Mon May 18, 2020, 04:12:37
+[56] Biber.pm:371> INFO - Reading 'main.bcf'
+[141] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[142] Biber.pm:857> INFO - Found 33 citekeys in bib section 1
+[142] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[160] Biber.pm:3976> INFO - Processing section 1
+[171] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 1
+[175] bibtex.pm:1500> INFO - LaTeX decoding ...
+[296] bibtex.pm:1316> INFO - Found BibTeX data source 'bibli.bib'
+[303] Utils.pm:193> WARN - Duplicate entry key: 'weinberg' in file 'bibli.bib', skipping ...
+[565] Utils.pm:193> WARN - month field 'Jul' in entry 'PhysRevD.86.010001' is not an integer - this will probably not sort properly.
+[566] Utils.pm:193> WARN - Entry 'sm_wiki' (bibli.bib): Invalid format '12.05.2020' of date field 'date' - ignoring
+[569] Utils.pm:193> WARN - month field 'Feb' in entry 'Schwinger_polariz' is not an integer - this will probably not sort properly.
+[572] Utils.pm:193> WARN - Entry 'coupl_wiki' (bibli.bib): Invalid format '12.05.2020' of date field 'date' - ignoring
+[576] Utils.pm:193> WARN - month field 'Jun' in entry 'Gross' is not an integer - this will probably not sort properly.
+[579] Utils.pm:193> WARN - month field 'Jun' in entry 'Politzer' is not an integer - this will probably not sort properly.
+[589] Utils.pm:193> WARN - month field 'Oct' in entry 'YangMills' is not an integer - this will probably not sort properly.
+[594] Utils.pm:193> WARN - month field 'Nov' in entry 'Feynman_math' is not an integer - this will probably not sort properly.
+[597] Utils.pm:193> WARN - month field 'Sep' in entry 'Feynman_positrons' is not an integer - this will probably not sort properly.
+[600] Utils.pm:193> WARN - month field 'Sep' in entry 'Feynman_spacetime' is not an integer - this will probably not sort properly.
+[606] Utils.pm:193> WARN - month field 'Feb' in entry 'Dyson_all' is not an integer - this will probably not sort properly.
+[609] Utils.pm:193> WARN - month field 'Jun' in entry 'Dyson_smatr' is not an integer - this will probably not sort properly.
+[613] Utils.pm:193> WARN - month field 'Feb' in entry 'Salam1959' is not an integer - this will probably not sort properly.
+[617] Utils.pm:193> WARN - month field 'Aug' in entry 'brout' is not an integer - this will probably not sort properly.
+[620] Utils.pm:193> WARN - month field 'Oct' in entry 'higgs' is not an integer - this will probably not sort properly.
+[621] Utils.pm:193> WARN - month field 'nov' in entry 'Hollik_2006' is not an integer - this will probably not sort properly.
+[627] Utils.pm:193> WARN - month field 'Dec' in entry 'weinberg2' is not an integer - this will probably not sort properly.
+[628] Utils.pm:193> WARN - Entry 'conf_wiki' (bibli.bib): Invalid format '12.05.2020' of date field 'date' - ignoring
+[629] Utils.pm:193> WARN - I didn't find a database entry for 'einstein' (section 1)
+[629] Utils.pm:193> WARN - I didn't find a database entry for 'pointcarre' (section 1)
+[629] Utils.pm:193> WARN - I didn't find a database entry for 'lorentz' (section 1)
+[653] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[653] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[653] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[653] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[679] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[725] bbl.pm:720> INFO - Output to main.bbl
+[726] Biber.pm:110> INFO - WARNINGS: 22
