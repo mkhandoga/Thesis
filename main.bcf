@@ -1980,47 +1980,7 @@
     <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="1">
-    <bcf:citekey order="1">Peskin</bcf:citekey>
-    <bcf:citekey order="2">bogol</bcf:citekey>
-    <bcf:citekey order="3">Srednicki</bcf:citekey>
-    <bcf:citekey order="4">Berest</bcf:citekey>
-    <bcf:citekey order="5">weinberg</bcf:citekey>
-    <bcf:citekey order="6">Griffiths</bcf:citekey>
-    <bcf:citekey order="7">pep</bcf:citekey>
-    <bcf:citekey order="8">PhysRevD.86.010001</bcf:citekey>
-    <bcf:citekey order="9">sm_wiki</bcf:citekey>
-    <bcf:citekey order="10">sm_wiki</bcf:citekey>
-    <bcf:citekey order="11">Schwinger_polariz</bcf:citekey>
-    <bcf:citekey order="12">bogol</bcf:citekey>
-    <bcf:citekey order="13">Glashow:1959wxa</bcf:citekey>
-    <bcf:citekey order="14">coupl_wiki</bcf:citekey>
-    <bcf:citekey order="15">coupl_wiki</bcf:citekey>
-    <bcf:citekey order="16">Gross</bcf:citekey>
-    <bcf:citekey order="17">Politzer</bcf:citekey>
-    <bcf:citekey order="18">Vanyashin</bcf:citekey>
-    <bcf:citekey order="19">einstein</bcf:citekey>
-    <bcf:citekey order="20">pointcarre</bcf:citekey>
-    <bcf:citekey order="21">lorentz</bcf:citekey>
-    <bcf:citekey order="22">Noether1918</bcf:citekey>
-    <bcf:citekey order="23">bogol</bcf:citekey>
-    <bcf:citekey order="24">YangMills</bcf:citekey>
-    <bcf:citekey order="25">Schwinger_covar</bcf:citekey>
-    <bcf:citekey order="26">Schwinger_polariz</bcf:citekey>
-    <bcf:citekey order="27">Feynman_math</bcf:citekey>
-    <bcf:citekey order="28">Feynman_positrons</bcf:citekey>
-    <bcf:citekey order="29">Feynman_spacetime</bcf:citekey>
-    <bcf:citekey order="30">Tomonaga</bcf:citekey>
-    <bcf:citekey order="31">Dyson_all</bcf:citekey>
-    <bcf:citekey order="32">Dyson_smatr</bcf:citekey>
-    <bcf:citekey order="33">Glashow:1959wxa</bcf:citekey>
-    <bcf:citekey order="34">weinberg</bcf:citekey>
-    <bcf:citekey order="35">Salam1959</bcf:citekey>
-    <bcf:citekey order="36">brout</bcf:citekey>
-    <bcf:citekey order="37">higgs</bcf:citekey>
-    <bcf:citekey order="38">Hollik_2006</bcf:citekey>
-    <bcf:citekey order="39">weinberg2</bcf:citekey>
-    <bcf:citekey order="40">conf_wiki</bcf:citekey>
-    <bcf:citekey order="41">conf_wiki</bcf:citekey>
+    <bcf:citekey order="1">Awramik</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">

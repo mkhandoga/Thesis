@@ -9,14 +9,22 @@
 \graphicspath{{Front-back_covers/images/}}
 \usetikzlibrary{calc}
 %\usepackage[backend=bibtex,style=verbose-trad2]{biblatex}
+\usepackage{luacode}
+\usepackage{tikz}
+\usetikzlibrary{graphdrawing}
+%\usepackage[compat=1.1.0]{tikz-feynman}
+
 \usepackage{biblatex}
 \usepackage{multicol}
-\DeclareUnicodeCharacter{2212}{-}
+\usepackage{wasysym}
+\usepackage{newunicodechar}
+%\newunicodechar{2212}{-}
+%\DeclareUnicodeCharacter{2212}{-}
 \bibliography{bibli}
 
 \input{acronymes.tex}
 \makeglossaries
-\graphicspath{{Chapitre_1/pictures/}{Chapitre_2/pictures/}{Chapitre_3/pictures/}{Chapitre_4/pictures/}{Front-back_covers/images/}}
+\graphicspath{{Chapitre_1/pictures/}{Chapitre_2/pictures/}{Chapitre_3/pictures/}{Chapitre_4/pictures/}{Chapitre_5/pictures/}{Front-back_covers/images/}}
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
@@ -27,7 +35,7 @@
 %\input{Front-back_covers/Front-back_covers}
 %\newgeometry{twoside}
 %\newpage
-\thispagestyle{empty}
+%\thispagestyle{empty}
 \begin{tikzpicture}[remember picture, overlay] 
 \end{tikzpicture}
 %\newpage
@@ -68,14 +76,14 @@
 %\input{Chapitre_1/Chapitre_1.tex}
 %\newpage
 \input{Chapitre_2/Chapitre_2.tex}
-\newpage
-\input{Chapitre_3/Chapitre_3.tex}
+%\newpage
+%\input{Chapitre_3/Chapitre_3.tex}
 %\newpage
 %\input{Chapitre_4/Chapitre_4.tex}
 %\newpage
 %\input{Chapitre_5/Chapitre_5.tex}
 %\newpage
-\backmatter
+%\backmatter
 %\input{conclusion/conclusion.tex}
 \printbibliography
 
