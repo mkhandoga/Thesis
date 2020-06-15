@@ -47,3 +47,11 @@
 \newcommand{\extraPartText}[1]{\def\@extraPartText{#1}}
 \pretocmd{\@endpart}{\vspace{8ex}\begingroup\flushleft{\@extraPartText}\par\endgroup\let\@extraPartText\relax}{}{}
 \makeatother
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\@acf{\AC@acl}{\AC@foo}{}{}
+\patchcmd\@acf{\AC@acl}{\AC@foo}{}{}
+\patchcmd\@acf{\AC@foo}{\hskip\z@\AC@acl}{}{}
+\patchcmd\@acf{\AC@foo}{\hskip\z@\AC@acl}{}{}
+\makeatother

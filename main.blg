@@ -1,19 +1,26 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
-[1] Config.pm:305> INFO - Logfile is 'main.blg'
-[46] biber-darwin:313> INFO - === Fri Jun  5, 2020, 01:45:16
-[67] Biber.pm:371> INFO - Reading 'main.bcf'
-[153] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[153] Biber.pm:857> INFO - Found 1 citekeys in bib section 1
-[154] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[174] Biber.pm:3976> INFO - Processing section 1
-[184] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 1
-[189] bibtex.pm:1500> INFO - LaTeX decoding ...
-[332] bibtex.pm:1316> INFO - Found BibTeX data source 'bibli.bib'
-[337] Utils.pm:193> WARN - Duplicate entry key: 'weinberg' in file 'bibli.bib', skipping ...
-[357] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[357] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[357] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[357] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[359] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[360] bbl.pm:720> INFO - Output to main.bbl
-[360] Biber.pm:110> INFO - WARNINGS: 1
+[0] Config.pm:305> INFO - Logfile is 'main.blg'
+[47] biber-darwin:313> INFO - === Mon Jun 15, 2020, 01:40:19
+[74] Biber.pm:371> INFO - Reading 'main.bcf'
+[163] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[164] Biber.pm:857> INFO - Found 20 citekeys in bib section 1
+[164] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[184] Biber.pm:3976> INFO - Processing section 1
+[203] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 1
+[209] bibtex.pm:1500> INFO - LaTeX decoding ...
+[398] bibtex.pm:1316> INFO - Found BibTeX data source 'bibli.bib'
+[403] Utils.pm:193> WARN - Duplicate entry key: 'weinberg' in file 'bibli.bib', skipping ...
+[431] Utils.pm:193> WARN - month field 'Mar' in entry 'bjorken' is not an integer - this will probably not sort properly.
+[440] Utils.pm:193> WARN - month field 'Dec' in entry 'feynman_partons' is not an integer - this will probably not sort properly.
+[466] Utils.pm:193> WARN - month field 'Aug' in entry 'drellyan' is not an integer - this will probably not sort properly.
+[479] Utils.pm:193> WARN - month field 'Jul' in entry 'Martin:392675' is not an integer - this will probably not sort properly.
+[502] Utils.pm:193> WARN - month field 'Oct' in entry 'PhysRevD.100.074027' is not an integer - this will probably not sort properly.
+[547] Utils.pm:193> WARN - ISBN '978-0-511-82328-2, 978-0-521-54589-1' in entry 'Ellis:1991qj' is invalid - run biber with '--validate_datamodel' for details.
+[572] Utils.pm:193> WARN - I didn't find a database entry for 'dis' (section 1)
+[591] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[591] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[591] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[591] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[620] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[631] bbl.pm:720> INFO - Output to main.bbl
+[631] Biber.pm:110> INFO - WARNINGS: 8

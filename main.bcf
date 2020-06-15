@@ -1981,6 +1981,33 @@
   </bcf:bibdata>
   <bcf:section number="1">
     <bcf:citekey order="1">Awramik</bcf:citekey>
+    <bcf:citekey order="2">proton_struct</bcf:citekey>
+    <bcf:citekey order="3">factorization</bcf:citekey>
+    <bcf:citekey order="4">dis</bcf:citekey>
+    <bcf:citekey order="5">bjorken</bcf:citekey>
+    <bcf:citekey order="6">feynman_partons</bcf:citekey>
+    <bcf:citekey order="7">Lipatov:1974qm</bcf:citekey>
+    <bcf:citekey order="8">ALTARELLI</bcf:citekey>
+    <bcf:citekey order="9">Gribov:1972ri</bcf:citekey>
+    <bcf:citekey order="10">Dokshitzer:1977sg</bcf:citekey>
+    <bcf:citekey order="11">lhec</bcf:citekey>
+    <bcf:citekey order="12">drellyan</bcf:citekey>
+    <bcf:citekey order="13">proton_struct</bcf:citekey>
+    <bcf:citekey order="14">Halzen:2013bqa</bcf:citekey>
+    <bcf:citekey order="15">Halzen:2013bqa</bcf:citekey>
+    <bcf:citekey order="16">Mangano:2015ejw</bcf:citekey>
+    <bcf:citekey order="17">Mangano:2015ejw</bcf:citekey>
+    <bcf:citekey order="18">Martin:392675</bcf:citekey>
+    <bcf:citekey order="19">Martin:392675</bcf:citekey>
+    <bcf:citekey order="20">PhysRevD.100.074027</bcf:citekey>
+    <bcf:citekey order="21">Ellis:1991qj</bcf:citekey>
+    <bcf:citekey order="22">HAUTMANN2020135478</bcf:citekey>
+    <bcf:citekey order="23">Bizon:2019zgf</bcf:citekey>
+    <bcf:citekey order="24">Bizon:2019zgf</bcf:citekey>
+    <bcf:citekey order="25">Bizon:2019zgf</bcf:citekey>
+    <bcf:citekey order="26">Bizon:2019zgf</bcf:citekey>
+    <bcf:citekey order="27">Anastasiou:2003ds</bcf:citekey>
+    <bcf:citekey order="28">Anastasiou:2003ds</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
