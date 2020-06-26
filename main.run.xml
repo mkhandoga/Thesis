@@ -81,6 +81,11 @@
     </requires>
     <requires type="editable">
       <file>bibli.bib</file>
+      <file>bib/ATLAS_Useful.bib</file>
+      <file>bib/ATLAS.bib</file>
+      <file>bib/PubNotes.bib</file>
+      <file>bib/ConfNotes.bib</file>
+      <file>bib/CMS.bib</file>
     </requires>
   </external>
 </requests>

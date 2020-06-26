@@ -31,6 +31,18 @@
 \def\bs{ \boldmath$}
 \def\es{$ \unboldmath}
 
+\newcommand{\Pythia}{\textsc{Pythia8}}
+\newcommand{\Powheg}{\textsc{Powheg}}
+\newcommand{\Sherpa}{\textsc{Sherpa}}
+\newcommand{\Herwig}{\textsc{Herwig7}}
+\newcommand{\Photos}{\textsc{Photos++}}
+
+%% \newcommand{\Sec}{Sec.}
+%% \newcommand{\Tab}{Tab.}
+%% \newcommand{\Fig}{Fig.}
+%% \newcommand{\Figs}{Figs.}
+
+
 \newcommand*\parttitle{}
 \let\origpart\part
 \renewcommand*{\part}[2][]{%
@@ -55,3 +67,7 @@
 \patchcmd\@acf{\AC@foo}{\hskip\z@\AC@acl}{}{}
 \patchcmd\@acf{\AC@foo}{\hskip\z@\AC@acl}{}{}
 \makeatother
+
+\def\Zgmm{\ensuremath{Z/\gamma^* \rightarrow \mu\mu}\xspace}
+\def\Zgee{\ensuremath{Z/\gamma^* \rightarrow ee}\xspace}
+\def\Zgll{\ensuremath{Z/\gamma^* \rightarrow \ell\ell}\xspace}

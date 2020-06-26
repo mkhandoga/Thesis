@@ -1,11 +1,93 @@
-\BOOKMARK [0][-]{chapter.1}{Hadronic recoil regression with deep neural networks}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Deep neural networks}{chapter.1}% 2
-\BOOKMARK [2][-]{subsection.1.1.1}{Gradient descent optimization}{section.1.1}% 3
-\BOOKMARK [2][-]{subsection.1.1.2}{DNN structure and training}{section.1.1}% 4
-\BOOKMARK [2][-]{subsection.1.1.3}{Batch normalization}{section.1.1}% 5
-\BOOKMARK [1][-]{section.1.2}{HR regression}{chapter.1}% 6
-\BOOKMARK [2][-]{subsection.1.2.1}{Input samples and features}{section.1.2}% 7
-\BOOKMARK [2][-]{subsection.1.2.2}{Network parameters}{section.1.2}% 8
-\BOOKMARK [2][-]{subsection.1.2.3}{Results}{section.1.2}% 9
-\BOOKMARK [1][-]{section.1.3}{Technical details}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.3}{Bibliography}{chapter.1}% 11
+\BOOKMARK [1][-]{section.0.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.0.1.1}{Historical retrospective}{section.0.1}% 2
+\BOOKMARK [2][-]{subsection.0.1.2}{Actual challenges}{section.0.1}% 3
+\BOOKMARK [2][-]{subsection.0.1.3}{Thesis composition}{section.0.1}% 4
+\BOOKMARK [0][-]{chapter.1}{The Standard Model}{}% 5
+\BOOKMARK [1][-]{section.1.1}{General composition and key parameters}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Classical fields and gauge invariance principle}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Quantum electrodynamics}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.4}{Electroweak theory and the Higgs mechanism}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.4.1}{Electroweak gauge fields}{section.1.4}% 10
+\BOOKMARK [2][-]{subsection.1.4.2}{Fermion sector}{section.1.4}% 11
+\BOOKMARK [2][-]{subsection.1.4.3}{Higgs fields breaking the symmetry}{section.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.4.4}{Physical interpretation of gauge fields and parameters}{section.1.4}% 13
+\BOOKMARK [1][-]{section.1.5}{Chromodynamics}{chapter.1}% 14
+\BOOKMARK [0][-]{chapter.2}{The W boson}{}% 15
+\BOOKMARK [1][-]{section.2.1}{The motivation for the W mass measurement}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.2}{Massive boson production at hadron colliders}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.1}{Deep Inelastic scattering}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.2}{The Drell-Yan process}{section.2.2}% 19
+\BOOKMARK [1][-]{section.2.3}{Transverse momentum of massive vector bosons }{chapter.2}% 20
+\BOOKMARK [0][-]{chapter.3}{The Large Hadron Collider}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{The LHC running sequence}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.3}{Special low pile-up run during LHC Run 2}{chapter.3}% 24
+\BOOKMARK [0][-]{chapter.4}{The ATLAS detector}{}% 25
+\BOOKMARK [1][-]{section.4.1}{General description and layout}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{Coordinate system}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.3}{Magnet system and magnetic field}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.4}{Inner detector}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.5}{Calorimeter system }{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.5.1}{Electromagnetic calorimeter }{section.4.5}% 31
+\BOOKMARK [2][-]{subsection.4.5.2}{Hadronic calorimeter }{section.4.5}% 32
+\BOOKMARK [1][-]{section.4.6}{Muon detectors}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.7}{Forward detectors}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.8}{Trigger system}{chapter.4}% 35
+\BOOKMARK [0][-]{chapter.5}{Electromagnetic shower shapes correction in the electromagnetic calorimeter }{}% 36
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.2}{ Shower shapes measurement and correction }{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.2.1}{Event selection}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.2}{Data/MC discrepancies}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.3}{The correction procedure}{section.5.2}% 41
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.4}{Appendix: control plots}{chapter.5}% 43
+\BOOKMARK [0][-]{chapter.6}{Event reconstruction}{}% 44
+\BOOKMARK [1][-]{section.6.1}{Charged particles track reconstruction}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.2}{Determining the primary vertex of the event}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.3}{Muon reconstruction and identification}{chapter.6}% 47
+\BOOKMARK [2][-]{subsection.6.3.1}{Muon reconstruction}{section.6.3}% 48
+\BOOKMARK [2][-]{subsection.6.3.2}{Muon identification}{section.6.3}% 49
+\BOOKMARK [2][-]{subsection.6.3.3}{Muon isolation}{section.6.3}% 50
+\BOOKMARK [1][-]{section.6.4}{Electron reconstruction and identification}{chapter.6}% 51
+\BOOKMARK [2][-]{subsection.6.4.1}{Electron reconstruction}{section.6.4}% 52
+\BOOKMARK [2][-]{subsection.6.4.2}{Electron identification}{section.6.4}% 53
+\BOOKMARK [2][-]{subsection.6.4.3}{Electron isolation}{section.6.4}% 54
+\BOOKMARK [1][-]{section.6.5}{Particle flow objects}{chapter.6}% 55
+\BOOKMARK [0][-]{chapter.7}{MC samples and selection}{}% 56
+\BOOKMARK [1][-]{section.7.1}{Data samples}{chapter.7}% 57
+\BOOKMARK [1][-]{section.7.2}{MC Signal and Background samples}{chapter.7}% 58
+\BOOKMARK [1][-]{section.7.3}{Observables}{chapter.7}% 59
+\BOOKMARK [2][-]{subsection.7.3.1}{Hadronic recoil}{section.7.3}% 60
+\BOOKMARK [2][-]{subsection.7.3.2}{SET}{section.7.3}% 61
+\BOOKMARK [2][-]{subsection.7.3.3}{SETUE}{section.7.3}% 62
+\BOOKMARK [2][-]{subsection.7.3.4}{Transverse mass}{section.7.3}% 63
+\BOOKMARK [2][-]{subsection.7.3.5}{Missing transverse energy}{section.7.3}% 64
+\BOOKMARK [1][-]{section.7.4}{Event selection}{chapter.7}% 65
+\BOOKMARK [2][-]{subsection.7.4.1}{Electrons}{section.7.4}% 66
+\BOOKMARK [2][-]{subsection.7.4.2}{Muons}{section.7.4}% 67
+\BOOKMARK [2][-]{subsection.7.4.3}{Truth}{section.7.4}% 68
+\BOOKMARK [2][-]{subsection.7.4.4}{W boson}{section.7.4}% 69
+\BOOKMARK [1][-]{section.7.5}{MC samples and backgrounds}{chapter.7}% 70
+\BOOKMARK [0][-]{chapter.8}{MC samples and selection}{}% 71
+\BOOKMARK [1][-]{section.8.1}{Data and MC samples}{chapter.8}% 72
+\BOOKMARK [2][-]{subsection.8.1.1}{MC samples and cross-sections}{section.8.1}% 73
+\BOOKMARK [1][-]{section.8.2}{Z vertex reweighting }{chapter.8}% 74
+\BOOKMARK [2][-]{subsection.8.2.1}{Multijet background}{section.8.2}% 75
+\BOOKMARK [1][-]{section.8.3}{W analysis event selection and control plots}{chapter.8}% 76
+\BOOKMARK [2][-]{subsection.8.3.1}{Event selection}{section.8.3}% 77
+\BOOKMARK [2][-]{subsection.8.3.2}{s = 13 TeV dataset control plots}{section.8.3}% 78
+\BOOKMARK [2][-]{subsection.8.3.3}{s = 5 TeV dataset control plots}{section.8.3}% 79
+\BOOKMARK [0][-]{chapter.9}{W boson pT spectrum}{}% 80
+\BOOKMARK [1][-]{section.9.1}{Uncertainties propagation}{chapter.9}% 81
+\BOOKMARK [1][-]{section.9.2}{Uncertainties breakdown plots}{chapter.9}% 82
+\BOOKMARK [2][-]{subsection.9.2.1}{Unfolding}{section.9.2}% 83
+\BOOKMARK [0][-]{chapter.10}{Hadronic recoil regression with deep neural networks}{}% 84
+\BOOKMARK [1][-]{section.10.1}{Deep neural networks}{chapter.10}% 85
+\BOOKMARK [2][-]{subsection.10.1.1}{Gradient descent optimization}{section.10.1}% 86
+\BOOKMARK [2][-]{subsection.10.1.2}{DNN structure and training}{section.10.1}% 87
+\BOOKMARK [2][-]{subsection.10.1.3}{Batch normalization}{section.10.1}% 88
+\BOOKMARK [1][-]{section.10.2}{HR regression}{chapter.10}% 89
+\BOOKMARK [2][-]{subsection.10.2.1}{Input features and model}{section.10.2}% 90
+\BOOKMARK [2][-]{subsection.10.2.2}{Results}{section.10.2}% 91
+\BOOKMARK [1][-]{section.10.3}{Technical details}{chapter.10}% 92
+\BOOKMARK [1][-]{section.10.3}{Bibliography}{chapter.10}% 93

@@ -1,3 +1,92 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \addvspace {10pt}
-\contentsline {figure}{\numberline {11}{\ignorespaces A: The nodes perform a linear transformation of the inputs, then apply a non-linear activation function. B: The architecture of a deep neural network: neurons are arranged into layers \cite {dnn1}. \relax }}{4}{figure.caption.1}
+\contentsline {figure}{\numberline {11}{\ignorespaces The list of particles that enters the \gls {sm}\cite {sm_wiki}. \relax }}{7}{figure.caption.1}
+\contentsline {figure}{\numberline {12}{\ignorespaces The evolution of the \gls {sm} running coupling constants \cite {coupl_wiki}. \relax }}{8}{figure.caption.2}
+\contentsline {figure}{\numberline {13}{\ignorespaces The QEQ diagrams: Compton scattering, electron self-energy, photon self-energy.\relax }}{11}{figure.caption.3}
+\contentsline {figure}{\numberline {14}{\ignorespaces Electroweak sector and the Weinberg rotation \cite {coupl_wiki}. \relax }}{16}{figure.caption.4}
+\contentsline {figure}{\numberline {15}{\ignorespaces The formation of a jet \cite {conf_wiki}. \relax }}{17}{figure.caption.5}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {21}{\ignorespaces Next-to-leading order diagrams for W boson propagator containing contributions from heavy quarks and the Higgs boson.\relax }}{19}{figure.caption.6}
+\contentsline {figure}{\numberline {22}{\ignorespaces W mass measurements and predictions\relax }}{20}{figure.caption.7}
+\contentsline {figure}{\numberline {23}{\ignorespaces Examples of hard QCD scatterings.\relax }}{21}{figure.caption.8}
+\contentsline {figure}{\numberline {24}{\ignorespaces The evolution of a PDF4LHC15 NNLO Hessian set from $Q^2=10^2$ GeV to $Q^2=10^4$ GeV using the \gls {dglap}. Notice the increase in the sea quark density. The PDFs include one standard deviation uncertainty band.\relax }}{23}{figure.caption.9}
+\contentsline {figure}{\numberline {25}{\ignorespaces Rapidity distribution for the vector bosons using MSTW2008 and CTEQ6.6 PDF sets for the centre-of-mass energies of 7 and 14 TeV \cite {Halzen:2013bqa}.\relax }}{24}{figure.caption.10}
+\contentsline {figure}{\numberline {26}{\ignorespaces W and Z boson cross sections LHC at 7 TeV. ATLAS and CMS results, compared to NNLO predictions for various PDF sets \cite {Mangano:2015ejw}.\relax }}{25}{figure.caption.11}
+\contentsline {figure}{\numberline {27}{\ignorespaces Parton contributions to the cross-sections of $W^+$ and $W^-$ bosons for LHC and Tevatron cases \cite {Martin:392675}.\relax }}{25}{figure.caption.12}
+\contentsline {figure}{\numberline {28}{\ignorespaces Kinematic distributions for $W^{\pm }$ with corrections.\relax }}{27}{figure.caption.13}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {31}{\ignorespaces \gls {atlas} A hydrogen tank supplies LHC with protons \cite {hydro}.\relax }}{30}{figure.caption.14}
+\contentsline {figure}{\numberline {32}{\ignorespaces Schematic depiction of the LHC ring.\relax }}{31}{figure.caption.15}
+\contentsline {figure}{\numberline {33}{\ignorespaces Bunching at RF cavities\relax }}{31}{figure.caption.16}
+\contentsline {figure}{\numberline {34}{\ignorespaces The crossing\relax }}{32}{figure.caption.17}
+\contentsline {figure}{\numberline {35}{\ignorespaces Number of Interactions per bunch crossing in \gls {atlas} Run 2 \cite {run2lumi}. A little bump around $\mu \approx 2$ corresponds to special low pile-up runs.\relax }}{34}{figure.caption.18}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {41}{\ignorespaces ATLAS detector general layout\relax }}{36}{figure.caption.20}
+\contentsline {figure}{\numberline {42}{\ignorespaces Geometry of \gls {atlas} magnet windings\relax }}{37}{figure.caption.21}
+\contentsline {figure}{\numberline {43}{\ignorespaces Fichier Gerber des modèles d CFR-34 et CFR-35.\relax }}{38}{figure.caption.22}
+\contentsline {figure}{\numberline {44}{\ignorespaces \gls {atlas} calorimeter general layout\relax }}{39}{figure.caption.23}
+\contentsline {figure}{\numberline {45}{\ignorespaces \gls {atlas} EM calorimeter layers\relax }}{41}{figure.caption.25}
+\contentsline {figure}{\numberline {46}{\ignorespaces Accordion absorbers of the \gls {emc}\relax }}{42}{figure.caption.26}
+\contentsline {figure}{\numberline {47}{\ignorespaces \gls {atlas} muon system\relax }}{43}{figure.caption.27}
+\contentsline {figure}{\numberline {48}{\ignorespaces Cut views of the muon systems\relax }}{45}{figure.caption.28}
+\contentsline {figure}{\numberline {49}{\ignorespaces \gls {atlas} forward detectors\relax }}{47}{figure.caption.30}
+\contentsline {figure}{\numberline {410}{\ignorespaces The scheme of \gls {atlas} trigger systems\relax }}{48}{figure.caption.31}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {51}{\ignorespaces The schematic portrayal of EM shower development\relax }}{49}{figure.caption.32}
+\contentsline {figure}{\numberline {52}{\ignorespaces Visualisations of the 7x11 calorimeter cluster\relax }}{50}{figure.caption.33}
+\contentsline {figure}{\numberline {53}{\ignorespaces Shower shapes in the second layer of the electromagnetic calorimeter\relax }}{50}{figure.caption.34}
+\contentsline {figure}{\numberline {54}{\ignorespaces Distribution of $R_{\eta }$ in simulation (GEANT4) for electrons and jets \cite {sshapes_simulation}.\relax }}{51}{figure.caption.35}
+\contentsline {figure}{\numberline {55}{\ignorespaces Data/MC Comparison for Calorimeter Shower Shapes of High Et Electrons \cite {geant_corr}.\relax }}{52}{figure.caption.36}
+\contentsline {figure}{\numberline {56}{\ignorespaces $R_{\eta }$ in the barel and in the end-cap, Data vs MC\relax }}{53}{figure.caption.37}
+\contentsline {figure}{\numberline {57}{\ignorespaces $R_{\phi }$ in the barel and in the end-cap, Data vs MC\relax }}{53}{figure.caption.38}
+\contentsline {figure}{\numberline {58}{\ignorespaces $W_{\eta }^2$ in the barel and in the end-cap, Data vs MC\relax }}{54}{figure.caption.39}
+\contentsline {figure}{\numberline {59}{\ignorespaces $R_{\phi }$ in the barel and in the end-cap, Data vs MC\relax }}{55}{figure.caption.42}
+\contentsline {figure}{\numberline {510}{\ignorespaces Schematic energy profile in $\phi $ dimension. Bremsstrahlung tails subtraction based on $e^+$ and $e^-$ energy profiles.\relax }}{55}{figure.caption.43}
+\contentsline {figure}{\numberline {511}{\ignorespaces $R_{\eta }$ in the barrel and in the end-cap\relax }}{56}{figure.caption.44}
+\contentsline {figure}{\numberline {512}{\ignorespaces $R_{\phi }$ in the barel and in the end-cap, Data, MC, reweighted MC\relax }}{57}{figure.caption.45}
+\contentsline {figure}{\numberline {513}{\ignorespaces $W_{\eta }^2$ in the barel and in the end-cap, Data, MC, reweighted MC\relax }}{57}{figure.caption.46}
+\contentsline {figure}{\numberline {514}{\ignorespaces Distributions integrated over pT (a) $R_{\phi }$; (b) $R_{\eta }$; (c)$W_{\eta 2}$.\relax }}{58}{figure.caption.47}
+\contentsline {figure}{\numberline {515}{\ignorespaces Electron identification efficiency as a function of the electron pseudo-rapidity\relax }}{58}{figure.caption.48}
+\contentsline {figure}{\numberline {516}{\ignorespaces Reta 2\relax }}{59}{figure.caption.49}
+\contentsline {figure}{\numberline {517}{\ignorespaces Rphi in all eta slices\relax }}{60}{figure.caption.50}
+\contentsline {figure}{\numberline {518}{\ignorespaces Reta 2\relax }}{61}{figure.caption.51}
+\contentsline {figure}{\numberline {519}{\ignorespaces Reta 2\relax }}{62}{figure.caption.52}
+\contentsline {figure}{\numberline {520}{\ignorespaces Reta 2\relax }}{63}{figure.caption.53}
+\contentsline {figure}{\numberline {521}{\ignorespaces Reta 2\relax }}{64}{figure.caption.54}
+\contentsline {figure}{\numberline {522}{\ignorespaces Reta 2\relax }}{65}{figure.caption.55}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {61}{\ignorespaces Impact parameters}}{67}{figure.caption.56}
+\contentsline {figure}{\numberline {62}{\ignorespaces Ambiguity solving.\relax }}{69}{figure.caption.57}
+\contentsline {figure}{\numberline {63}{\ignorespaces Vertices}}{70}{figure.caption.58}
+\contentsline {figure}{\numberline {64}{\ignorespaces sagitta}}{71}{figure.caption.59}
+\contentsline {figure}{\numberline {65}{\ignorespaces muon combined}}{72}{figure.caption.60}
+\contentsline {figure}{\numberline {66}{\ignorespaces Electron path}}{74}{figure.caption.61}
+\contentsline {figure}{\numberline {67}{\ignorespaces topocluster}}{75}{figure.caption.64}
+\contentsline {figure}{\numberline {68}{\ignorespaces Supercluster}}{76}{figure.caption.67}
+\contentsline {figure}{\numberline {69}{\ignorespaces Isolation plot}}{78}{figure.caption.68}
+\contentsline {figure}{\numberline {610}{\ignorespaces pflow}}{80}{figure.caption.69}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {81}{\ignorespaces Distributions for the 5 TeV low-$\mu $ dataset in a $\ensuremath {Z/\gamma ^* \rightarrow \mu \mu }\xspace $ (top row) and a \ensuremath {Z/\gamma ^* \rightarrow ee}\xspace (bottom row) selection. The data (points) is compared to \ensuremath {Z/\gamma ^* \rightarrow \mu \mu }\xspace or \ensuremath {Z/\gamma ^* \rightarrow ee}\xspace signal MC, respectively. The left and middle plots show the actual $\mu $ in a coarsely-binned and a finely-binned version. The right plot shows the number of reconstructed primary vertices $N_{PV}$.\relax }}{84}{figure.caption.70}
+\contentsline {figure}{\numberline {82}{\ignorespaces Distributions for the 13 TeV low-$\mu $ datasets taken in 2017 and 2018 in a \ensuremath {Z/\gamma ^* \rightarrow \mu \mu }\xspace (top row) and a \ensuremath {Z/\gamma ^* \rightarrow ee}\xspace (bottom row) selection. The data (points) is compared to \ensuremath {Z/\gamma ^* \rightarrow \mu \mu }\xspace or \ensuremath {Z/\gamma ^* \rightarrow ee}\xspace signal MC, respectively. All distributions are (roughly) normalised to the same number of selected events in the 2017 dataset. The left and middle plots show the actual $\mu $ in a coarsely-binned and a finely-binned version. The right plot shows the number of reconstructed primary vertices $N_{PV}$.\relax }}{84}{figure.caption.71}
+\contentsline {figure}{\numberline {83}{\ignorespaces Distributions for the 5 \TeV {} (left) and 13 \TeV {} (right) low-$\mu $ dataset(s) in a \ensuremath {Z/\gamma ^* \rightarrow \mu \mu }\xspace (top row) and a \ensuremath {Z/\gamma ^* \rightarrow ee}\xspace (bottom row) selection. The data (points) is compared to \ensuremath {Z/\gamma ^* \rightarrow \mu \mu }\xspace or \ensuremath {Z/\gamma ^* \rightarrow ee}\xspace signal MC, respectively. The distributions of the $z$-position of the primary vertex selected as the hard interaction are compared for the dataset(s) and the MC simulation before (``no $z_\mathrm {vtx}$ rwgt'', blue, only 13 \TeV {}) and after reweighting (black). For the 13 \TeV {} data the 2017 and 2018 data are shown separately and all distributions are (roughly) normalised to the same number of selected events in the 2017 dataset. \relax }}{90}{figure.caption.76}
+\contentsline {figure}{\numberline {84}{\ignorespaces $\Sigma \bar {E_T}$ distribution in the muon and electron channel for the $\sqrt {s} = 13$\nobreakspace {}\TeV \ dataset.\relax }}{95}{figure.caption.86}
+\contentsline {figure}{\numberline {85}{\ignorespaces $\Sigma {E_T}$ distribution in the muon and electron channel for the $\sqrt {s} = 13$\nobreakspace {}\TeV \ dataset.\relax }}{96}{figure.caption.87}
+\contentsline {figure}{\numberline {86}{\ignorespaces $\mathaccentV {vec}17E{E}^{miss}_{T}$ distribution in the muon and electron channel for the $\sqrt {s} = 13$\nobreakspace {}\TeV \ dataset. \relax }}{97}{figure.caption.88}
+\contentsline {figure}{\numberline {87}{\ignorespaces Transverse mass distribution of the W boson in the muon and electron channel for the $\sqrt {s} = 13$\nobreakspace {}\TeV \ dataset. \relax }}{98}{figure.caption.89}
+\contentsline {figure}{\numberline {88}{\ignorespaces Lepton pseudorapidity distribution in the muon and electron channel for the $\sqrt {s} = 13$\nobreakspace {}\TeV \ dataset. \relax }}{99}{figure.caption.90}
+\contentsline {figure}{\numberline {89}{\ignorespaces Lepton transverse momentum distribution in the muon and electron channel for the $\sqrt {s} = 13$\nobreakspace {}\TeV \ dataset. \relax }}{100}{figure.caption.91}
+\contentsline {figure}{\numberline {810}{\ignorespaces W transverse momentum distribution in the muon and electron channel for the $\sqrt {s} = 13$\nobreakspace {}\TeV \ dataset. \relax }}{101}{figure.caption.92}
+\contentsline {figure}{\numberline {811}{\ignorespaces $\Sigma \bar {E_T}$ distribution in the muon and electron channel for the $\sqrt {s} = 5$\nobreakspace {}\TeV \ dataset.\relax }}{102}{figure.caption.93}
+\contentsline {figure}{\numberline {812}{\ignorespaces $\Sigma {E_T}$ distribution in the muon and electron channel for the $\sqrt {s} = 5$\nobreakspace {}\TeV \ dataset.\relax }}{103}{figure.caption.94}
+\contentsline {figure}{\numberline {813}{\ignorespaces $\mathaccentV {vec}17E{E}^{miss}_{T}$ distribution in the muon and electron channel for the $\sqrt {s} = 5$\nobreakspace {}\TeV \ dataset.\relax }}{104}{figure.caption.95}
+\contentsline {figure}{\numberline {814}{\ignorespaces Transverse mass distribution of the W boson in the muon and electron channel for the $\sqrt {s} = 5$\nobreakspace {}\TeV \ dataset. \relax }}{105}{figure.caption.96}
+\contentsline {figure}{\numberline {815}{\ignorespaces Lepton pseudorapidity distribution in the muon and electron channel for the $\sqrt {s} = 5$\nobreakspace {}\TeV \ dataset. \relax }}{106}{figure.caption.97}
+\contentsline {figure}{\numberline {816}{\ignorespaces Lepton transverse momentum distribution in the muon and electron channel for the $\sqrt {s} = 5$\nobreakspace {}\TeV \ dataset. \relax }}{107}{figure.caption.98}
+\contentsline {figure}{\numberline {817}{\ignorespaces W transverse momentum distribution in the muon and electron channel for the $\sqrt {s} = 5$\nobreakspace {}\TeV \ dataset. \relax }}{108}{figure.caption.99}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {101}{\ignorespaces A: The nodes perform a linear transformation of the inputs, then apply a non-linear activation function. B: The architecture of a deep neural network: neurons are arranged into layers \cite {dnn1}. \relax }}{114}{figure.caption.100}
+\contentsline {figure}{\numberline {102}{\ignorespaces A model of the \gls {dnn} used in the analysis. \relax }}{117}{figure.caption.101}
+\contentsline {figure}{\numberline {103}{\ignorespaces learning curve. \relax }}{118}{figure.caption.102}
+\contentsline {figure}{\numberline {104}{\ignorespaces The schematic portrayal of EM shower development\relax }}{118}{figure.caption.103}
