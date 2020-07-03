@@ -65,7 +65,7 @@ So in terms of a \gls{dnn} fitting the model means tuning the weights and biases
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.5\textwidth,keepaspectratio]{dnn.png}
-	\caption{A: The nodes perform a linear transformation of the inputs, then apply a non-linear activation function. B: The architecture of a deep neural network: neurons are arranged into layers \cite{dnn1}. }
+	\caption{A: The nodes perform a linear transformation of the inputs, then apply a non-linear activation function. B: The architecture of a deep neural network: neurons are arranged into layers~\cite{dnn1}. }
 	\label{fig::dnn}
 \end{figure}
 Let us assume that there are L layers in the network $l=1,...,L$, that $w^l_{jk}$ and $b^l_j$ are the weight of an input parameter k and the bias for node $k$ in layer l respectively. The layered structure of the neural network ensures that the inputs for the nodes in layer $l$ depend only on the outputs of the nodes from layer $l-1$, hence:
@@ -142,7 +142,7 @@ Considering that hadronic recoil is an observable what uses many inputs from \gl
  \item Total number of jets in the event.
  \item Total number of \gls{npfos} and \gls{cpfos} in the event.
 \end{itemize}
-All input features were preprocessed using the StandardScaler module from Scikit Learn package \cite{scikit-learn}.\\
+All input features were pre-processed using the StandardScaler module from Scikit Learn package \cite{scikit-learn}.\\
 The model contains 3 dense layers with 256 neurons each, alternated with batch normalization layers (see Fig. \ref{fig::nnmodel}). Using batch normalization layers has allowed to reduce the training time by the factor of 10. 
 \begin{figure}[htpb]
 	\centering
@@ -150,29 +150,10 @@ The model contains 3 dense layers with 256 neurons each, alternated with batch n
 	\caption{A model of the \gls{dnn} used in the analysis. }
 	\label{fig::nnmodel}
 \end{figure}
-The model has used Adam optimizator with learning step $0.001$ and batch size of $4000$ data points. Twenty percent of events were used for validation. The two target values were Cartesian components of the truth \gls{hr} vector.
- 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.5\textwidth,keepaspectratio]{model.png}
-	\caption{learning curve. }
-	\label{fig::nnlearn}
-\end{figure} 
+The model has used Adam optimizer with learning step $0.001$ and batch size of $4000$ data points. Twenty percent of events were used for validation. The two target values were Cartesian components of the truth \gls{hr} vector.
 
-\subsection{Results}
-\begin{figure}[htpb]
-  	\begin{subfigure}[t]{0.5\textwidth}
-	\includegraphics[width=\textwidth,keepaspectratio]{em_shower.png}
-	\caption[Started by an electron]{Initiated by an electron}
-	\label{fig::id}
-\end{subfigure}
-\hfill
-\begin{subfigure}[t]{0.5\textwidth} 
-	\includegraphics[width=\textwidth,keepaspectratio]{emshower.png}
-	\caption[Started by a $\gamma$-photon]{Initiated by a $\gamma$-photon}
-	\label{fig::pd}
-\end{subfigure}
-\caption{The schematic portrayal of EM shower development}
-\label{fig::em_shower}
-\end{figure}
+\subsection{Kinematic distributions} 
+The results presented here demonstrate the regression plots obtained with the trained DNN. They include the plots from the test sample of $W^+\rightarrow\mu\nu$ at 13 TeV, as well as plots from.  
+
+
 \section{Technical details}

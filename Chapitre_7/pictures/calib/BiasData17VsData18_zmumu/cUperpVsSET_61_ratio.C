@@ -1,0 +1,101 @@
+void cUperpVsSET_61_ratio()
+{
+//=========Macro generated from canvas: cUperpVsSET_61/
+//=========  (Mon Aug 19 16:50:32 2019) by ROOT version 6.18/00
+   TCanvas *cUperpVsSET_61 = new TCanvas("cUperpVsSET_61", "",1,1,700,476);
+   gStyle->SetOptStat(0);
+   cUperpVsSET_61->Range(-12.5,-15,112.5,35);
+   cUperpVsSET_61->SetFillColor(0);
+   cUperpVsSET_61->SetBorderMode(0);
+   cUperpVsSET_61->SetBorderSize(2);
+   cUperpVsSET_61->SetFrameBorderMode(0);
+   
+   TH1D *hb_61__33 = new TH1D("hb_61__33","400 GeV < SETUE < 440 GeV",40,0,200);
+   hb_61__33->SetBinContent(1,0.9803922);
+   hb_61__33->SetBinContent(2,-6.786834);
+   hb_61__33->SetBinContent(3,0.5150943);
+   hb_61__33->SetBinContent(4,1.161333);
+   hb_61__33->SetBinContent(5,0.416026);
+   hb_61__33->SetBinContent(6,0.2338983);
+   hb_61__33->SetBinContent(7,1.721334);
+   hb_61__33->SetBinContent(8,0.5441197);
+   hb_61__33->SetBinContent(9,0.5407925);
+   hb_61__33->SetBinContent(10,1.204482);
+   hb_61__33->SetBinContent(11,-0.05377527);
+   hb_61__33->SetBinContent(12,1.008193);
+   hb_61__33->SetBinContent(13,-0.5947522);
+   hb_61__33->SetBinContent(14,1.711111);
+   hb_61__33->SetBinContent(15,2.294118);
+   hb_61__33->SetBinContent(16,0.304878);
+   hb_61__33->SetBinContent(17,5.361446);
+   hb_61__33->SetBinContent(19,0.45);
+   hb_61__33->SetBinContent(20,1.393939);
+   hb_61__33->SetBinContent(21,0.5254237);
+   hb_61__33->SetBinContent(22,0.2930233);
+   hb_61__33->SetBinContent(23,1.833333);
+   hb_61__33->SetBinContent(25,0.3230769);
+   hb_61__33->SetBinContent(26,-3.451128);
+   hb_61__33->SetBinContent(27,0.9107143);
+   hb_61__33->SetBinContent(28,0.7837838);
+   hb_61__33->SetBinContent(29,5);
+   hb_61__33->SetBinContent(31,0.4210526);
+   hb_61__33->SetBinContent(39,-5.181818);
+   hb_61__33->SetBinContent(41,1.086364);
+   hb_61__33->SetBinError(1,1.778846);
+   hb_61__33->SetBinError(2,28.48018);
+   hb_61__33->SetBinError(3,0.6774121);
+   hb_61__33->SetBinError(4,2.552477);
+   hb_61__33->SetBinError(5,0.3745222);
+   hb_61__33->SetBinError(6,0.207787);
+   hb_61__33->SetBinError(7,0.7765428);
+   hb_61__33->SetBinError(8,0.2230479);
+   hb_61__33->SetBinError(9,0.4876305);
+   hb_61__33->SetBinError(10,1.557344);
+   hb_61__33->SetBinError(11,0.7921608);
+   hb_61__33->SetBinError(12,0.7244232);
+   hb_61__33->SetBinError(13,1.100996);
+   hb_61__33->SetBinError(14,0.8660379);
+   hb_61__33->SetBinError(15,7.173685);
+   hb_61__33->SetBinError(16,0.5565164);
+   hb_61__33->SetBinError(17,3.288128);
+   hb_61__33->SetBinError(19,0.3075832);
+   hb_61__33->SetBinError(20,0.5963233);
+   hb_61__33->SetBinError(21,0.579724);
+   hb_61__33->SetBinError(22,0.5274236);
+   hb_61__33->SetBinError(23,3.073237);
+   hb_61__33->SetBinError(25,0.08702853);
+   hb_61__33->SetBinError(26,1.175381);
+   hb_61__33->SetBinError(27,0.1034955);
+   hb_61__33->SetBinError(28,0.1198311);
+   hb_61__33->SetBinError(29,10.03638);
+   hb_61__33->SetBinError(31,0.292557);
+   hb_61__33->SetBinError(41,0.3320588);
+   hb_61__33->SetMinimum(0);
+   hb_61__33->SetMaximum(2.5);
+   hb_61__33->SetEntries(0.191578);
+   hb_61__33->SetStats(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#0000ff");
+   hb_61__33->SetLineColor(ci);
+   hb_61__33->GetXaxis()->SetRange(1,20);
+   hb_61__33->GetXaxis()->SetLabelFont(42);
+   hb_61__33->GetXaxis()->SetLabelSize(0.035);
+   hb_61__33->GetXaxis()->SetTitleSize(0.035);
+   hb_61__33->GetXaxis()->SetTitleOffset(1);
+   hb_61__33->GetXaxis()->SetTitleFont(42);
+   hb_61__33->GetYaxis()->SetLabelFont(42);
+   hb_61__33->GetYaxis()->SetLabelSize(0.035);
+   hb_61__33->GetYaxis()->SetTitleSize(0.035);
+   hb_61__33->GetYaxis()->SetTitleFont(42);
+   hb_61__33->GetZaxis()->SetLabelFont(42);
+   hb_61__33->GetZaxis()->SetLabelSize(0.035);
+   hb_61__33->GetZaxis()->SetTitleSize(0.035);
+   hb_61__33->GetZaxis()->SetTitleOffset(1);
+   hb_61__33->GetZaxis()->SetTitleFont(42);
+   hb_61__33->Draw("histe");
+   cUperpVsSET_61->Modified();
+   cUperpVsSET_61->cd();
+   cUperpVsSET_61->SetSelected(cUperpVsSET_61);
+}

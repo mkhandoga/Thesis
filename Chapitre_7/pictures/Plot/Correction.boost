@@ -1,0 +1,55 @@
+inputType=1
+
+rootFileName=/sps/atlas/h/hatmani/rel21_Calib_Pre/source_17/mc16c.root
+legend= No weight
+objName=CollectionTree
+varWeight=
+
+rootFileName=/sps/atlas/h/hatmani/rel21_Calib_Pre/source_17/mc16c.root
+legend= PileUp weight
+objName=CollectionTree
+varWeight=weight_pileup_17
+
+rootFileName=/sps/atlas/h/hatmani/rel21_Calib_Pre/source_17/mc16c.root
+legend= SF reconstruction
+objName=CollectionTree
+varWeight=el1_reconstruction_SF el2_reconstruction_SF
+
+rootFileName=/sps/atlas/h/hatmani/rel21_Calib_Pre/source_17/mc16c.root
+legend= SF isolation
+objName=CollectionTree
+varWeight=el1_isolation_SF el2_isolation_SF
+
+rootFileName=/sps/atlas/h/hatmani/rel21_Calib_Pre/source_17/mc16c.root
+legend= SF identification
+objName=CollectionTree
+varWeight=el1_isEM_SF el2_isEM_SF
+
+rootFileName=/sps/atlas/h/hatmani/rel21_Calib_Pre/source_17/mc16c.root
+legend= SF trigger
+objName=CollectionTree
+varWeight=el1_trigger_SF el2_trigger_SF
+
+
+varName=m12
+varMin=80000
+varMax=100000
+nBins=40
+doRatio=1
+xTitle=m_{ee} [MeV]
+yTitle=events
+normalize=1
+
+legendPos= 0.7 0.9
+latex = __ATLAS Internal
+latexOpt = 0.13 0.9
+#latex = __HASHTAGsqrt{s} = 13 TeV, L =        fb^{-1} 
+#latexOpt = 0.14 0.85
+#latex= Scale factors computed for 87<m_{ee}<94.5 GeV
+#latex = Excluding 1.2<|__HASHTAGeta|<1.82#, at least 1 electron in 1.2<|__HASHTAGeta|<1.82
+#latexOpt = 0.14 0.78
+
+extension=eps
+extendUp=0.4
+#plotDirectory=/sps/atlas/h/hatmani/Plot-note/
+#loadFiles=/sps/atlas/a/aguerguichon/Calibration/ScaleResults/170124/Label.txt

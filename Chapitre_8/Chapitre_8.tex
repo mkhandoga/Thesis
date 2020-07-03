@@ -62,7 +62,7 @@
 	
     \subsection{MC samples and cross-sections}
     Signal and background processes are modelled using fully simulated and reconstructed using \gls{mc} samples, specifically tuned for the special run conditions, namely the pileup conditions, lower topo-cluster noise thresholds and adapter trigger menu. No pileup reweighting is performed.\\
-    The information on the simulated samples and their properties is given in Tables \ref{tab:samples13}, \ref{tab:samples13_sherpaz}, \ref{tab:samples13_sherpaw},  \ref{tab:samples5}. The predicted event counts are normalized to the cross-sections quoted in the table.\\
+    The information on the simulated samples and their properties is given in Tables \ref{tab:samples13}, \ref{tab:samples13_sherpaz}, \ref{tab:samples13_sherpaw},  \ref{tab:samples5} \cite{Kretzschmar:2657141}. The predicted event counts are normalized to the cross-sections quoted in the table.\\
     The primary signal event samples for W and Z production are obtained using \Powheg~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2008gx,Alioli:2010xd} event generator with CT10 PDF, linked with \Pythia~\cite{pythia} with AZNLO tune~\cite{STDM-2012-23}. \Powheg+\Pythia8 samples are interfaced to \Photos~\cite{Golonka:2005pn}  for final state \gls{qed} effects simulation.\\
     A set of alternative samples at $\sqrt{s} = 13\tev$ was prepared with \Sherpa 2.2.2~\cite{Hoche:2010kg} using the NNPDF3.0 PDFs and merging
     $V+0,1,2$ at NLO accuracy with $V+3,4$ at LO accuracy with the MEPS@NLO scheme. A similar set for $\sqrt{s} = 5\tev$ was prepared with \Sherpa 2.2.5 with a setup similar to 13 TeV samples.\\
@@ -337,6 +337,8 @@
      	\label{fig:zvtx}
      \end{figure}
     \subsection{Multijet background}
+ The estimate of the multijet background, which contain contributions from fake leptons produced in semi-leptonic decays of heavy quarks, in-flight pion decays, photon conversions, etc, is done using a data-driven techniques described in Reference~\cite{Xu:2657146}. TO BE ADDED.
+ 
  
 \section{W analysis event selection and control plots}
 \label{sec:selection}
@@ -358,18 +360,13 @@ This transverse mass is defined as follows:
 {m}_{T} = \sqrt{2 {p}_{T}^{\nu}p_{T} ^{l} (1-\cos\Delta\phi^{\nu})}
 \end{equation}
 
-analogously to Eq.~(\ref{eq:METandNeutrino}) with \ptn{} replaced by \MET{}
-and $\phi^{\nu}$ replaced by the azimuthal angle related to the \MET{}.
+The tables~\ref{tab:wpen5},\ref{tab:wpmn5},\ref{tab:wmen5},\ref{tab:wmmn5} contain signal selection event yields for the $W^{\pm} \rightarrow \ell^{\pm}\nu$  at $\sqrt{s} = 5~\TeV$ \lowmu dataset. Similarly the tables~\ref{tab:wpen},\ref{tab:wpmn},\ref{tab:wmen},\ref{tab:wmmn} contain the corresponding numbers for the 13~\TeV\ \lowmu\ dataset. Table~\ref{tab:wyields} provides a comparison between observed and expected yields.
+Events denoted as \Wln{} in the tables and the plots contain the sum of background events coming from \Wtaunu\ and other \Wboson{} leptonic decays other than the signal.
 
-In tables~\ref{tab:wpen5},\ref{tab:wpmn5},\ref{tab:wmen5},\ref{tab:wmmn5} $W^{\pm} \rightarrow \ell^{\pm}\nu$ signal selection event yields for the $\sqrt{s} = 5~\TeV$ \lowmu dataset are shown, and the corresponding numbers for the 13~\TeV\ \lowmu\ dataset are shown
-in tables~\ref{tab:wpen},\ref{tab:wpmn},\ref{tab:wmen},\ref{tab:wmmn}. A summary of observed compated to expected yields is then provided in table~\ref{tab:wyields}.
-The yields for the signal and for the main electroweak and top backgrounds are obtained from the dedicated MC samples described in Ref~\cite{Kretzschmar:2657141}.
-The events referred to as \Wln{} in the tables in the plots are adding the \Wboson\ of opposite charge, same flavour, with respect to the signal, to the \Wtaunu\ background events.
-The estimate of the multijet background, which contain contributions from fake leptons produced in semi-leptonic decays of heavy quarks, in-flight pion decays, photon conversions, etc, is done using a data-driven techniques described in Reference~\cite{Xu:2657146}.
 
 \input{table}
 
-\clearpage
+%\clearpage
 
 
 \subsection{$\sqrt{s} = 13$~\TeV\ dataset control plots}

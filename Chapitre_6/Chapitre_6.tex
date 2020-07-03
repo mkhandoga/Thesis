@@ -195,6 +195,7 @@
 	\end{equation}
 	where $R_{max}$ is the maximum cone size and may vary depending on the analysis needs, typically between 0.2 and 0.4.
       \section{Particle flow objects}
+      \label{sec:pfo}
       The measurement of hadronic objects and particle showers remains a complicated task due to large variety of particle types and properties they posses and because of the large energy/momentum span of the measured objects. For the low-energy charged particles the \gls{id} shows better momentum resolution and angular resolution. On the other hand, the calorimeter shows better performance at high energy and is also capable of detecting neutral particles. The idea behind the \gls{pf} algorithm \cite{pflow} is to combine the information from the two detectors to obtain the best result possible. To properly take into account every particle it has to be ensured that every particle detected in both detectors is counted only once. This means that for a charged particle its deposit in the calorimeter must be found and subtracted. The \gls{pfo} reconstruction process is schematically presented in Fig. \ref{fig::pflow}.
       	\begin{figure}[htbp]
       	\centering

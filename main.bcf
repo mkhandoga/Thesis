@@ -2230,6 +2230,19 @@
     <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="7">
+    <bcf:citekey order="1">Kretzschmar:2657141</bcf:citekey>
+    <bcf:citekey order="2">Aaboud:2018ugz</bcf:citekey>
+    <bcf:citekey order="3">PERF-2017-03</bcf:citekey>
+    <bcf:citekey order="4">egamma_perf_2017</bcf:citekey>
+    <bcf:citekey order="5">PERF-2013-05</bcf:citekey>
+    <bcf:citekey order="6">Andari:2651890</bcf:citekey>
+    <bcf:citekey order="7">Aaboud:2018ugz</bcf:citekey>
+    <bcf:citekey order="7">electrons_reco1</bcf:citekey>
+    <bcf:citekey order="7">topoclust_2019</bcf:citekey>
+    <bcf:citekey order="8">electrons_reco1</bcf:citekey>
+    <bcf:citekey order="9">topoclust_2019</bcf:citekey>
+    <bcf:citekey order="10">muon_align</bcf:citekey>
+    <bcf:citekey order="11">Koehler:2665704</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2244,23 +2257,23 @@
     <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="8">
-    <bcf:citekey order="1">Nason:2004rx</bcf:citekey>
-    <bcf:citekey order="1">Frixione:2007vw</bcf:citekey>
-    <bcf:citekey order="1">Alioli:2008gx</bcf:citekey>
-    <bcf:citekey order="1">Alioli:2010xd</bcf:citekey>
-    <bcf:citekey order="2">pythia</bcf:citekey>
-    <bcf:citekey order="3">STDM-2012-23</bcf:citekey>
-    <bcf:citekey order="4">Golonka:2005pn</bcf:citekey>
-    <bcf:citekey order="5">Hoche:2010kg</bcf:citekey>
-    <bcf:citekey order="6">Ball:2012cx</bcf:citekey>
-    <bcf:citekey order="7">ATL-PHYS-PUB-2016-017</bcf:citekey>
-    <bcf:citekey order="8">Catani:2007vq</bcf:citekey>
-    <bcf:citekey order="8">Catani:2009sm</bcf:citekey>
-    <bcf:citekey order="9">Harland-Lang:2014zoa</bcf:citekey>
-    <bcf:citekey order="10">STDM-2015-03</bcf:citekey>
-    <bcf:citekey order="11">HION-2018-02</bcf:citekey>
-    <bcf:citekey order="12">CMS-TOP-16-023</bcf:citekey>
-    <bcf:citekey order="13">Kretzschmar:2657141</bcf:citekey>
+    <bcf:citekey order="1">Kretzschmar:2657141</bcf:citekey>
+    <bcf:citekey order="2">Nason:2004rx</bcf:citekey>
+    <bcf:citekey order="2">Frixione:2007vw</bcf:citekey>
+    <bcf:citekey order="2">Alioli:2008gx</bcf:citekey>
+    <bcf:citekey order="2">Alioli:2010xd</bcf:citekey>
+    <bcf:citekey order="3">pythia</bcf:citekey>
+    <bcf:citekey order="4">STDM-2012-23</bcf:citekey>
+    <bcf:citekey order="5">Golonka:2005pn</bcf:citekey>
+    <bcf:citekey order="6">Hoche:2010kg</bcf:citekey>
+    <bcf:citekey order="7">Ball:2012cx</bcf:citekey>
+    <bcf:citekey order="8">ATL-PHYS-PUB-2016-017</bcf:citekey>
+    <bcf:citekey order="9">Catani:2007vq</bcf:citekey>
+    <bcf:citekey order="9">Catani:2009sm</bcf:citekey>
+    <bcf:citekey order="10">Harland-Lang:2014zoa</bcf:citekey>
+    <bcf:citekey order="11">STDM-2015-03</bcf:citekey>
+    <bcf:citekey order="12">HION-2018-02</bcf:citekey>
+    <bcf:citekey order="13">CMS-TOP-16-023</bcf:citekey>
     <bcf:citekey order="14">Xu:2657146</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
@@ -2276,6 +2289,9 @@
     <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="9">
+    <bcf:citekey order="1">Schmitt:2016orm</bcf:citekey>
+    <bcf:citekey order="2">unfolding1</bcf:citekey>
+    <bcf:citekey order="3">unfolding2</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2309,6 +2325,20 @@
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
   </bcf:section>
+  <!-- SECTION 11 -->
+  <bcf:bibdata section="11">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="11">
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
     <bcf:sort order="1">
@@ -2316,7 +2346,106 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="1"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="2"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="3"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="4"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="5"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="6"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="7"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="8"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="9"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
   <bcf:datalist section="10"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="11"
                 name="none/global//global/global"
                 type="entry"
                 sortingtemplatename="none"

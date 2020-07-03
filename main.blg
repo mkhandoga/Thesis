@@ -1,169 +1,189 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'main.blg'
-[47] biber-darwin:313> INFO - === Fri Jun 26, 2020, 01:54:58
-[74] Biber.pm:371> INFO - Reading 'main.bcf'
-[196] Biber.pm:857> INFO - Found 14 citekeys in bib section 0
-[196] Biber.pm:857> INFO - Found 35 citekeys in bib section 1
-[197] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[197] Biber.pm:857> INFO - Found 21 citekeys in bib section 2
-[197] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[197] Biber.pm:857> INFO - Found 14 citekeys in bib section 3
-[197] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[198] Biber.pm:857> INFO - Found 14 citekeys in bib section 4
-[198] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[198] Biber.pm:857> INFO - Found 4 citekeys in bib section 5
-[198] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[198] Biber.pm:857> INFO - Found 20 citekeys in bib section 6
-[199] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[199] Biber.pm:857> INFO - Found 0 citekeys in bib section 7
-[199] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[199] Biber.pm:857> INFO - Found 18 citekeys in bib section 8
-[199] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[199] Biber.pm:857> INFO - Found 0 citekeys in bib section 9
-[199] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[199] Biber.pm:857> INFO - Found 13 citekeys in bib section 10
-[200] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[286] Biber.pm:3976> INFO - Processing section 0
-[299] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 0
-[310] bibtex.pm:1500> INFO - LaTeX decoding ...
-[662] bibtex.pm:1316> INFO - Found BibTeX data source 'bibli.bib'
-[668] Utils.pm:193> WARN - Duplicate entry key: 'weinberg' in file 'bibli.bib', skipping ...
-[682] Utils.pm:193> WARN - Duplicate entry key: 'PrimVertRun3' in file 'bibli.bib', skipping ...
-[692] Utils.pm:193> WARN - month field 'Mar' in entry 'isotopes' is not an integer - this will probably not sort properly.
-[696] Utils.pm:193> WARN - month field 'May' in entry 'brownian' is not an integer - this will probably not sort properly.
-[700] Utils.pm:193> WARN - month field 'October' in entry 'cathode' is not an integer - this will probably not sort properly.
-[703] Utils.pm:193> WARN - month field 'June' in entry 'neutron' is not an integer - this will probably not sort properly.
-[707] Utils.pm:193> WARN - month field 'March' in entry 'positron_exp' is not an integer - this will probably not sort properly.
-[710] Utils.pm:193> WARN - month field 'February' in entry 'positron_th' is not an integer - this will probably not sort properly.
-[715] Utils.pm:193> WARN - month field 'May' in entry 'muon_exp' is not an integer - this will probably not sort properly.
-[723] Utils.pm:193> WARN - month field 'May' in entry 'pion' is not an integer - this will probably not sort properly.
-[728] Utils.pm:193> WARN - month field 'Dec' in entry 'kaon' is not an integer - this will probably not sort properly.
-[734] Utils.pm:193> WARN - month field 'Dec' in entry 'lambda0' is not an integer - this will probably not sort properly.
-[741] Utils.pm:193> WARN - month field 'Feb' in entry 'zweig' is not an integer - this will probably not sort properly.
-[791] Utils.pm:193> WARN - month field 'Feb' in entry 'omega' is not an integer - this will probably not sort properly.
-[812] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[812] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[812] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[812] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[830] Biber.pm:3976> INFO - Processing section 1
-[830] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 1
-[1156] Utils.pm:193> WARN - month field 'Jul' in entry 'PhysRevD.86.010001' is not an integer - this will probably not sort properly.
-[1158] Utils.pm:193> WARN - Entry 'sm_wiki' (bibli.bib): Invalid format '12.05.2020' of date field 'date' - ignoring
-[1182] Utils.pm:193> WARN - month field 'Feb' in entry 'Schwinger_polariz' is not an integer - this will probably not sort properly.
-[1188] Utils.pm:193> WARN - Entry 'coupl_wiki' (bibli.bib): Invalid format '12.05.2020' of date field 'date' - ignoring
-[1193] Utils.pm:193> WARN - month field 'Jun' in entry 'Gross' is not an integer - this will probably not sort properly.
-[1197] Utils.pm:193> WARN - month field 'Jun' in entry 'Politzer' is not an integer - this will probably not sort properly.
-[1209] Utils.pm:193> WARN - month field 'Dec' in entry 'poincare' is not an integer - this will probably not sort properly.
-[1222] Utils.pm:193> WARN - month field 'Oct' in entry 'YangMills' is not an integer - this will probably not sort properly.
-[1230] Utils.pm:193> WARN - month field 'Nov' in entry 'Feynman_math' is not an integer - this will probably not sort properly.
-[1233] Utils.pm:193> WARN - month field 'Sep' in entry 'Feynman_positrons' is not an integer - this will probably not sort properly.
-[1237] Utils.pm:193> WARN - month field 'Sep' in entry 'Feynman_spacetime' is not an integer - this will probably not sort properly.
-[1244] Utils.pm:193> WARN - month field 'Feb' in entry 'Dyson_all' is not an integer - this will probably not sort properly.
-[1248] Utils.pm:193> WARN - month field 'Jun' in entry 'Dyson_smatr' is not an integer - this will probably not sort properly.
-[1254] Utils.pm:193> WARN - month field 'Aug' in entry 'lbl_th' is not an integer - this will probably not sort properly.
-[1258] Utils.pm:193> WARN - month field 'Jul' in entry 'lbl_exp' is not an integer - this will probably not sort properly.
-[1263] Utils.pm:193> WARN - month field 'Feb' in entry 'Salam1959' is not an integer - this will probably not sort properly.
-[1268] Utils.pm:193> WARN - month field 'Aug' in entry 'brout' is not an integer - this will probably not sort properly.
-[1272] Utils.pm:193> WARN - month field 'Oct' in entry 'higgs' is not an integer - this will probably not sort properly.
-[1273] Utils.pm:193> WARN - month field 'nov' in entry 'Hollik_2006' is not an integer - this will probably not sort properly.
-[1279] Utils.pm:193> WARN - month field 'Dec' in entry 'weinberg2' is not an integer - this will probably not sort properly.
-[1280] Utils.pm:193> WARN - Entry 'conf_wiki' (bibli.bib): Invalid format '12.05.2020' of date field 'date' - ignoring
-[1313] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1313] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1313] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1314] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[1348] Biber.pm:3976> INFO - Processing section 2
-[1349] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 2
-[1371] Utils.pm:193> WARN - month field 'Aug' in entry 'Haller2018' is not an integer - this will probably not sort properly.
-[1388] Utils.pm:193> WARN - month field 'Mar' in entry 'bjorken' is not an integer - this will probably not sort properly.
-[1391] Utils.pm:193> WARN - month field 'Dec' in entry 'feynman_partons' is not an integer - this will probably not sort properly.
-[1422] Utils.pm:193> WARN - month field 'Aug' in entry 'drellyan' is not an integer - this will probably not sort properly.
-[1442] Utils.pm:193> WARN - month field 'Jul' in entry 'Martin:392675' is not an integer - this will probably not sort properly.
-[1459] Utils.pm:193> WARN - month field 'Oct' in entry 'PhysRevD.100.074027' is not an integer - this will probably not sort properly.
-[1467] Utils.pm:193> WARN - ISBN '978-0-511-82328-2, 978-0-521-54589-1' in entry 'Ellis:1991qj' is invalid - run biber with '--validate_datamodel' for details.
-[1500] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ATLAS_Useful.bib' for section 2
-[1503] bibtex.pm:1500> INFO - LaTeX decoding ...
-[1595] bibtex.pm:1316> INFO - Found BibTeX data source 'bib/ATLAS_Useful.bib'
-[1601] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ATLAS.bib' for section 2
-[1656] bibtex.pm:1500> INFO - LaTeX decoding ...
-[3615] bibtex.pm:1316> INFO - Found BibTeX data source 'bib/ATLAS.bib'
-[3731] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/PubNotes.bib' for section 2
-[3744] bibtex.pm:1500> INFO - LaTeX decoding ...
-[4093] bibtex.pm:1316> INFO - Found BibTeX data source 'bib/PubNotes.bib'
-[4127] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ConfNotes.bib' for section 2
-[4170] bibtex.pm:1500> INFO - LaTeX decoding ...
-[5385] bibtex.pm:1316> INFO - Found BibTeX data source 'bib/ConfNotes.bib'
-[5497] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/CMS.bib' for section 2
-[5551] bibtex.pm:1500> INFO - LaTeX decoding ...
-[7498] bibtex.pm:1316> INFO - Found BibTeX data source 'bib/CMS.bib'
-[7621] Utils.pm:193> WARN - I didn't find a database entry for 'dis' (section 2)
-[7644] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[7644] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[7644] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[7644] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[7662] Biber.pm:3976> INFO - Processing section 3
-[7662] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 3
-[7669] Utils.pm:193> WARN - month field 'Mar' in entry 'Bruning:2668521' is not an integer - this will probably not sort properly.
-[7681] Utils.pm:193> WARN - Entry 'hydro' (bibli.bib): Invalid format '24.04.2010' of date field 'date' - ignoring
-[7685] Utils.pm:193> WARN - Entry 'rf_cavities' (bibli.bib): Invalid format '24.04.2010' of date field 'date' - ignoring
-[7717] Utils.pm:193> WARN - month field 'Nov' in entry 'vdm2' is not an integer - this will probably not sort properly.
-[7739] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[7739] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[7739] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[7740] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[7750] Biber.pm:3976> INFO - Processing section 4
-[7751] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 4
-[7764] Utils.pm:193> WARN - month field 'Feb' in entry 'atlas_trigger' is not an integer - this will probably not sort properly.
-[7781] Utils.pm:193> WARN - month field 'Sep' in entry 'muons_2' is not an integer - this will probably not sort properly.
-[7788] Utils.pm:193> WARN - month field 'Apr' in entry 'lucid_1' is not an integer - this will probably not sort properly.
-[7792] Utils.pm:193> WARN - month field 'Jun' in entry 'lucid_2' is not an integer - this will probably not sort properly.
-[7799] Utils.pm:193> WARN - month field 'Jun' in entry 'luminosity' is not an integer - this will probably not sort properly.
-[7804] Utils.pm:193> WARN - month field 'Feb' in entry 'daq' is not an integer - this will probably not sort properly.
-[7822] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[7822] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[7822] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[7823] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[7833] Biber.pm:3976> INFO - Processing section 5
-[7833] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 5
-[7835] Utils.pm:193> WARN - month field 'Aug' in entry 'egamma_perf_2017' is not an integer - this will probably not sort properly.
-[7836] Utils.pm:193> WARN - month field 'Apr' in entry 'sshapes_simulation' is not an integer - this will probably not sort properly.
-[7838] Utils.pm:193> WARN - month field 'Apr' in entry 'RecoID2011' is not an integer - this will probably not sort properly.
-[7849] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[7849] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[7849] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[7849] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[7852] Biber.pm:3976> INFO - Processing section 6
-[7853] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 6
-[7874] Utils.pm:193> WARN - month field 'Apr' in entry 'PrimVertRun3' is not an integer - this will probably not sort properly.
-[7927] Utils.pm:193> WARN - month field 'Apr' in entry 'Lampl:1099735' is not an integer - this will probably not sort properly.
-[7931] Utils.pm:193> WARN - month field 'Mar' in entry 'topoclust2_2016' is not an integer - this will probably not sort properly.
-[7969] Utils.pm:193> WARN - month field 'Mar' in entry 'Cornelissen:1020106' is not an integer - this will probably not sort properly.
-[7970] Utils.pm:193> WARN - month field 'May' in entry 'GSF' is not an integer - this will probably not sort properly.
-[7993] Utils.pm:193> WARN - month field 'Mar' in entry 'pflow' is not an integer - this will probably not sort properly.
-[8015] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[8016] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[8016] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[8016] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[8033] Biber.pm:3976> INFO - Processing section 8
-[8033] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 8
-[8090] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ATLAS_Useful.bib' for section 8
-[8120] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ATLAS.bib' for section 8
-[8136] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/PubNotes.bib' for section 8
-[8140] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ConfNotes.bib' for section 8
-[8141] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/CMS.bib' for section 8
-[8142] Utils.pm:193> WARN - I didn't find a database entry for 'Kretzschmar:2657141' (section 8)
-[8142] Utils.pm:193> WARN - I didn't find a database entry for 'Xu:2657146' (section 8)
-[8162] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[8162] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[8162] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[8162] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[8175] Biber.pm:3976> INFO - Processing section 10
-[8175] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 10
-[8232] Utils.pm:193> WARN - month field 'Dec' in entry 'Cybenko1989' is not an integer - this will probably not sort properly.
-[8306] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[8306] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[8306] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[8306] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[8319] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[8438] bbl.pm:720> INFO - Output to main.bbl
-[8438] Biber.pm:110> INFO - WARNINGS: 65
+[45] biber-darwin:313> INFO - === Fri Jul  3, 2020, 22:46:12
+[73] Biber.pm:371> INFO - Reading 'main.bcf'
+[178] Biber.pm:857> INFO - Found 14 citekeys in bib section 0
+[179] Biber.pm:857> INFO - Found 35 citekeys in bib section 1
+[179] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[179] Biber.pm:857> INFO - Found 21 citekeys in bib section 2
+[179] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[179] Biber.pm:857> INFO - Found 14 citekeys in bib section 3
+[179] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[180] Biber.pm:857> INFO - Found 14 citekeys in bib section 4
+[180] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[180] Biber.pm:857> INFO - Found 4 citekeys in bib section 5
+[180] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[180] Biber.pm:857> INFO - Found 20 citekeys in bib section 6
+[180] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[180] Biber.pm:857> INFO - Found 10 citekeys in bib section 7
+[180] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[181] Biber.pm:857> INFO - Found 18 citekeys in bib section 8
+[181] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[181] Biber.pm:857> INFO - Found 3 citekeys in bib section 9
+[181] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[181] Biber.pm:857> INFO - Found 13 citekeys in bib section 10
+[181] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[181] Biber.pm:857> INFO - Found 0 citekeys in bib section 11
+[181] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[255] Biber.pm:3976> INFO - Processing section 0
+[271] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 0
+[284] bibtex.pm:1500> INFO - LaTeX decoding ...
+[566] bibtex.pm:1316> INFO - Found BibTeX data source 'bibli.bib'
+[570] Utils.pm:193> WARN - Duplicate entry key: 'weinberg' in file 'bibli.bib', skipping ...
+[581] Utils.pm:193> WARN - Duplicate entry key: 'PrimVertRun3' in file 'bibli.bib', skipping ...
+[589] Utils.pm:193> WARN - month field 'Mar' in entry 'isotopes' is not an integer - this will probably not sort properly.
+[595] Utils.pm:193> WARN - month field 'May' in entry 'brownian' is not an integer - this will probably not sort properly.
+[598] Utils.pm:193> WARN - month field 'October' in entry 'cathode' is not an integer - this will probably not sort properly.
+[601] Utils.pm:193> WARN - month field 'June' in entry 'neutron' is not an integer - this will probably not sort properly.
+[604] Utils.pm:193> WARN - month field 'March' in entry 'positron_exp' is not an integer - this will probably not sort properly.
+[607] Utils.pm:193> WARN - month field 'February' in entry 'positron_th' is not an integer - this will probably not sort properly.
+[611] Utils.pm:193> WARN - month field 'May' in entry 'muon_exp' is not an integer - this will probably not sort properly.
+[617] Utils.pm:193> WARN - month field 'May' in entry 'pion' is not an integer - this will probably not sort properly.
+[620] Utils.pm:193> WARN - month field 'Dec' in entry 'kaon' is not an integer - this will probably not sort properly.
+[624] Utils.pm:193> WARN - month field 'Dec' in entry 'lambda0' is not an integer - this will probably not sort properly.
+[629] Utils.pm:193> WARN - month field 'Feb' in entry 'zweig' is not an integer - this will probably not sort properly.
+[669] Utils.pm:193> WARN - month field 'Feb' in entry 'omega' is not an integer - this will probably not sort properly.
+[683] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[683] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[683] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[683] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[700] Biber.pm:3976> INFO - Processing section 1
+[701] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 1
+[959] Utils.pm:193> WARN - month field 'Jul' in entry 'PhysRevD.86.010001' is not an integer - this will probably not sort properly.
+[960] Utils.pm:193> WARN - Entry 'sm_wiki' (bibli.bib): Invalid format '12.05.2020' of date field 'date' - ignoring
+[963] Utils.pm:193> WARN - month field 'Feb' in entry 'Schwinger_polariz' is not an integer - this will probably not sort properly.
+[966] Utils.pm:193> WARN - Entry 'coupl_wiki' (bibli.bib): Invalid format '12.05.2020' of date field 'date' - ignoring
+[970] Utils.pm:193> WARN - month field 'Jun' in entry 'Gross' is not an integer - this will probably not sort properly.
+[973] Utils.pm:193> WARN - month field 'Jun' in entry 'Politzer' is not an integer - this will probably not sort properly.
+[982] Utils.pm:193> WARN - month field 'Dec' in entry 'poincare' is not an integer - this will probably not sort properly.
+[991] Utils.pm:193> WARN - month field 'Oct' in entry 'YangMills' is not an integer - this will probably not sort properly.
+[997] Utils.pm:193> WARN - month field 'Nov' in entry 'Feynman_math' is not an integer - this will probably not sort properly.
+[1000] Utils.pm:193> WARN - month field 'Sep' in entry 'Feynman_positrons' is not an integer - this will probably not sort properly.
+[1001] Utils.pm:193> WARN - month field 'Sep' in entry 'Feynman_spacetime' is not an integer - this will probably not sort properly.
+[1007] Utils.pm:193> WARN - month field 'Feb' in entry 'Dyson_all' is not an integer - this will probably not sort properly.
+[1010] Utils.pm:193> WARN - month field 'Jun' in entry 'Dyson_smatr' is not an integer - this will probably not sort properly.
+[1016] Utils.pm:193> WARN - month field 'Aug' in entry 'lbl_th' is not an integer - this will probably not sort properly.
+[1019] Utils.pm:193> WARN - month field 'Jul' in entry 'lbl_exp' is not an integer - this will probably not sort properly.
+[1024] Utils.pm:193> WARN - month field 'Feb' in entry 'Salam1959' is not an integer - this will probably not sort properly.
+[1028] Utils.pm:193> WARN - month field 'Aug' in entry 'brout' is not an integer - this will probably not sort properly.
+[1032] Utils.pm:193> WARN - month field 'Oct' in entry 'higgs' is not an integer - this will probably not sort properly.
+[1032] Utils.pm:193> WARN - month field 'nov' in entry 'Hollik_2006' is not an integer - this will probably not sort properly.
+[1038] Utils.pm:193> WARN - month field 'Dec' in entry 'weinberg2' is not an integer - this will probably not sort properly.
+[1039] Utils.pm:193> WARN - Entry 'conf_wiki' (bibli.bib): Invalid format '12.05.2020' of date field 'date' - ignoring
+[1066] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1066] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1067] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1067] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[1092] Biber.pm:3976> INFO - Processing section 2
+[1092] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 2
+[1109] Utils.pm:193> WARN - month field 'Aug' in entry 'Haller2018' is not an integer - this will probably not sort properly.
+[1121] Utils.pm:193> WARN - month field 'Mar' in entry 'bjorken' is not an integer - this will probably not sort properly.
+[1124] Utils.pm:193> WARN - month field 'Dec' in entry 'feynman_partons' is not an integer - this will probably not sort properly.
+[1147] Utils.pm:193> WARN - month field 'Aug' in entry 'drellyan' is not an integer - this will probably not sort properly.
+[1160] Utils.pm:193> WARN - month field 'Jul' in entry 'Martin:392675' is not an integer - this will probably not sort properly.
+[1173] Utils.pm:193> WARN - month field 'Oct' in entry 'PhysRevD.100.074027' is not an integer - this will probably not sort properly.
+[1178] Utils.pm:193> WARN - ISBN '978-0-511-82328-2, 978-0-521-54589-1' in entry 'Ellis:1991qj' is invalid - run biber with '--validate_datamodel' for details.
+[1203] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ATLAS_Useful.bib' for section 2
+[1208] bibtex.pm:1500> INFO - LaTeX decoding ...
+[1281] bibtex.pm:1316> INFO - Found BibTeX data source 'bib/ATLAS_Useful.bib'
+[1286] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ATLAS.bib' for section 2
+[1333] bibtex.pm:1500> INFO - LaTeX decoding ...
+[2745] bibtex.pm:1316> INFO - Found BibTeX data source 'bib/ATLAS.bib'
+[2830] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/PubNotes.bib' for section 2
+[2842] bibtex.pm:1500> INFO - LaTeX decoding ...
+[3092] bibtex.pm:1316> INFO - Found BibTeX data source 'bib/PubNotes.bib'
+[3115] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ConfNotes.bib' for section 2
+[3152] bibtex.pm:1500> INFO - LaTeX decoding ...
+[4024] bibtex.pm:1316> INFO - Found BibTeX data source 'bib/ConfNotes.bib'
+[4101] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/CMS.bib' for section 2
+[4148] bibtex.pm:1500> INFO - LaTeX decoding ...
+[5633] bibtex.pm:1316> INFO - Found BibTeX data source 'bib/CMS.bib'
+[5730] Utils.pm:193> WARN - I didn't find a database entry for 'dis' (section 2)
+[5748] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[5748] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[5748] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[5748] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[5763] Biber.pm:3976> INFO - Processing section 3
+[5763] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 3
+[5768] Utils.pm:193> WARN - month field 'Mar' in entry 'Bruning:2668521' is not an integer - this will probably not sort properly.
+[5777] Utils.pm:193> WARN - Entry 'hydro' (bibli.bib): Invalid format '24.04.2010' of date field 'date' - ignoring
+[5781] Utils.pm:193> WARN - Entry 'rf_cavities' (bibli.bib): Invalid format '24.04.2010' of date field 'date' - ignoring
+[5804] Utils.pm:193> WARN - month field 'Nov' in entry 'vdm2' is not an integer - this will probably not sort properly.
+[5821] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[5821] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[5821] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[5821] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[5830] Biber.pm:3976> INFO - Processing section 4
+[5830] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 4
+[5839] Utils.pm:193> WARN - month field 'Feb' in entry 'atlas_trigger' is not an integer - this will probably not sort properly.
+[5855] Utils.pm:193> WARN - month field 'Sep' in entry 'muons_2' is not an integer - this will probably not sort properly.
+[5860] Utils.pm:193> WARN - month field 'Apr' in entry 'lucid_1' is not an integer - this will probably not sort properly.
+[5863] Utils.pm:193> WARN - month field 'Jun' in entry 'lucid_2' is not an integer - this will probably not sort properly.
+[5868] Utils.pm:193> WARN - month field 'Jun' in entry 'luminosity' is not an integer - this will probably not sort properly.
+[5872] Utils.pm:193> WARN - month field 'Feb' in entry 'daq' is not an integer - this will probably not sort properly.
+[5885] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[5886] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[5886] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[5886] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[5894] Biber.pm:3976> INFO - Processing section 5
+[5894] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 5
+[5895] Utils.pm:193> WARN - month field 'Aug' in entry 'egamma_perf_2017' is not an integer - this will probably not sort properly.
+[5896] Utils.pm:193> WARN - month field 'Apr' in entry 'sshapes_simulation' is not an integer - this will probably not sort properly.
+[5898] Utils.pm:193> WARN - month field 'Apr' in entry 'RecoID2011' is not an integer - this will probably not sort properly.
+[5907] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[5907] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[5907] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[5907] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[5910] Biber.pm:3976> INFO - Processing section 6
+[5911] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 6
+[5928] Utils.pm:193> WARN - month field 'Apr' in entry 'PrimVertRun3' is not an integer - this will probably not sort properly.
+[5970] Utils.pm:193> WARN - month field 'Apr' in entry 'Lampl:1099735' is not an integer - this will probably not sort properly.
+[5973] Utils.pm:193> WARN - month field 'Mar' in entry 'topoclust2_2016' is not an integer - this will probably not sort properly.
+[6003] Utils.pm:193> WARN - month field 'Mar' in entry 'Cornelissen:1020106' is not an integer - this will probably not sort properly.
+[6004] Utils.pm:193> WARN - month field 'May' in entry 'GSF' is not an integer - this will probably not sort properly.
+[6020] Utils.pm:193> WARN - month field 'Mar' in entry 'pflow' is not an integer - this will probably not sort properly.
+[6038] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6038] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6038] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[6038] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[6051] Biber.pm:3976> INFO - Processing section 7
+[6051] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 7
+[6055] Utils.pm:193> WARN - month field 'Feb' in entry 'Kretzschmar:2657141' is not an integer - this will probably not sort properly.
+[6060] Utils.pm:193> WARN - month field 'Aug' in entry 'egamma_perf_2017' is not an integer - this will probably not sort properly.
+[6082] Utils.pm:193> WARN - month field 'Oct' in entry 'muon_align' is not an integer - this will probably not sort properly.
+[6096] Utils.pm:193> WARN - month field 'Mar' in entry 'Koehler:2665704' is not an integer - this will probably not sort properly.
+[6097] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ATLAS_Useful.bib' for section 7
+[6097] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ATLAS.bib' for section 7
+[6116] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6116] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6116] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[6116] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[6123] Biber.pm:3976> INFO - Processing section 8
+[6123] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 8
+[6127] Utils.pm:193> WARN - month field 'Feb' in entry 'Kretzschmar:2657141' is not an integer - this will probably not sort properly.
+[6167] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ATLAS_Useful.bib' for section 8
+[6186] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ATLAS.bib' for section 8
+[6196] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/PubNotes.bib' for section 8
+[6200] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/ConfNotes.bib' for section 8
+[6201] Biber.pm:4136> INFO - Looking for bibtex format file 'bib/CMS.bib' for section 8
+[6201] Utils.pm:193> WARN - I didn't find a database entry for 'Xu:2657146' (section 8)
+[6216] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6216] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6216] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[6216] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[6226] Biber.pm:3976> INFO - Processing section 9
+[6226] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 9
+[6249] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6249] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6249] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[6249] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[6252] Biber.pm:3976> INFO - Processing section 10
+[6252] Biber.pm:4136> INFO - Looking for bibtex format file 'bibli.bib' for section 10
+[6295] Utils.pm:193> WARN - month field 'Dec' in entry 'Cybenko1989' is not an integer - this will probably not sort properly.
+[6345] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6345] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6346] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[6346] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[6355] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[6453] bbl.pm:720> INFO - Output to main.bbl
+[6453] Biber.pm:110> INFO - WARNINGS: 69

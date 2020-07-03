@@ -1,0 +1,107 @@
+void cUperpVsSET_51_ratio()
+{
+//=========Macro generated from canvas: cUperpVsSET_51/
+//=========  (Mon Aug 19 16:50:31 2019) by ROOT version 6.18/00
+   TCanvas *cUperpVsSET_51 = new TCanvas("cUperpVsSET_51", "",1,1,700,476);
+   gStyle->SetOptStat(0);
+   cUperpVsSET_51->Range(-12.5,-15,112.5,35);
+   cUperpVsSET_51->SetFillColor(0);
+   cUperpVsSET_51->SetBorderMode(0);
+   cUperpVsSET_51->SetBorderSize(2);
+   cUperpVsSET_51->SetFrameBorderMode(0);
+   
+   TH1D *hb_51__3 = new TH1D("hb_51__3","0 GeV < SETUE < 40 GeV",40,0,200);
+   hb_51__3->SetBinContent(1,0.7950076);
+   hb_51__3->SetBinContent(2,0.9216299);
+   hb_51__3->SetBinContent(3,0.9958758);
+   hb_51__3->SetBinContent(4,0.9950735);
+   hb_51__3->SetBinContent(5,0.9983313);
+   hb_51__3->SetBinContent(6,1.085951);
+   hb_51__3->SetBinContent(7,0.9053207);
+   hb_51__3->SetBinContent(8,0.8903335);
+   hb_51__3->SetBinContent(9,1.090733);
+   hb_51__3->SetBinContent(10,1.078765);
+   hb_51__3->SetBinContent(11,0.8891134);
+   hb_51__3->SetBinContent(12,1.007246);
+   hb_51__3->SetBinContent(13,0.7201946);
+   hb_51__3->SetBinContent(14,1.100995);
+   hb_51__3->SetBinContent(15,1.243996);
+   hb_51__3->SetBinContent(16,1.223502);
+   hb_51__3->SetBinContent(17,1.010697);
+   hb_51__3->SetBinContent(18,1.006667);
+   hb_51__3->SetBinContent(19,1.666);
+   hb_51__3->SetBinContent(20,0.5719298);
+   hb_51__3->SetBinContent(21,1.675676);
+   hb_51__3->SetBinContent(22,0.6991736);
+   hb_51__3->SetBinContent(23,1.424242);
+   hb_51__3->SetBinContent(24,0.775);
+   hb_51__3->SetBinContent(25,0.751634);
+   hb_51__3->SetBinContent(26,1.823529);
+   hb_51__3->SetBinContent(27,8.538462);
+   hb_51__3->SetBinContent(28,3.769231);
+   hb_51__3->SetBinContent(29,0.8181818);
+   hb_51__3->SetBinContent(30,1.525641);
+   hb_51__3->SetBinContent(34,-0.2255639);
+   hb_51__3->SetBinContent(40,0.8961039);
+   hb_51__3->SetBinContent(41,1.944);
+   hb_51__3->SetBinError(1,0.05216606);
+   hb_51__3->SetBinError(2,0.0338687);
+   hb_51__3->SetBinError(3,0.03898193);
+   hb_51__3->SetBinError(4,0.04527376);
+   hb_51__3->SetBinError(5,0.06221842);
+   hb_51__3->SetBinError(6,0.08176162);
+   hb_51__3->SetBinError(7,0.08380836);
+   hb_51__3->SetBinError(8,0.09608339);
+   hb_51__3->SetBinError(9,0.1332613);
+   hb_51__3->SetBinError(10,0.1460926);
+   hb_51__3->SetBinError(11,0.1367901);
+   hb_51__3->SetBinError(12,0.2977444);
+   hb_51__3->SetBinError(13,0.1466572);
+   hb_51__3->SetBinError(14,0.3057382);
+   hb_51__3->SetBinError(15,0.3294915);
+   hb_51__3->SetBinError(16,0.3407548);
+   hb_51__3->SetBinError(17,0.3697799);
+   hb_51__3->SetBinError(18,0.2115168);
+   hb_51__3->SetBinError(19,0.5327624);
+   hb_51__3->SetBinError(20,0.271856);
+   hb_51__3->SetBinError(21,0.754606);
+   hb_51__3->SetBinError(22,0.3797714);
+   hb_51__3->SetBinError(23,0.6644662);
+   hb_51__3->SetBinError(24,0.1905056);
+   hb_51__3->SetBinError(25,0.3491231);
+   hb_51__3->SetBinError(26,1.442873);
+   hb_51__3->SetBinError(27,3.856064);
+   hb_51__3->SetBinError(28,1.230115);
+   hb_51__3->SetBinError(29,0.292856);
+   hb_51__3->SetBinError(30,0.5882123);
+   hb_51__3->SetBinError(34,0.06565507);
+   hb_51__3->SetBinError(41,0.7392324);
+   hb_51__3->SetMinimum(0);
+   hb_51__3->SetMaximum(2.5);
+   hb_51__3->SetEntries(85.58217);
+   hb_51__3->SetStats(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#0000ff");
+   hb_51__3->SetLineColor(ci);
+   hb_51__3->GetXaxis()->SetRange(1,20);
+   hb_51__3->GetXaxis()->SetLabelFont(42);
+   hb_51__3->GetXaxis()->SetLabelSize(0.035);
+   hb_51__3->GetXaxis()->SetTitleSize(0.035);
+   hb_51__3->GetXaxis()->SetTitleOffset(1);
+   hb_51__3->GetXaxis()->SetTitleFont(42);
+   hb_51__3->GetYaxis()->SetLabelFont(42);
+   hb_51__3->GetYaxis()->SetLabelSize(0.035);
+   hb_51__3->GetYaxis()->SetTitleSize(0.035);
+   hb_51__3->GetYaxis()->SetTitleFont(42);
+   hb_51__3->GetZaxis()->SetLabelFont(42);
+   hb_51__3->GetZaxis()->SetLabelSize(0.035);
+   hb_51__3->GetZaxis()->SetTitleSize(0.035);
+   hb_51__3->GetZaxis()->SetTitleOffset(1);
+   hb_51__3->GetZaxis()->SetTitleFont(42);
+   hb_51__3->Draw("histe");
+   cUperpVsSET_51->Modified();
+   cUperpVsSET_51->cd();
+   cUperpVsSET_51->SetSelected(cUperpVsSET_51);
+}
