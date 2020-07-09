@@ -1,0 +1,20 @@
+leppt  FIT   35
+Total_MJ: 41748.8
+MJ_ratio: 0.0712101 0.000936564
+MJ_ratio_err: 0.000936564 0.000936564
+Fit_MJ: 95599.9
+Loose_data: 1.38952e+06
+Loose_ew: 1.30245e+06
+Fit_Factor: 2.28988
+CR1_data: 42750
+CR1_ew: 980.161
+CR1_mj: 41769.8
+CR1_err: 209.118
+CR2_data: 2688
+CR2_ew: 712.454
+CR2_mj: 1975.55
+CR2_err: 58.3134
+E_factor: 0.047296
+E_error: 0.001416
+MJ: 4521.49
+MJ_err: 147.856

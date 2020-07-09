@@ -1,0 +1,20 @@
+leppt  FIT   45
+Total_MJ: 26833.9
+MJ_ratio: 0.0692172 0.000962288
+MJ_ratio_err: 0.000962288 0.000962288
+Fit_MJ: 92967.1
+Loose_data: 1.38952e+06
+Loose_ew: 1.30245e+06
+Fit_Factor: 3.46453
+CR1_data: 27313
+CR1_ew: 467.529
+CR1_mj: 26845.5
+CR1_err: 166.675
+CR2_data: 1553
+CR2_ew: 334.614
+CR2_mj: 1218.39
+CR2_err: 43.4467
+E_factor: 0.0453852
+E_error: 0.00164275
+MJ: 4219.33
+MJ_err: 163.599

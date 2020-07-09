@@ -1,0 +1,41 @@
+uT<1000.GeV
+pfo_mT_p0: 619.478
+pfo_mT_p1: 23970.6
+pfo_mT_p0_err: 53.7511
+pfo_mT_p1_err: 1347.23
+pfo_met_p0: 752.713
+pfo_met_p1: 23431.8
+pfo_met_p0_err: 57.9742
+pfo_met_p1_err: 1437.78
+leppt_p0: 231.309
+leppt_p1: 26360.8
+leppt_p0_err: 44.1479
+leppt_p1_err: 1144.77
+uT<15.GeV
+pfo_mT_p0: 152.53
+pfo_mT_p1: 28138.8
+pfo_mT_p0_err: 54.2236
+pfo_mT_p1_err: 1388.54
+pfo_met_p0: 175.363
+pfo_met_p1: 27630.4
+pfo_met_p0_err: 54.2292
+pfo_met_p1_err: 1389.58
+leppt_p0: 7.86764
+leppt_p1: 27401.5
+leppt_p0_err: 47.1992
+leppt_p1_err: 1237.18
+uT<30.GeV
+pfo_mT_p0: 498.904
+pfo_mT_p1: 26121.4
+pfo_mT_p0_err: 53.9575
+pfo_mT_p1_err: 1361.84
+pfo_met_p0: 530.464
+pfo_met_p1: 25819
+pfo_met_p0_err: 54.6467
+pfo_met_p1_err: 1376.56
+leppt_p0: 308.678
+leppt_p1: 26798.2
+leppt_p0_err: 48.5938
+leppt_p1_err: 1247.29
+CenVal: 5e+13
+Err: -5e+13

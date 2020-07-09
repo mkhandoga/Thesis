@@ -1,0 +1,10 @@
+central_point: 35
+pfo_mT: 283405
+pfo_mT_err: 2559.1
+
+pfo_met: 292963
+pfo_met_err: 2924.66
+
+leppt: 271120
+leppt_err: 2595.25
+

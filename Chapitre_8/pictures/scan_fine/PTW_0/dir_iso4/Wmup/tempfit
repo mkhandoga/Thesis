@@ -1,0 +1,14 @@
+el/mu_Channel: el
+isRooFit: false
+scan_low: 25.
+scan_high: 30.
+MC_scale: 0.98
+data_iso_veryloose: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShiftFullChain_newIso/scan/../../PtWShift_ptcone20/Merge/loose/PTW_2/iso0/Wmup/data.root
+data_antiiso_veryloose: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShiftFullChain_newIso/scan/../Merge/CR_1_calib/PTW_0/iso4/Wmup/data.root
+EW_iso_veryloose: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShiftFullChain_newIso/scan/../../PtWShift_ptcone20/Merge/loose/PTW_2/iso0/Wmup/ew.root
+EW_antiiso_veryloose: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShiftFullChain_newIso/scan/../Merge/CR_1_calib/PTW_0/iso4/Wmup/ew.root
+data_iso_SR: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShiftFullChain_newIso/scan/../../PtWShift_ptcone20/Merge/sig/PTW_3/iso0/Wmup/data.root
+data_antiiso_SR: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShiftFullChain_newIso/scan/../Merge/CR_2_calib/PTW_0/iso4/Wmup/data.root
+EW_iso_SR: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShiftFullChain_newIso/scan/../../PtWShift_ptcone20/Merge/sig/PTW_3/iso0/Wmup/ew.root
+EW_antiiso_SR: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShiftFullChain_newIso/scan/../Merge/CR_2_calib/PTW_0/iso4/Wmup/ew.root
+

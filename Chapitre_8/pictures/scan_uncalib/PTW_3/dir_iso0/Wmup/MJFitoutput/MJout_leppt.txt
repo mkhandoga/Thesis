@@ -1,0 +1,20 @@
+leppt  FIT   15
+Total_MJ: 67318.3
+MJ_ratio: 0.0755718 0.000851943
+MJ_ratio_err: 0.000851943 0.000851943
+Fit_MJ: 101496
+Loose_data: 1.38952e+06
+Loose_ew: 1.30245e+06
+Fit_Factor: 1.5077
+CR1_data: 80146
+CR1_ew: 12569.2
+CR1_mj: 67576.8
+CR1_err: 304.492
+CR2_data: 12177
+CR2_ew: 9645.6
+CR2_mj: 2531.4
+CR2_err: 147.725
+E_factor: 0.0374595
+E_error: 0.00219253
+MJ: 3801.98
+MJ_err: 226.622

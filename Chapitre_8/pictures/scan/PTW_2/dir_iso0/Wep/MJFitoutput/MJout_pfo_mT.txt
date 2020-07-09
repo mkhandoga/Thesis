@@ -1,0 +1,20 @@
+pfo_mT  FIT   15
+Total_MJ: 61335.4
+MJ_ratio: 0.490679 0.0025891
+MJ_ratio_err: 0.0025891 0.0025891
+Fit_MJ: 285658
+Loose_data: 1.40726e+06
+Loose_ew: 1.10485e+06
+Fit_Factor: 4.65731
+CR1_data: 65587
+CR1_ew: 4166.56
+CR1_mj: 61420.4
+CR1_err: 264.109
+CR2_data: 6471
+CR2_ew: 3331.17
+CR2_mj: 3139.83
+CR2_err: 99.0059
+E_factor: 0.0511202
+E_error: 0.00162686
+MJ: 14602.9
+MJ_err: 471.07

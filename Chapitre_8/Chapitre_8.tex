@@ -311,35 +311,124 @@
     		\label{tab:samples5}
     	\end{center}
     \end{table}
-    
+    \clearpage
+
+    \section{Multijet background}
+ The estimate of the multijet background, which contain contributions from fake leptons produced in semi-leptonic decays of heavy quarks, in-flight kaon decays, photon conversions, mis-identified pions, is done using a data-driven technique. The W boson signal region is defined by the following cuts:
+\begin{itemize}
+	\item $p_\text{T}^\ell>25$~GeV, $|\eta_\ell|<2.4$;
+	\item $E_\text{T}^\text{miss}>25$~GeV,
+	\item $m_\text{T}>50$~GeV.
+	\item lepton isolation using track variables.
+\end{itemize}
+The production of multijet events is mainly concentrated at lower values of $p_T^l$, \met and \mt, such that the largest part of the multijet background events is removed by the cuts described above. The background estimate is obtained by fitting the signal and multijet yields in $p_T^l$, \met and \mt kinematic distributions, but with \met and \mt cuts relaxed. These kinematic distributions for the signal are modelled using the MC simulation and include the calibrations and corrections presented in the previous chapter. The templates of the multijet distributions are obtained using the data with the same kinematic selection, but with relaxed or inverted isolation cuts. The multijet yield is obtained in the region with relaxed kinematic cuts and then extrapolated to the signal region, correcting for kinematic cuts efficiency.\\
+First step consists in defining four different regions in phase-isolation space:
+\begin{itemize}
+	\item signal region (SR): isolated leptons, signal requirement on $p_{T}^{lep}$, $E_T^{miss}$ and $m_\text{T}$;
+	\item fit region (FR): isolated leptons, relaxed kinematic requirements: $\met>0$~\gev, $m_\text{T}>0$~\gev;
+	\item control region 1 (CR1): anti-isolated leptons with FR kinematic requirements;
+	\item control region 2 (CR2): anti-isolated leptons with SR kinematic requirements.
+\end{itemize}
+ Multijet(MJ) yield is estimated in SR. The fit region is used to perform the fraction fit, which is obtained by fitting the template obtained from the CR1. The shape of the multijet background in the SR is provided by CR2. This shape is then normalized to the ratio of MJ events in the two control regions: $\epsilon = N_{MJ}^{CR2}/N_{MJ}^{CR1}$.
+ The number of the MJ background events is estimated in the following way:
+ \begin{itemize}
+  \item The number of multijet background events in CR1 ($N_\text{MJ}^{CR1}$) and their distributions ($H_\text{MJ}^{CR1}$) are derived as follows:
+ \begin{eqnarray}
+ N_\text{MJ}^{CR1} &=&  N_\text{data}^\text{CR1}-N_\text{EW}^\text{CR1},\\ 
+ H_\text{MJ}^{CR1} &=&  H_\text{data}^\text{CR1}-H_\text{EW}^\text{CR1} 
+ \end{eqnarray}
+ where $H^{CR1}$ stands for one of the kinematic distributions used in the fit, namely $p_\text{T}^\ell$, \met or $m_\text{T}$. 
+ 
+ \item The fraction fit is performed in FR, which has looser kinematics cuts and the same isolation cuts as the signal. The fit has the following form:
+ \begin{equation}
+ H_\text{data}^\text{FR} = \alpha \cdot H_\text{EW}^\text{FR} + T \cdot H_\text{MJ}^\text{CR1}.
+ \label{eq:mjfit1}
+ \end{equation}
+ The fitting parameter $T$ gives the factor for the MJ contribution in FR:  $N_{MJ}^{FR} \approx T \cdot N_\text{MJ}^{CR1}$. A normalization factor for the EW+top contribution, $\alpha$, is also fitted and should be unity within the uncertainties in the luminosity and the cross-sections of the MC-simulated processes.
+ 
+ \item Then the fitted multijet yield is extrapolated to the signal region. The extrapolation factor $\varepsilon$ that was mentioned before can be obtained as follows:
+ \begin{equation}
+ \varepsilon \equiv \frac{N_\text{data}^\text{CR2}-N_\text{EW}^\text{CR2}}{N_\text{data}^\text{CR1}-N_\text{EW}^\text{CR1}},
+ \label{eq:mjfit2}
+ \end{equation}
+ and assuming that this factor does not depend in the isolation cuts, one obtains
+ \begin{equation}
+ N_{MJ}^{SR} = \varepsilon N_{MJ}^{FR}.
+ \end{equation}
+\end{itemize}
+ This method relies on the anti-isolation procedure which may introduce a bias into the results. The dependence of the MJ yield on the isolation criteria must be taken into account. In order to do this the control regions CR1 and CR2 are esimated in the slices of anti-isolation with \texttt{ptvarcone20/pT} ranging in the following intervals: [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40].\\
+ The change of isolation criterion also biases the hadronic recoil reconstruction procedure, where the cone replacement appears to be isolation-dependent. This bias is overcome by introducing a correction to the hadronic recoil vector:
+ \begin{eqnarray}
+ \vec{u}^\text{corr} &=& \vec{u}^\text{baseline} + \vec{u}^\text{iso}, \text{ where}\\
+ \vec{u}^\text{iso} &\equiv& \texttt{ptcone20} \cdot \vec{n_\ell}.
+ \end{eqnarray}
+ The unit vector $\vec{n_\ell}$ is aligned with the lepton direction. This correction vanishes at low isolation in the signal region but introduces a sizable correction in the anti-isolated region (see Fig. \ref{fig:calib_upar}).
+ \begin{figure}
+ 	\centering
+ 	\includegraphics[width=0.32\textwidth]{bias/data/2}
+ 	\includegraphics[width=0.32\textwidth]{bias/data/4}
+ 	\includegraphics[width=0.32\textwidth]{bias/data/6}
+ 	\caption{$<u_\parallel^\ell>$ as a function of \texttt{ptcone20}, before and after correction using data samples at $\sqrt{s}$ = 13~TeV.}
+ 	\label{fig:calib_upar}
+ \end{figure}
+Some residual dependence of the extrapolated distributions on the isolation criteria is still present and requires shape extrapolation procedure. Distribution shape is estimated in three slices of \texttt{ptvarcone20/pT} isolation within [0.10, 0.20, 0.30 0.40] in CR2. For every observable $X$, $X = p_\text{T}^\ell$, \met, $m_\text{T}$, the difference $\Delta[X]$ of the distribution of $X$ between consecutive isolation slices is defined as:
+\begin{equation}
+H_{MJ}^{[0.1,0.2]}[X] = H_{data}^{[0.1,0.2]}[X] - H_{MC}^{[0.1,0.2]}[X]; 
+\end{equation}
+\begin{equation}
+\Delta[X]= 1/2 \left[ (H_{MJ}^{[0.1,0.2]}[X]-H_{MJ}^{[0.2,0.3]}[X]) + (H_{MJ}^{[0.2,0.3]}[X]-H_{MJ}^{[0.3,0.4]}[X]) \right],
+\end{equation}
+where $H_{X}^{[x,y]}$ is the normalized distribution of $X$ in CR2 (anti-isolated signal region) satisfying $x < \texttt{ptvarcone20/pT} < y$, estimated from the MC-subtracted data in CR2.\\
+$\Delta[X]$ is supposed to be the difference between MJ sprectrum in the signal region (\texttt{ptvarcone20/pT}$<0.1$)  and the isolation slice next to it (0.10 < \texttt{ptvarcone20/pT} < 0.20).
+So the extrapolated distribution to the signal region is the following:
+\begin{equation}
+H_{X}^{sig} = H_{X}^{[0.1,0.2]} - \Delta[X]
+\end{equation}
+The shift $\Delta[X]$ applied is assigned a 100\% relative uncertainty because of large statistical uncertainty coming from the linear fit used.
+The MJ contributions to the kinematic distributions in slices of isolation along with the extrapolation to the signal region for the 13 TeV for electrons and muons are shown in Figures \ref{fig:mjbkg-shape-lep} and \ref{fig:mjbkg-shape}. The kinematic distributions with the contributions from the multijets for 5 and 13 TeV are presented in sections \ref{subsec:controlplots5} and \ref{subsec:controlplots13} respectively.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.48\textwidth]{plot_ratio_isoslice/PTW_3/CR_2_calib/Wep/leppt.png}
+	\includegraphics[width=0.48\textwidth]{plot_ratio_isoslice/PTW_3/CR_2_calib/Wmup/leppt.png}\\
+	\includegraphics[width=0.48\textwidth]{plot_ratio_isoslice/PTW_3/CR_2_calib/Wep/lepeta.png}
+	\includegraphics[width=0.48\textwidth]{plot_ratio_isoslice/PTW_3/CR_2_calib/Wmup/lepeta.png}\\
+	\caption{Extrapolation of the multijet distributions for the lepton transverse momentum (top) and pseudo-rapidity (bottom), in the $W^+\to e^+\nu$ (left) and $W^+\to \mu^+\nu$ (right) channels at $\sqrt{s}=13$~TeV}
+	\label{fig:mjbkg-shape-lep}
+\end{figure}
+
+\begin{figure}[htbp]
+	\includegraphics[width=0.48\textwidth]{plot_ratio_isoslice/PTW_3/CR_2_calib/Wep/pfo_met.png}
+	\includegraphics[width=0.48\textwidth]{plot_ratio_isoslice/PTW_3/CR_2_calib/Wmup/pfo_met.png}\\
+	\includegraphics[width=0.48\textwidth]{plot_ratio_isoslice/PTW_3/CR_2_calib/Wmup/pfo_mT.png}
+	\includegraphics[width=0.48\textwidth]{plot_ratio_isoslice/PTW_3/CR_2_calib/Wmup/pfo_mT.png}\\
+	\caption{Extrapolation of the multijet distributions for the missing transverse energy (top) and transverse mass (bottom), in the $W^+\to e^+\nu$ (left) and $W^+\to \mu^+\nu$ (right) channels at $\sqrt{s}=13$~TeV}
+	\label{fig:mjbkg-shape}
+\end{figure}
+\clearpage
      \section{Z vertex reweighting }
-     The 5 TeV MC samples have been generated to be perfectly matched to the data 
-     Although this is not the case for 13 TeV samples, which can be seen at Fig. \ref{fig:zvtx}. 
-     It is also seen from these plots that the 2017 and 2018 data were collected at two different runs under different beam conditions. 
-   	 To avoid possible impact on the acceptance the MC samples were reweighted to the data using \Zee and \Zmm selections.
-     
-     \begin{figure}[tph]
-     	\centering
-     	\includegraphics[width=.5\textwidth]{zmumu_5tev_zvtx}%
-     	\includegraphics[width=.5\textwidth]{zmumu_13tev_zvtx_norwgt}
-     	\includegraphics[width=.5\textwidth]{zee_5tev_zvtx}%
-     	\includegraphics[width=.5\textwidth]{zee_13tev_zvtx_norwgt}
-     	\caption{Distributions for the 5 \TeV{} (left) and 13 \TeV{} (right)
-     		low-$\mu$ dataset(s) in a \Zgmm (top row) and a \Zgee (bottom row)
-     		selection. The data (points) is compared to \Zgmm or \Zgee signal
-     		MC, respectively. The distributions of the $z$-position of the
-     		primary vertex selected as the hard interaction are compared for
-     		the dataset(s) and the MC simulation before (``no $z_\mathrm{vtx}$
-     		rwgt'', blue, only 13 \TeV{}) and after reweighting (black). For
-     		the 13 \TeV{} data the 2017 and 2018 data are shown separately and
-     		all distributions are (roughly) normalised to the same number of
-     		selected events in the 2017 dataset. }
-     	\label{fig:zvtx}
-     \end{figure}
-    \subsection{Multijet background}
- The estimate of the multijet background, which contain contributions from fake leptons produced in semi-leptonic decays of heavy quarks, in-flight pion decays, photon conversions, etc, is done using a data-driven techniques described in Reference~\cite{Xu:2657146}. TO BE ADDED.
- 
- 
+The 5 TeV MC samples have been generated to be perfectly matched to the data 
+Although this is not the case for 13 TeV samples, which can be seen at Fig. \ref{fig:zvtx}. 
+It is also seen from these plots that the 2017 and 2018 data were collected at two different runs under different beam conditions. 
+To avoid possible impact on the acceptance the MC samples were reweighted to the data using \Zee and \Zmm selections.
+
+\begin{figure}[tph]
+	\centering
+	\includegraphics[width=.5\textwidth]{zmumu_5tev_zvtx}%
+	\includegraphics[width=.5\textwidth]{zmumu_13tev_zvtx_norwgt}
+	\includegraphics[width=.5\textwidth]{zee_5tev_zvtx}%
+	\includegraphics[width=.5\textwidth]{zee_13tev_zvtx_norwgt}
+	\caption{Distributions for the 5 \TeV{} (left) and 13 \TeV{} (right)
+		low-$\mu$ dataset(s) in a \Zgmm (top row) and a \Zgee (bottom row)
+		selection. The data (points) is compared to \Zgmm or \Zgee signal
+		MC, respectively. The distributions of the $z$-position of the
+		primary vertex selected as the hard interaction are compared for
+		the dataset(s) and the MC simulation before (``no $z_\mathrm{vtx}$
+		rwgt'', blue, only 13 \TeV{}) and after reweighting (black). For
+		the 13 \TeV{} data the 2017 and 2018 data are shown separately and
+		all distributions are (roughly) normalised to the same number of
+		selected events in the 2017 dataset. }
+	\label{fig:zvtx}
+\end{figure}
 \section{W analysis event selection and control plots}
 \label{sec:selection}
 

@@ -1,0 +1,20 @@
+pfo_met  FIT   35
+Total_MJ: 77911.9
+MJ_ratio: 0.760246 0.00384194
+MJ_ratio_err: 0.00384194 0.00384194
+Fit_MJ: 1.05441e+06
+Loose_data: 2.05579e+06
+Loose_ew: 1.16213e+06
+Fit_Factor: 13.5334
+CR1_data: 78182
+CR1_ew: 229.803
+CR1_mj: 77952.2
+CR1_err: 280.021
+CR2_data: 1000
+CR2_ew: 162.694
+CR2_mj: 837.306
+CR2_err: 34.0983
+E_factor: 0.0107413
+E_error: 0.000439124
+MJ: 11325.7
+MJ_err: 466.542

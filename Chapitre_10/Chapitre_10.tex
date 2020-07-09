@@ -130,7 +130,7 @@ where $\epsilon$ is a small regularization constant.
 \section{HR regression}
 Considering that hadronic recoil is an observable what uses many inputs from \gls{id}, \gls{emc} and \gls{hc} it is reasonable to expect improvement of the result using modern \gls{mva} techniques. 
 \subsection{Input features and model}
- Training, testing and validation was performed using the MC sample $W^+\rightarrow\mu\nu$ at 13 TeV with the same selection. From the 3625136 events that have passed the selection 2 275 902 were used for training and 1 349 234 for testing the performance. 
+ Training, testing and validation was performed using the MC sample $W^+\rightarrow\mu\nu$ at 13 TeV with the same selection. From the 3625136 events that have passed the selection 12 734 109 were used for training and 3 034 130 for testing the performance. 
  Below is the list of 38 input features: 
  \begin{itemize}
  \item \textbf{Hadronic recoil} is possible in a number of definitions. As it was described before, the \gls{hr} may be defined using exclusively charged \gls{pfos}, exclusively neutral \gls{pfos} or both. All three definitions are included to the input features in the with two Cartesian components for each definition, making 6 input features. 
@@ -151,9 +151,49 @@ The model contains 3 dense layers with 256 neurons each, alternated with batch n
 	\label{fig::nnmodel}
 \end{figure}
 The model has used Adam optimizer with learning step $0.001$ and batch size of $4000$ data points. Twenty percent of events were used for validation. The two target values were Cartesian components of the truth \gls{hr} vector.
-
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.99\textwidth,keepaspectratio]{loss.png}
+	\caption{Learning curve of the model.}
+	\label{fig::nntraining}
+\end{figure}
 \subsection{Kinematic distributions} 
-The results presented here demonstrate the regression plots obtained with the trained DNN. They include the plots from the test sample of $W^+\rightarrow\mu\nu$ at 13 TeV, as well as plots from.  
+The results presented here demonstrate the regression plots obtained with the trained DNN. The regression was tested for the four W channels in MC and for the two Z channels in both data and MC. Here the plots for $W^-\rightarrow \mu \nu$ channel are presented, the rest of the results are presented in Appendix B.
+	\begin{figure}[tph]
+	\centering
+	\includegraphics[width=.49\textwidth]{histosDeltaUxminusmunu}%
+	\includegraphics[width=.49\textwidth]{histosDeltaUyminusmunu}
+	\includegraphics[width=.49\textwidth]{histosDeltaUPhiminusmunu}%
+	\includegraphics[width=.49\textwidth]{histosDeltaUtminusmunu}
+	\includegraphics[width=.49\textwidth]{outMVA_biasminusmunu}%
+	\includegraphics[width=.49\textwidth]{outMVA_uPerpminusmunu}
+	\caption{}
+	\label{fig:mu13}
+\end{figure}
 
+	\begin{figure}[tph]
+	\centering
+	\includegraphics[width=.49\textwidth]{histosMeanBiasminusmunu.pdf}%
+	\includegraphics[width=.49\textwidth]{histosSigmaUperpminusmunu.pdf}
+	\caption{}
+	\label{fig:mu13}
+\end{figure}
+
+	\begin{figure}[tph]
+	\centering
+	\includegraphics[width=.99\textwidth]{histosUperpRelativeminusmunu.pdf}%
+	\caption{}
+	\label{fig:mu13}
+\end{figure}
+
+	\begin{figure}[tph]
+	\centering
+	\includegraphics[width=.49\textwidth]{WpT_Reco_cut7_plusenu_13TeV_log_norm_MVA.pdf}%
+	\includegraphics[width=.49\textwidth]{WpT_Reco_cut7_plusmunu_13TeV_log_norm_MVA.pdf}
+	\includegraphics[width=.49\textwidth]{WpT_Reco_cut7_minusenu_13TeV_log_norm_MVA.pdf}%
+	\includegraphics[width=.49\textwidth]{WpT_Reco_cut7_minusmunu_13TeV_log_norm_MVA.pdf}
+	\caption{}
+	\label{fig:mu13}
+\end{figure}
 
 \section{Technical details}

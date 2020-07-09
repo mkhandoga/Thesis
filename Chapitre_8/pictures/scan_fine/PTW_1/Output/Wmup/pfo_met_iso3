@@ -1,0 +1,20 @@
+pfo_met  FIT   22.5
+Total_MJ: 45391.7
+MJ_ratio: 0.29693 0.0019565
+MJ_ratio_err: 0.0019565 0.0019565
+Fit_MJ: 165186
+Loose_data: 1.44096e+06
+Loose_ew: 1.31106e+06
+Fit_Factor: 3.63912
+CR1_data: 46280
+CR1_ew: 865.605
+CR1_mj: 45414.4
+CR1_err: 217.13
+CR2_data: 4988
+CR2_ew: 829.009
+CR2_mj: 4158.99
+CR2_err: 76.2693
+E_factor: 0.0915787
+E_error: 0.00196285
+MJ: 15127.5
+MJ_err: 339.211

@@ -1,0 +1,6 @@
++data_path: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShift_ptcone20/Merge/CR_1_calib/PTW_1/iso0/Wep/data.root
++ew_path: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShift_ptcone20/Merge/CR_1_calib/PTW_1/iso0/Wep/ew.root
++data_path: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShift_ptcone20/Merge/CR_1_calib/PTW_1/iso1/Wep/data.root
++ew_path: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShift_ptcone20/Merge/CR_1_calib/PTW_1/iso1/Wep/ew.root
++data_path: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShift_ptcone20/Merge/CR_1_calib/PTW_1/iso2/Wep/data.root
++ew_path: /sps/atlas/t/txu/work/lowmu/WZanal/13TeV_lep25ptW3000/PtWShift_ptcone20/Merge/CR_1_calib/PTW_1/iso2/Wep/ew.root

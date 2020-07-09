@@ -1,0 +1,20 @@
+pfo_mT  FIT   45
+Total_MJ: 4830.33
+MJ_ratio: 0.485257 0.00705184
+MJ_ratio_err: 0.00705184 0.00705184
+Fit_MJ: 281199
+Loose_data: 1.40726e+06
+Loose_ew: 1.10485e+06
+Fit_Factor: 58.2154
+CR1_data: 4930
+CR1_ew: 97.6778
+CR1_mj: 4832.32
+CR1_err: 70.9061
+CR2_data: 289
+CR2_ew: 77.4964
+CR2_mj: 211.504
+CR2_err: 19.1441
+E_factor: 0.0437685
+E_error: 0.00401339
+MJ: 12307.7
+MJ_err: 1142.65
