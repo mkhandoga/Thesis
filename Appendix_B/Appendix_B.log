@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.2.21)  10 JUL 2020 01:49
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2019.2.21)  10 JUL 2020 17:04
  restricted system commands enabled.
 **Appendix_B.tex
 (./Appendix_B.tex
@@ -34,11 +34,11 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.110 seconds
+luaotfload | main : initialization completed in 0.151 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 ! Undefined control sequence.
 l.1 \chapter
-          {MC samples and selection}
+          {Appendix B}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -52,8 +52,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 \chapter{M
-            C samples and selection}
+l.1 \chapter{A
+            ppendix B}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -68,7 +68,7 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
-[]MC
+[]Appendix
  []
 
 
@@ -479,6 +479,66 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
+! Undefined control sequence.
+l.15 	{\includegraphics
+                     [width=.49\textwidth]{outMVA_biaszeedata.pdf}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+]
+l.15 	{\includegraphics[width=.49\textwidth]
+                                          {outMVA_biaszeedata.pdf}}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+]
+l.15 	{\includegraphics[width=.49\textwidth]
+                                          {outMVA_biaszeedata.pdf}}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+l.16 	{\includegraphics
+                     [width=.49\textwidth]{outMVA_uPerpzeedata.pdf}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+]
+l.16 	{\includegraphics[width=.49\textwidth]
+                                          {outMVA_uPerpzeedata.pdf}}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+]
+l.16 	{\includegraphics[width=.49\textwidth]
+                                          {outMVA_uPerpzeedata.pdf}}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 
 ! LaTeX Error: \caption outside float.
 
@@ -486,7 +546,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.15 	\caption
+l.17 	\caption
             { Breakdown of systematic uncertainties for 5 (a,b) and 13 (c,d)...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -498,7 +558,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 \end{figure}
+l.19 \end{figure}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -507,7 +567,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.17 \end{figure}
+l.19 \end{figure}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -518,7 +578,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.17 \end{figure}
+l.19 \end{figure}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -529,7 +589,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.17 \end{figure}
+l.19 \end{figure}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -540,7 +600,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.17 \end{figure}
+l.19 \end{figure}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -551,7 +611,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.17 \end{figure}
+l.19 \end{figure}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -562,7 +622,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.17 \end{figure}
+l.19 \end{figure}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -573,7 +633,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.17 \end{figure}
+l.19 \end{figure}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -588,14 +648,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 \begin{figure}
+l.20 \begin{figure}
                  [h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.20 	{\includegraphics
+l.22 	{\includegraphics
                      [width=.49\textwidth]{histosDeltaUtzeedata.pdf}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -606,7 +666,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.20 	{\includegraphics[width=.49\textwidth]
+l.22 	{\includegraphics[width=.49\textwidth]
                                           {histosDeltaUtzeedata.pdf}}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -615,7 +675,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.20 	{\includegraphics[width=.49\textwidth]
+l.22 	{\includegraphics[width=.49\textwidth]
                                           {histosDeltaUtzeedata.pdf}}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -625,7 +685,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.21 	{\includegraphics
+l.23 	{\includegraphics
                      [width=.49\textwidth]{histosDeltaUxzeedata.pdf}} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -636,7 +696,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.21 	{\includegraphics[width=.49\textwidth]
+l.23 	{\includegraphics[width=.49\textwidth]
                                           {histosDeltaUxzeedata.pdf}} \\
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -645,7 +705,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.21 	{\includegraphics[width=.49\textwidth]
+l.23 	{\includegraphics[width=.49\textwidth]
                                           {histosDeltaUxzeedata.pdf}} \\
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -655,12 +715,12 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
-Overfull \hbox (726.46219pt too wide) in paragraph at lines 13--21
- [][width=.49]outMVA$[][]\OML/cmm/m/it/10 iaszeedata:pdf[][][]$ 
+Overfull \hbox (1068.92691pt too wide) in paragraph at lines 13--23
+ [][width=.49]outMVA$[][]\OML/cmm/m/it/10 iaszeedata:pdf[][][][][]$ 
  []
 
 ! Undefined control sequence.
-l.22 	{\includegraphics
+l.24 	{\includegraphics
                      [width=.49\textwidth]{histosDeltaUyzeedata.pdf}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -675,7 +735,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 	{\includegraphics[
+l.24 	{\includegraphics[
                       width=.49\textwidth]{histosDeltaUyzeedata.pdf}}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -683,7 +743,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.22 	{\includegraphics[width=.49\textwidth]
+l.24 	{\includegraphics[width=.49\textwidth]
                                           {histosDeltaUyzeedata.pdf}}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -692,7 +752,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.22 	{\includegraphics[width=.49\textwidth]
+l.24 	{\includegraphics[width=.49\textwidth]
                                           {histosDeltaUyzeedata.pdf}}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -702,7 +762,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.23 	{\includegraphics
+l.25 	{\includegraphics
                      [width=.49\textwidth]{histosDeltaUPhizeedata.pdf}}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -713,7 +773,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.23 	{\includegraphics[width=.49\textwidth]
+l.25 	{\includegraphics[width=.49\textwidth]
                                           {histosDeltaUPhizeedata.pdf}}\\
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -722,7 +782,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.23 	{\includegraphics[width=.49\textwidth]
+l.25 	{\includegraphics[width=.49\textwidth]
                                           {histosDeltaUPhizeedata.pdf}}\\
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -732,7 +792,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.24 	{\includegraphics
+l.26 	{\includegraphics
                      [width=.49\textwidth]{histosMeanBiaszeedata.pdf}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -747,7 +807,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.24 	{\includegraphics[
+l.26 	{\includegraphics[
                       width=.49\textwidth]{histosMeanBiaszeedata.pdf}}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -755,7 +815,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.24 	{\includegraphics[width=.49\textwidth]
+l.26 	{\includegraphics[width=.49\textwidth]
                                           {histosMeanBiaszeedata.pdf}}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -764,7 +824,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.24 	{\includegraphics[width=.49\textwidth]
+l.26 	{\includegraphics[width=.49\textwidth]
                                           {histosMeanBiaszeedata.pdf}}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -774,7 +834,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.25 	{\includegraphics
+l.27 	{\includegraphics
                      [width=.49\textwidth]{histosSigmaUperpzeedata.pdf}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -785,7 +845,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.25 	{\includegraphics[width=.49\textwidth]
+l.27 	{\includegraphics[width=.49\textwidth]
                                           {histosSigmaUperpzeedata.pdf}}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -794,7 +854,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.25 	{\includegraphics[width=.49\textwidth]
+l.27 	{\includegraphics[width=.49\textwidth]
                                           {histosSigmaUperpzeedata.pdf}}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -810,7 +870,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.26 	\caption
+l.28 	\caption
             { Breakdown of systematic uncertainties for 5 (a,b) and 13 (c,d)...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -822,7 +882,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \end{figure}
+l.30 \end{figure}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -838,10 +898,10 @@ or  <return>  to continue without it.
 
 Here is how much of LuaTeX's memory you used:
  25 strings out of 494413
- 100000,89155 words of node,token memory allocated 6824 words of node memory still in use:
-   38 hlist, 3 disc, 7 local_par, 1 dir, 6 math, 102 glue, 50 kern, 14 penalty, 
-711 glyph, 32 attribute, 35 glue_spec, 32 attribute_list, 1 temp, 2 write nodes
-   avail lists: 3:148,4:11,5:5,8:150,10:10
+ 100000,89155 words of node,token memory allocated 7341 words of node memory still in use:
+   44 hlist, 3 disc, 7 local_par, 1 dir, 6 math, 104 glue, 64 kern, 14 penalty, 
+764 glyph, 34 attribute, 35 glue_spec, 34 attribute_list, 1 temp, 2 write nodes
+   avail lists: 3:217,4:9,5:5,8:217,10:8
  4306 multiletter control sequences out of 65536+600000
  25 fonts using 1344807 bytes
  18i,3n,12p,150b,83s stack positions out of 5000i,500n,10000p,200000b,100000s

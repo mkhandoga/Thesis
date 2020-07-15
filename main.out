@@ -1,1 +1,111 @@
-\BOOKMARK [0][-]{chapter.1}{Appendix B}{}% 1
+\BOOKMARK [1][-]{section.0.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.0.1.1}{Historical retrospective}{section.0.1}% 2
+\BOOKMARK [2][-]{subsection.0.1.2}{Current challenges}{section.0.1}% 3
+\BOOKMARK [2][-]{subsection.0.1.3}{Thesis composition outline}{section.0.1}% 4
+\BOOKMARK [1][-]{subsection.0.1.3}{Bibliography}{}% 5
+\BOOKMARK [0][-]{chapter.1}{The Standard Model}{}% 6
+\BOOKMARK [1][-]{section.1.1}{General composition and key parameters}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Classical fields and gauge invariance principle}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.3}{Quantum electrodynamics}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.4}{Electroweak theory and the Higgs mechanism}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.4.1}{Electroweak gauge fields}{section.1.4}% 11
+\BOOKMARK [2][-]{subsection.1.4.2}{Fermion sector}{section.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.4.3}{Higgs field breaking the symmetry}{section.1.4}% 13
+\BOOKMARK [2][-]{subsection.1.4.4}{Physical interpretation of gauge fields and parameters}{section.1.4}% 14
+\BOOKMARK [1][-]{section.1.5}{Chromodynamics}{chapter.1}% 15
+\BOOKMARK [1][-]{figure.caption.5}{Bibliography}{chapter.1}% 16
+\BOOKMARK [0][-]{chapter.2}{The W boson}{}% 17
+\BOOKMARK [1][-]{section.2.1}{The motivation for the W mass measurement}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.2}{Massive boson production at hadron colliders}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.1}{Deep Inelastic scattering}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.2}{The Drell-Yan process}{section.2.2}% 21
+\BOOKMARK [1][-]{section.2.3}{Transverse momentum of massive vector bosons }{chapter.2}% 22
+\BOOKMARK [1][-]{figure.caption.13}{Bibliography}{chapter.2}% 23
+\BOOKMARK [0][-]{chapter.3}{The Large Hadron Collider}{}% 24
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.2}{The LHC running sequence}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.3}{Special low pile-up run during LHC Run 2}{chapter.3}% 27
+\BOOKMARK [1][-]{table.caption.19}{Bibliography}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{The ATLAS detector}{}% 29
+\BOOKMARK [1][-]{section.4.1}{General description and layout}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.2}{Coordinate system}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.3}{Magnet system and magnetic field}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.4}{Inner detector}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.5}{Calorimeter system }{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.5.1}{Electromagnetic calorimeter }{section.4.5}% 35
+\BOOKMARK [2][-]{subsection.4.5.2}{Hadronic calorimeter }{section.4.5}% 36
+\BOOKMARK [1][-]{section.4.6}{Muon detectors}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.7}{Forward detectors}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.8}{Trigger system}{chapter.4}% 39
+\BOOKMARK [1][-]{figure.caption.31}{Bibliography}{chapter.4}% 40
+\BOOKMARK [0][-]{chapter.5}{Electromagnetic shower shapes correction in the electromagnetic calorimeter }{}% 41
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.2}{ Shower shapes measurement and correction }{chapter.5}% 43
+\BOOKMARK [2][-]{subsection.5.2.1}{Event selection}{section.5.2}% 44
+\BOOKMARK [2][-]{subsection.5.2.2}{Data/MC discrepancies}{section.5.2}% 45
+\BOOKMARK [2][-]{subsection.5.2.3}{The correction procedure}{section.5.2}% 46
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.4}{Appendix: control plots}{chapter.5}% 48
+\BOOKMARK [1][-]{figure.caption.55}{Bibliography}{chapter.5}% 49
+\BOOKMARK [0][-]{chapter.6}{Event reconstruction}{}% 50
+\BOOKMARK [1][-]{section.6.1}{Charged particles track reconstruction}{chapter.6}% 51
+\BOOKMARK [1][-]{section.6.2}{Determining the primary vertex of the event}{chapter.6}% 52
+\BOOKMARK [1][-]{section.6.3}{Muon reconstruction and identification}{chapter.6}% 53
+\BOOKMARK [2][-]{subsection.6.3.1}{Muon reconstruction}{section.6.3}% 54
+\BOOKMARK [2][-]{subsection.6.3.2}{Muon identification}{section.6.3}% 55
+\BOOKMARK [2][-]{subsection.6.3.3}{Muon isolation}{section.6.3}% 56
+\BOOKMARK [1][-]{section.6.4}{Electron reconstruction and identification}{chapter.6}% 57
+\BOOKMARK [2][-]{subsection.6.4.1}{Electron reconstruction}{section.6.4}% 58
+\BOOKMARK [2][-]{subsection.6.4.2}{Electron identification}{section.6.4}% 59
+\BOOKMARK [2][-]{subsection.6.4.3}{Electron isolation}{section.6.4}% 60
+\BOOKMARK [1][-]{section.6.5}{Particle flow objects}{chapter.6}% 61
+\BOOKMARK [1][-]{equation.6.5.9}{Bibliography}{chapter.6}% 62
+\BOOKMARK [0][-]{chapter.7}{Calibrations and corrections}{}% 63
+\BOOKMARK [1][-]{section.7.1}{Electron corrections}{chapter.7}% 64
+\BOOKMARK [2][-]{subsection.7.1.1}{Energy scale and resolution correction}{section.7.1}% 65
+\BOOKMARK [2][-]{subsection.7.1.2}{Electron selection efficiency}{section.7.1}% 66
+\BOOKMARK [2][-]{subsection.7.1.3}{SF uncertainties propagation}{section.7.1}% 67
+\BOOKMARK [1][-]{section.7.2}{Muon corrections}{chapter.7}% 68
+\BOOKMARK [2][-]{subsection.7.2.1}{Muon momentum calibration}{section.7.2}% 69
+\BOOKMARK [2][-]{subsection.7.2.2}{Correction for charge-dependent momentum bias}{section.7.2}% 70
+\BOOKMARK [2][-]{subsection.7.2.3}{Muon efficiency measurements}{section.7.2}% 71
+\BOOKMARK [1][-]{section.7.3}{Hadronic recoil calibration}{chapter.7}% 72
+\BOOKMARK [2][-]{subsection.7.3.1}{SET-uT reweighting }{section.7.3}% 73
+\BOOKMARK [2][-]{subsection.7.3.2}{uX and uY correction}{section.7.3}% 74
+\BOOKMARK [2][-]{subsection.7.3.3}{Resolution and response corrections}{section.7.3}% 75
+\BOOKMARK [2][-]{subsection.7.3.4}{Hadronic recoil calibration uncertainties}{section.7.3}% 76
+\BOOKMARK [1][-]{section.7.4}{Angular coefficients correction}{chapter.7}% 77
+\BOOKMARK [1][-]{equation.7.4.20}{Bibliography}{chapter.7}% 78
+\BOOKMARK [0][-]{chapter.8}{MC samples and selection}{}% 79
+\BOOKMARK [1][-]{section.8.1}{Data and MC samples}{chapter.8}% 80
+\BOOKMARK [2][-]{subsection.8.1.1}{Data samples}{section.8.1}% 81
+\BOOKMARK [2][-]{subsection.8.1.2}{MC samples and cross-sections}{section.8.1}% 82
+\BOOKMARK [1][-]{section.8.2}{Multijet background}{chapter.8}% 83
+\BOOKMARK [1][-]{section.8.3}{Z vertex reweighting }{chapter.8}% 84
+\BOOKMARK [1][-]{section.8.4}{W analysis event selection and control plots}{chapter.8}% 85
+\BOOKMARK [2][-]{subsection.8.4.1}{Event selection}{section.8.4}% 86
+\BOOKMARK [2][-]{subsection.8.4.2}{s = 13 TeV dataset control plots}{section.8.4}% 87
+\BOOKMARK [2][-]{subsection.8.4.3}{s = 5 TeV dataset control plots}{section.8.4}% 88
+\BOOKMARK [1][-]{figure.caption.140}{Bibliography}{chapter.8}% 89
+\BOOKMARK [0][-]{chapter.9}{W boson pT spectrum}{}% 90
+\BOOKMARK [1][-]{section.9.1}{Unfolding}{chapter.9}% 91
+\BOOKMARK [1][-]{section.9.2}{Propagation of uncertainties}{chapter.9}% 92
+\BOOKMARK [2][-]{subsection.9.2.1}{Statistical uncertainty propagation using Bootstrap method}{section.9.2}% 93
+\BOOKMARK [2][-]{subsection.9.2.2}{Systematic uncertainty propagation}{section.9.2}% 94
+\BOOKMARK [2][-]{subsection.9.2.3}{Unfolded uncertainty breakdown}{section.9.2}% 95
+\BOOKMARK [1][-]{section.9.3}{Unfolding bias}{chapter.9}% 96
+\BOOKMARK [1][-]{section.9.4}{Results}{chapter.9}% 97
+\BOOKMARK [1][-]{figure.caption.148}{Bibliography}{chapter.9}% 98
+\BOOKMARK [0][-]{chapter.10}{Hadronic recoil regression with deep neural networks}{}% 99
+\BOOKMARK [1][-]{section.10.1}{Deep neural networks}{chapter.10}% 100
+\BOOKMARK [2][-]{subsection.10.1.1}{Gradient descent optimization}{section.10.1}% 101
+\BOOKMARK [2][-]{subsection.10.1.2}{DNN structure and training}{section.10.1}% 102
+\BOOKMARK [2][-]{subsection.10.1.3}{Batch normalization}{section.10.1}% 103
+\BOOKMARK [1][-]{section.10.2}{HR regression}{chapter.10}% 104
+\BOOKMARK [2][-]{subsection.10.2.1}{Input features and model}{section.10.2}% 105
+\BOOKMARK [2][-]{subsection.10.2.2}{Kinematic distributions}{section.10.2}% 106
+\BOOKMARK [1][-]{section.10.3}{Conclusions}{chapter.10}% 107
+\BOOKMARK [1][-]{section.10.3}{Bibliography}{chapter.10}% 108
+\BOOKMARK [0][-]{chapter.11}{Appendix A}{}% 109
+\BOOKMARK [1][-]{section.11.1}{Experimental uncertainties of main observables}{chapter.11}% 110
+\BOOKMARK [0][-]{chapter.12}{Appendix B}{}% 111

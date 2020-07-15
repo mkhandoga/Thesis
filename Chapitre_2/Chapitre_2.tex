@@ -1,16 +1,11 @@
 \chapter{The W boson}
-    \chapterprecishere{
-        ``Potentielle citation sans aucun rapport avec le sujet"\par\raggedleft--- \textup{Personne inconnue}, contexte à déterminer
-    }
     
-   
-        
     	\section{The motivation for the W mass measurement}    
         Being one of the cornerstones of the \gls{sm}, the W boson is tightly connected to the other parameters of the theory. In the leading order of the perturbation theory the W mass depends only on the electroweak parameters \cite{Awramik}:
         \begin{equation}
-        M_W=\sqrt{\frac{\pi \alpha}{\sqrt{2}G_F}}\frac{1}{\sin{\theta_W}},
+        M_W=\sqrt{\frac{\pi \alpha_{EM}}{\sqrt{2}G_F}}\frac{1}{\sin{\theta_W}},
         \end{equation}
-        where $G_F$ stands for the Fermi constant. The factor $\sqrt{\frac{\pi \alpha}{\sqrt{2}G_F}} \approx 40$ GeV sets the lower bound for the possible W mass. Higher order corrections enter the equation in the following way:
+        where $G_F$ stands for the Fermi constant, $\alpha_{EM}\approx\frac{1}{137}$ is the electromagnetic coupling constant and $\sin{\theta_W}$ is the Weinberg angle (see \ref{sec:symmetry_breaking}). The factor $\sqrt{\frac{\pi \alpha}{\sqrt{2}G_F}} \approx 40$ GeV sets the lower bound for the possible W mass. Higher order corrections enter the equation in the following way:
         \begin{equation}
         M_W=\sqrt{\frac{\pi \alpha}{\sqrt{2}G_F}}\frac{1}{\sin{\theta_W}}\frac{1}{1+\Delta r},
         \end{equation}
@@ -33,41 +28,41 @@
         	};
         	\caption{ Next-to-leading order diagrams for W boson propagator containing contributions from heavy quarks and the Higgs boson.}
         \end{figure}
-    As it was mentioned in Chapter 1 the mass of the W boson is one of the input parameters of the \gls{sm}, so the predictions of the theory directly depend on how precisely we know the value of the boson mass. On the other hand, we can theoretically constrain the value of the W boson mass assuming the already known values of the other \gls{sm} parameters. Fig. \ref{fig::w_values} demonstrates that the uncertainty of the theoretical estimate for the W boson mass is about two times lower than that of the best available experimental measurement. This motivates the effort for a more precise experimental measurement in order to test the consistency of the \gls{sm}. Should the improved measurement reveal the inconsistency of the Standard Model - it would also allow to reveal viable \gls{bsm} theories. 
+    As it was mentioned in Chapter 1 the mass of the W boson is one of the input parameters of the \gls{sm}, so the predictions of the theory directly depend on how precisely we know the value of the boson mass. On the other hand, we can theoretically constrain the value of the W boson mass assuming the already known values of the other \gls{sm} parameters. Figure \ref{fig::w_values} demonstrates that the uncertainty on the theoretical estimate for the W boson mass is about two times lower than that of the best available experimental measurement. This motivates the effort for a more precise experimental measurement in order to test the consistency of the \gls{sm}. Should the improved measurement reveal the inconsistency of the Standard Model - it would also allow to reveal viable \gls{bsm} theories. 
     	\begin{figure}[htbp]
     	\begin{subfigure}[t]{0.48\textwidth}
     		\includegraphics[width=\textwidth,keepaspectratio]{mw2.png}
-    		\caption[Side view]{W mass constraint \cite{Haller2018}}
+    		\caption[Side view]{W mass constraint from the global electroweak fit.}
     		\label{fig::w_constraint}
     	\end{subfigure}
     	\hfill
     	\begin{subfigure}[t]{0.48\textwidth} 
     		\includegraphics[width=\textwidth,keepaspectratio]{mw1.png}
-    		\caption[Transverse view]{W mass measurements}
+    		\caption[Transverse view]{Available W mass measurements.}
     		\label{fig::w_measurement}
     	\end{subfigure}
-    	\caption{W mass measurements and predictions}
+    	\caption{W mass measurements and predictions~\cite{wboson}.}
     	\label{fig::w_values}
     \end{figure}
         \section{Massive boson production at hadron colliders}
 		Hadron colliders provide a fruitful environment for the production and study of massive electroweak bosons - all of them were discovered at hadron colliders. Hadron colliders allow to achieve much higher centre-of-mass collision energy and luminosity comparing to their lepton counterparts. At the same time precision measurements at hadron colliers demand much deeper theoretical understanding of different aspects of the \gls{sm}. \\
-		The main theoretical complication of the proton-proton colliders lies in the fact that in contrary to leptons, protons are complex objects. This raises the following problems:
+		The main theoretical complication of proton-proton colliders lies in the fact that contrary to leptons, protons are complex objects. This raises the following problems:
 		\begin{itemize}
-		\item A proton-proton collision is in general case a many-body problem. The absence of a consistent theory for the QCD vacuum does not allow to describe the initial state of the proton constituents in a consistent way. 
-		\item The initial energy of the whole proton is well known, but we don't know how this energy is distributed between the proton constituents.
+		\item A proton-proton collision is in the general case a many-body problem. The accompanying low-energy QCD processes can not be described from the first principles and introduce additional complications for the precision measurements.
+		\item The initial energy of the whole proton is known with good precision, but we don't know how this energy is distributed among the proton constituents. The absence of a consistent theory for the QCD vacuum does not allow to describe the initial states of the proton constituents.
 		\item We know that the proton consists of three valence quarks that have non-zero expectation value and interact through gluons. In the course of these interactions all flavours of quarks (called sea quarks) are appearing off-shell. The contribution of these sea quarks to the scattering cross-section must also be taken in account.  
 		\end{itemize}
-		In order to attack these problems and get accurate predictions for the proton-proton collisions it is necessary to take into account the asymptotic freedom that QCD demonstrates at short distances or high energies. At a certain energy scale of the momentum $Q$, transferred during the collision, we can assume that the interacting parts of the proton are asymptotically free and neglect the interaction with the rest of the proton. This is called \textit{the factorization theorem}. The factorization occurs only if the transferred momentum $Q\gg \Lambda_{QCD}$ is large, and that is why these processes are called "hard". The physical conditions of the hard processes allow to use the perturbative QCD formalism, since at large energy scale the strong coupling constant $\alpha_s$ becomes small. Processes with lower energy scale of the transferred momentum are called "soft" and do not allow to use the perturbative QCD formalism. As it was mentioned in Section 1, a lot of things in the low-energy non-perturbative sector of the QCD are still unclear. \\
-		The on-shell production of massive vector bosons occurs during the hard processes, however, precise measurements at hadron colliders require understanding of both hard and soft QCD regimes. It is common that the hard scattering of the proton constituents is accompanied by a soft scattering of the remaining proton parts. This forms what is called \textit{underlying event} and also must be taken into account. 
+		In order to attack these problems and obtain accurate predictions for the proton-proton collisions it is necessary to take into account the asymptotic freedom that QCD demonstrates at short distances or high energies. At a certain energy scale of the momentum $Q$, transferred during the collision, we can assume that the interacting parts of the proton are asymptotically free and neglect the interaction with the rest of the proton. This is called \textit{the factorization theorem}. The factorization occurs only if the transferred momentum $Q\gg \Lambda_{QCD}$ is large, and that is why these processes are called "hard". The physical conditions of the hard processes allow to use the perturbative QCD formalism, since at large energy scale the strong coupling constant $\alpha_s$ becomes small. Processes with lower energy scale of the transferred momentum are called "soft" and do not allow to use the perturbative QCD formalism. As it was mentioned in Section 1, a lot of things in the low-energy non-perturbative sector of the QCD are still unclear. \\
+		The on-shell production of massive vector bosons occurs during hard processes, however, precise measurements at hadron colliders require understanding of both hard and soft QCD regimes. It is common that the hard scattering of the proton constituents is accompanied by a soft scattering of the remaining proton parts. This forms what is called \textit{underlying event} and also must be taken into account. 
 		    	\begin{figure}[htbp]
 			\begin{subfigure}[t]{0.42\textwidth} 
 				\includegraphics[width=\textwidth,keepaspectratio]{hard_scattering.png}
-				\caption[Transverse view]{Hard scattering diagram}
+				\caption[Transverse view]{Hard scattering diagram~\cite{hard_interactions}.}
 				\label{fig::hs}
 			\end{subfigure}
 			\begin{subfigure}[t]{0.52\textwidth}
 				\includegraphics[width=\textwidth,keepaspectratio]{DIS.png}
-				\caption[Side view]{DIS diagram}
+				\caption[Side view]{DIS diagram~\cite{proton_struct}.}
 				\label{fig::dis}
 			\end{subfigure}
 			\hfill
@@ -75,7 +70,7 @@
 			\label{fig::hadron_qcd}
 		\end{figure}
 		\subsection{Deep Inelastic scattering}
-		In order to better illustrate the factorization approach let us first consider the lepton-hadron process called the \gls{dis}. Historically it was the first experimental evidence for the complex structure of the proton and still serves an indispensable tool for the proton structure study. Let's try to write a matrix element for a \gls{dis} process $e+A\rightarrow e+X$, exchanging a virtual photon with momentum $q^{\mu}$:
+		In order to better illustrate the factorization approach let us first consider the lepton-hadron process called the \gls{dis}. Historically it was the first experimental evidence for the complex structure of the proton and still serves as an indispensable tool for the proton structure study. Let's try to write a matrix element for a \gls{dis} process $e+A\rightarrow e+X$, exchanging a virtual photon with momentum $q^{\mu}$:
 		 \begin{equation}
 		|M|^2_{DIS}=4\pi M_N\frac{\alpha}{q^4}L_{\mu \nu}W^{\mu \nu}_{hadron},
 		\end{equation}
@@ -84,21 +79,21 @@
 		W_{\mu \nu}=F_1(x,Q^2)\left(-g_{\mu \nu}+\frac{q_{\mu}q_{\nu}}{q^2}\right)+F_2(x,Q^2)\frac{\left(p_{\mu}-q_{\mu}p\cdot q / q^2\right)\left(p_{\nu}-q_{\nu}p\cdot q / q^2\right)}{p\cdot q},
 		\end{equation}
 		with $p_{\mu}$ being the momentum of the hadron A, $Q^2$ is the exchange momentum, $x=\frac{Q^2}{2p \cdot q }$ and the form-factor functions $F_1(x,Q^2)$, $F_2(x,Q^2)$ are unknown. \\
-		The cross-section of the \gls{dis} process can be measured experimentally, leaving the possibility to study the form-factor functions. It turned out that these functions do not depend (at least in the first approximation) on $Q^2$ \cite{dis}. Further experiments have revealed that they form-factors depend only on the ratio $x$, as it was predicted before \cite{bjorken}. This type of behaviour was called the Bjorken scaling.\\
-		These results have led to the idea of partons - point-like constituents of the proton \cite{feynman_partons}. Keeping in mind the idea of factorization we can assume the lepton only interacts with one of the partons. Then we can express the hadronic tensor $W_{\mu \nu}$ as a sum of all available partons:
+		The cross-section of the \gls{dis} process can be measured experimentally, leaving the possibility to study the form-factor functions. It turned out that these functions do not depend (at least in the first approximation) on $Q^2$ \cite{dis1}. Further experiments have revealed that the form-factors depend only on the ratio $x$, as it was predicted before \cite{bjorken}. This type of behaviour was called the Bjorken scaling.\\
+		These results have led to the idea of partons - point-like constituents of the proton \cite{feynman_partons}. The factorization theorem states that it is possible to express the hadronic tensor $W_{\mu \nu}$ as a sum of all available partons:
 			\begin{equation}
 		W_{\mu \nu}(q_{\mu},p_{\nu})=\sum_{a} \int_{x}^{1}\frac{d\xi}{\xi} f_{a/A}(\xi,\mu) H^a_{\mu\nu}(q_{\mu},p_{\nu},\mu,\alpha_s(\mu)) + NLO.
 		\end{equation}
 		The functions $H^a_{\mu\nu}(q_{\mu},p_{\nu},\mu,\alpha_s(\mu))$ are called the hard scattering structure functions and only depend on parton type $a$, but not on hadron type $A$. These functions describe the high-energy behaviour and can be calculated in the framework of perturbative QCD. At the same time $f_{a/A}(\xi,\mu)$ is called \gls{pdf} and has a physical meaning of finding a parton of type $a$ (gluon, u-quark, d-quark etc ) in a hadron of type $A$ (proton, neutron, meson) carrying the fraction of $\xi$ of the hadron's momentum. These \gls{pdf}s contain information on the momentum distribution of quarks and gluons within the hadron. This corresponds to the non-perturbative sector of the QCD which is beyond the reach of theoretical methods available so far. Note that they do not directly depend on the momentum $Q^2$, but only on the energy scale $\mu$. \\
-		The \gls{dglap} equations show that once the \gls{pdf}s are known at a certain energy scale $\mu$ they can be perturbatively extrapolated to a different energy scale \cite{Lipatov:1974qm}, \cite{ALTARELLI}, \cite{Gribov:1972ri}, \cite{Dokshitzer:1977sg}. This means that the \gls{pdf}s are universal - they can be measured experimentally at certain conditions in the course of the DIS (or any other) process and then used for numerical calculations of any other process (e.g. \gls{dy} process) at different conditions. Such a measurement allows a workaround - we may not be able to solve the many-body problem and perform non-perturbative calculations starting from the first principles, yet we still get a theoretical prediction with a good precision. Currently there exist a number of different groups working on the PDF parametrizations and fits, constantly improving the fits using the data coming from hadron colliders. Using different PDF sets may give different results and also helps to estimate the systematic uncertainties implied by the PDFs. \\
-		Historically the DIS experiments at HERA electron-proton collider have allowed to perform proton PDFs measurements with a good level of precision in the $x$ region up to $x \backsim 10^{-4}$ at high $Q^2$. The HERA experiments operated until 2008, paving the path for precision predictions for the Drell-Yan process.  Currently there are prospects for new experiments like \gls{lhec} that would involve DIS and further improve the PDF precision \cite{lhec}.
+		The \gls{dglap} equations show that once the \gls{pdf}s are known at a certain energy scale $\mu$ they can be perturbatively extrapolated to a different energy scale \cite{Lipatov:1974qm}, \cite{ALTARELLI}, \cite{Gribov:1972ri}, \cite{Dokshitzer:1977sg}. This means that the \gls{pdf}s are universal - they can be measured experimentally at certain conditions in the course of the DIS (or any other) process and then used for numerical calculations of any other process (e.g. \gls{dy} process) at different conditions. Such a measurement allows a workaround - we may not be able to solve the many-body problem and perform non-perturbative calculations starting from the first principles, yet we still get a theoretical prediction with a good precision. Currently there exists a number of different groups working on the PDF parametrizations and fits, constantly improving the fits using the data coming from hadron and electron-proton colliders. Using different PDF sets may give different results and also helps to estimate the systematic uncertainties implied by the PDFs. \\
+		Historically the DIS experiments at HERA electron-proton collider have allowed to perform proton PDFs measurements with a good level of precision in the $x$ region up to $x \backsim 10^{-4}$ at high $Q^2$ of up to 50 000 $GeV^2$~\cite{shushin}. The HERA experiments operated until 2008, paving the path for precision predictions for the Drell-Yan process.  Currently there are prospects for new experiments like \gls{lhec} that would involve DIS and further improve the PDF precision \cite{lhec}.
 		\begin{figure}[htbp]
 		\includegraphics[width=\textwidth,keepaspectratio]{pdfs.png}
-		\caption{The evolution of a PDF4LHC15 NNLO Hessian set from $Q^2=10^2$ GeV to $Q^2=10^4$ GeV using the \gls{dglap}. Notice the increase in the sea quark density. The PDFs include one standard deviation uncertainty band.}
+		\caption{The evolution of a PDF4LHC15 NNLO Hessian set from $Q^2=10^2$ GeV to $Q^2=10^4$ GeV using the \gls{dglap}. Notice the increase in the sea quark density. The PDFs include one standard deviation uncertainty band~\cite{proton_struct}.}
 		\label{fig::pdfs}
 		\end{figure}
  		\subsection{The Drell-Yan process}
-		The \gls{dy} process happens during the high-energy hadron-hadron scattering when quark and antiquark annihilate to form an electroweak boson \cite{drellyan}. It is postulated that \gls{dy} cross-section in a proton-proton scattering $\sigma^{DY} (pp \rightarrow l^{+}l^{-} + X)$ can be expressed through the cross-sections of the corresponding parton-parton scattering cross-section convoluted with the \gls{pdf}s of these partons:
+		The \gls{dy} process happens during the high-energy hadron-hadron scattering when quark and antiquark annihilate to form an electroweak boson~\cite{drellyan}. For the neutral DY process $q\bar q \rightarrow Z/\gamma^* + X \rightarrow l^{+}l^{-} + X$ takes place. In a similar way the charged DY process can happen, generating a W boson: $ q\bar q' \rightarrow W^{\pm} +X \rightarrow l^{\pm}\nu + X$. It is postulated that the \gls{dy} cross-section $\sigma^{DY} $ in a proton-proton scattering  can be expressed through the cross-sections of the corresponding parton-parton scattering cross-section convoluted with the \gls{pdf}s of these partons:
 		\begin{equation}
 		\frac{d^2\sigma^{DY}}{dydM^2}=\sum_{a,b=q,\bar q,g}\int_{\tau_1}^1 dx_1 f_a(x_1,\mu_F^2) \int_{\tau_2}^1 dx_2 f_b(x_2,\mu_F^2)\frac{d^2\hat{\sigma}_{ab}^{DY}}{dydM^2}(x_1,x_2,y,M^2,\mu_R^2,\mu_F^2).
 		\label{eq::diffY}
@@ -107,15 +102,16 @@
 		\begin{equation}
 		\frac{d^2\hat{\sigma}_{ab}^{DY}}{dydM^2}(x_1,x_2,y,M^2,\mu_R^2,\mu_F^2)=\sum_{n=0}^{\infty}\left(\frac{\alpha_s\mu^2_R}{2\pi}\right)^n\frac{d^2\hat{\sigma}_{ab}^{(n)DY}}{dydM^2}.
 		\end{equation}
+		The cross-sections $\hat{\sigma}_{ab}^{(n)DY} \propto \alpha_s^n$ contain only the terms of order $n$ in $\alpha_s$. 
 		The exact sum of the expansion does not depend on the $\mu_F$ and $\mu_R$ parameters. However, finite-order calculations demand a specific choice for the two parameters. One of the common choices for the \gls{dy} process is putting  $\mu_F=\mu_R=M$, with $M$ being the mass of the dilepton pair. \\
 		From equation \ref{eq::diffY} we can see that the rapidity distribution of the vector boson explicitly depends on the \gls{pdf}s both in terms of flavour decomposition and in the sense of a particular PDF set. Figure \ref{fig::Wrapidity} demonstrates different rapidity distributions for two centre-of-mass energies and two different PDF sets.\\
 		\begin{figure}[htbp]
 			\centering
-			\includegraphics[width=0.5\textwidth,keepaspectratio]{rapidity.png}
+			\includegraphics[width=\textwidth,keepaspectratio]{rapidity.png}
 			\caption{ Rapidity distribution for the vector bosons using MSTW2008 and CTEQ6.6 PDF sets for the centre-of-mass energies of 7 and 14 TeV \cite{Halzen:2013bqa}.}
 			\label{fig::Wrapidity}
 		\end{figure}
-		Let us consider partonic cross-sections, which can be constructed using an analogy from QED $e^{+}e^{-}\rightarrow \mu^{+}\mu^{-}$ - a flavour-changing process:
+		Let us consider partonic cross-sections, which can be constructed using an analogy to QED $e^{+}e^{-}\rightarrow \mu^{+}\mu^{-}$ - a flavour-changing process:
 		\begin{equation}
 			\hat{\sigma}(q\bar q \rightarrow e^{+}e^{-}) = \frac{4\pi \alpha_s^2}{3s}\frac{1}{N}Q^2_q.
 		\end{equation}	
@@ -129,19 +125,20 @@
 		\end{equation}	
 		where $V_{qq^\prime}$ is the element of the \gls{ckm} matrix,  $v_q$ ($a_q$) is a vector (axial vector) that couples the Z boson to the quarks. Figure \ref{fig::wxsec} shows the contributions of different parton flavours into $W^+$ and $W^-$ cross-sections. An assumption of narrow W resonance was used. The fact that the bosons with opposite charges are formed from different quarks makes a notable difference at the LHC experiments. Figure \ref{fig::wzxsec} contains the comparison of the results obtained at the LHC experiments with the NNLO theoretical predictions that use different PDF sets.
 		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=0.5\textwidth,keepaspectratio]{wxsec1.png}
+			\caption{Parton contributions to the cross-sections of $W^+$ and $W^-$ bosons for LHC and Tevatron cases \cite{Martin:392675}.}
+			\label{fig::wxsec}
+		\end{figure}
+		\begin{figure}[htbp]
 		\includegraphics[width=\textwidth,keepaspectratio]{WZxsec.png}
 		\caption{W and Z boson cross sections LHC at 7 TeV. ATLAS and CMS results, compared to NNLO predictions for various PDF sets \cite{Mangano:2015ejw}.}
 		\label{fig::wzxsec}
 		\end{figure}
-			\begin{figure}[htbp]
-		\centering
-		\includegraphics[width=0.5\textwidth,keepaspectratio]{wxsec1.png}
-		\caption{Parton contributions to the cross-sections of $W^+$ and $W^-$ bosons for LHC and Tevatron cases \cite{Martin:392675}.}
-		\label{fig::wxsec}
-		\end{figure}
+
 	
 		 \section{Transverse momentum of massive vector bosons }
-		 The leading-order model of the \gls{dy} process assumes the colliding partons to have their momentum perfectly collinear with the proton as a whole, which would mean that the vector boson $p_T$ should peak at zero. However, most of the massive vector bosons produced in the \gls{dy} process have a small yet non-zero transverse momentum $p_T \ll M_V$. This occurs due to a non-perturbative effect of partons moving within the colliding protons, having an intrinsic momentum of their own. This intrinsic momentum $<k_T>\backsim \Lambda_{QCD}$ is well parametrized using a Gaussian distribution with average value of $500$ \cite{PhysRevD.100.074027} or $700$ GeV  \cite{Ellis:1991qj}, although there are ongoing efforts for a more sophisticated parametrization that would allow a better modelling of the lower part of vector boson $p_T$ spectrum \cite{HAUTMANN2020135478}. \\
+		 The leading-order model of the \gls{dy} process assumes the colliding partons to have their momentum perfectly collinear with the proton as a whole, which would mean that the vector boson $p_T$ should peak at zero. However, most of the massive vector bosons produced in the \gls{dy} process have a small yet non-zero transverse momentum, $p_T \ll M_V$. This occurs due to a non-perturbative effect of partons moving within the colliding protons, having an intrinsic momentum of their own. This intrinsic momentum $<k_T>\backsim \Lambda_{QCD}$ is well parametrized using a Gaussian distribution with average value of $500$ \cite{PhysRevD.100.074027} or $700$ MeV  \cite{Ellis:1991qj}, although there are ongoing efforts for a more sophisticated parametrization that would allow a better modelling of the lower part of vector boson spectrum, at $p_T<2\gev$~\cite{HAUTMANN2020135478}. \\
 		 The spectrum at higher values of $p_T$ is determined by hard perturbative parton emission(s) like $q\bar q \rightarrow Vg$, $qg \rightarrow Vq$. The corresponding amplitudes can be conveniently expressed using Mandelstam variables:
 	\begin{equation}
 	\begin{array}{lcl} 
@@ -162,7 +159,7 @@
 				 \end{array}
 	 \end{equation}	
 	 The exponential $\exp{G(\alpha_s,L)}$, where $L=\log{M^2_W/p^2_T}$ is called the Sudakov form-factor. Its expansion by the powers of $\alpha_s$ defines the resummation accuracy: the term $\backsim O(\alpha_s)$ is called the leading logarithm (LL), term with $ \backsim O(\alpha_s^2)$ is the next-to-leading logarithm (NLL) and so on. \\
-	 The cross-sections obtained with the resummation methods provide a good prediction for soft and collinear emissions at low $p_T\ll M_W$. In order to get a combined cross-section for higher $p_T$ region the resummed cross-section has to be \textit{matched} with the fixed-order cross-sections of the corresponding power in $\alpha_s$. 
+	 The cross-sections obtained with the resummation methods provide a good prediction for soft and collinear emissions at low $p_T\ll M_W$. In order to get a combined cross-section for higher $p_T$ region the resummed cross-section has to be \textit{matched} with the fixed-order cross-sections of the corresponding power in $\alpha_s$. Figure \ref{w_kinematics} contains NNLO resummed predictions for the W $p_T$ spectrum produced with RadISH\cite{Radish}. In Chapter 9 of this thesis the spectrum generated by another resumming tool - DYRes~\cite{dyres}, is used for comparison with \Powheg and \Sherpa predictions.
 	 \begin{figure}[htbp]
 	 	\begin{subfigure}[t]{0.31\textwidth} 
 	 		\includegraphics[width=\textwidth,keepaspectratio]{pt_nlo_wm.png}

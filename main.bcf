@@ -1979,6 +1979,27 @@
     <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="58">mendel</bcf:citekey>
+    <bcf:citekey order="59">prout</bcf:citekey>
+    <bcf:citekey order="60">isotopes</bcf:citekey>
+    <bcf:citekey order="61">brownian</bcf:citekey>
+    <bcf:citekey order="62">cathode</bcf:citekey>
+    <bcf:citekey order="63">proton_discovery</bcf:citekey>
+    <bcf:citekey order="64">anode_rays</bcf:citekey>
+    <bcf:citekey order="65">prout</bcf:citekey>
+    <bcf:citekey order="66">neutron</bcf:citekey>
+    <bcf:citekey order="67">pauli_neutrino</bcf:citekey>
+    <bcf:citekey order="68">positron_exp</bcf:citekey>
+    <bcf:citekey order="69">positron_th</bcf:citekey>
+    <bcf:citekey order="70">muon_exp</bcf:citekey>
+    <bcf:citekey order="71">pion</bcf:citekey>
+    <bcf:citekey order="72">kaon</bcf:citekey>
+    <bcf:citekey order="73">lambda0</bcf:citekey>
+    <bcf:citekey order="74">neutrino</bcf:citekey>
+    <bcf:citekey order="75">gellMann</bcf:citekey>
+    <bcf:citekey order="76">zweig</bcf:citekey>
+    <bcf:citekey order="77">omega</bcf:citekey>
+    <bcf:citekey order="78">wboson</bcf:citekey>
   </bcf:section>
   <!-- SECTION 1 -->
   <bcf:bibdata section="1">
@@ -1990,6 +2011,458 @@
     <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="1">
+    <bcf:citekey order="1">Peskin</bcf:citekey>
+    <bcf:citekey order="2">bogol</bcf:citekey>
+    <bcf:citekey order="3">Srednicki</bcf:citekey>
+    <bcf:citekey order="4">Berest</bcf:citekey>
+    <bcf:citekey order="5">weinberg</bcf:citekey>
+    <bcf:citekey order="6">Griffiths</bcf:citekey>
+    <bcf:citekey order="7">pep</bcf:citekey>
+    <bcf:citekey order="8">PhysRevD.86.010001</bcf:citekey>
+    <bcf:citekey order="9">sm_wiki</bcf:citekey>
+    <bcf:citekey order="10">sm_wiki</bcf:citekey>
+    <bcf:citekey order="11">Schwinger_polariz</bcf:citekey>
+    <bcf:citekey order="12">bogol</bcf:citekey>
+    <bcf:citekey order="13">Glashow:1959wxa</bcf:citekey>
+    <bcf:citekey order="14">coupl_wiki</bcf:citekey>
+    <bcf:citekey order="15">coupl_wiki</bcf:citekey>
+    <bcf:citekey order="16">Gross</bcf:citekey>
+    <bcf:citekey order="17">Politzer</bcf:citekey>
+    <bcf:citekey order="18">Vanyashin</bcf:citekey>
+    <bcf:citekey order="19">einstein</bcf:citekey>
+    <bcf:citekey order="20">poincare</bcf:citekey>
+    <bcf:citekey order="21">lorentz</bcf:citekey>
+    <bcf:citekey order="22">Noether1918</bcf:citekey>
+    <bcf:citekey order="23">bogol</bcf:citekey>
+    <bcf:citekey order="24">YangMills</bcf:citekey>
+    <bcf:citekey order="25">Schwinger_covar</bcf:citekey>
+    <bcf:citekey order="26">Schwinger_polariz</bcf:citekey>
+    <bcf:citekey order="27">Feynman_math</bcf:citekey>
+    <bcf:citekey order="28">Feynman_positrons</bcf:citekey>
+    <bcf:citekey order="29">Feynman_spacetime</bcf:citekey>
+    <bcf:citekey order="30">Tomonaga</bcf:citekey>
+    <bcf:citekey order="31">Dyson_all</bcf:citekey>
+    <bcf:citekey order="32">Dyson_smatr</bcf:citekey>
+    <bcf:citekey order="33">lbl_th</bcf:citekey>
+    <bcf:citekey order="34">lbl_exp</bcf:citekey>
+    <bcf:citekey order="35">Glashow:1959wxa</bcf:citekey>
+    <bcf:citekey order="36">weinberg</bcf:citekey>
+    <bcf:citekey order="37">Salam1959</bcf:citekey>
+    <bcf:citekey order="38">brout</bcf:citekey>
+    <bcf:citekey order="39">higgs</bcf:citekey>
+    <bcf:citekey order="40">Hollik_2006</bcf:citekey>
+    <bcf:citekey order="41">weinberg2</bcf:citekey>
+    <bcf:citekey order="42">coupl_wiki</bcf:citekey>
+    <bcf:citekey order="43">coupl_wiki</bcf:citekey>
+    <bcf:citekey order="44">conf_wiki</bcf:citekey>
+    <bcf:citekey order="45">conf_wiki</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 2 -->
+  <bcf:bibdata section="2">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="2">
+    <bcf:citekey order="1">Awramik</bcf:citekey>
+    <bcf:citekey order="2">wboson</bcf:citekey>
+    <bcf:citekey order="3">wboson</bcf:citekey>
+    <bcf:citekey order="4">hard_interactions</bcf:citekey>
+    <bcf:citekey order="5">hard_interactions</bcf:citekey>
+    <bcf:citekey order="6">proton_struct</bcf:citekey>
+    <bcf:citekey order="7">proton_struct</bcf:citekey>
+    <bcf:citekey order="8">proton_struct</bcf:citekey>
+    <bcf:citekey order="9">factorization</bcf:citekey>
+    <bcf:citekey order="10">dis1</bcf:citekey>
+    <bcf:citekey order="11">bjorken</bcf:citekey>
+    <bcf:citekey order="12">feynman_partons</bcf:citekey>
+    <bcf:citekey order="13">Lipatov:1974qm</bcf:citekey>
+    <bcf:citekey order="14">ALTARELLI</bcf:citekey>
+    <bcf:citekey order="15">Gribov:1972ri</bcf:citekey>
+    <bcf:citekey order="16">Dokshitzer:1977sg</bcf:citekey>
+    <bcf:citekey order="17">shushin</bcf:citekey>
+    <bcf:citekey order="18">lhec</bcf:citekey>
+    <bcf:citekey order="19">proton_struct</bcf:citekey>
+    <bcf:citekey order="20">proton_struct</bcf:citekey>
+    <bcf:citekey order="21">drellyan</bcf:citekey>
+    <bcf:citekey order="22">proton_struct</bcf:citekey>
+    <bcf:citekey order="23">Halzen:2013bqa</bcf:citekey>
+    <bcf:citekey order="24">Halzen:2013bqa</bcf:citekey>
+    <bcf:citekey order="25">Martin:392675</bcf:citekey>
+    <bcf:citekey order="26">Martin:392675</bcf:citekey>
+    <bcf:citekey order="27">Mangano:2015ejw</bcf:citekey>
+    <bcf:citekey order="28">Mangano:2015ejw</bcf:citekey>
+    <bcf:citekey order="29">PhysRevD.100.074027</bcf:citekey>
+    <bcf:citekey order="30">Ellis:1991qj</bcf:citekey>
+    <bcf:citekey order="31">HAUTMANN2020135478</bcf:citekey>
+    <bcf:citekey order="32">Radish</bcf:citekey>
+    <bcf:citekey order="33">dyres</bcf:citekey>
+    <bcf:citekey order="34">Bizon:2019zgf</bcf:citekey>
+    <bcf:citekey order="35">Bizon:2019zgf</bcf:citekey>
+    <bcf:citekey order="36">Bizon:2019zgf</bcf:citekey>
+    <bcf:citekey order="37">Bizon:2019zgf</bcf:citekey>
+    <bcf:citekey order="38">Anastasiou:2003ds</bcf:citekey>
+    <bcf:citekey order="39">Anastasiou:2003ds</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 3 -->
+  <bcf:bibdata section="3">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="3">
+    <bcf:citekey order="1">Bruning:2668521</bcf:citekey>
+    <bcf:citekey order="2">higgs_atlas</bcf:citekey>
+    <bcf:citekey order="3">higgs_cms</bcf:citekey>
+    <bcf:citekey order="4">hydro</bcf:citekey>
+    <bcf:citekey order="5">hydro</bcf:citekey>
+    <bcf:citekey order="6">sequence</bcf:citekey>
+    <bcf:citekey order="7">sequence</bcf:citekey>
+    <bcf:citekey order="8">sequence</bcf:citekey>
+    <bcf:citekey order="9">rf_cavities</bcf:citekey>
+    <bcf:citekey order="10">rf_cavities</bcf:citekey>
+    <bcf:citekey order="11">Wilson:513326</bcf:citekey>
+    <bcf:citekey order="12">Wilson:513326</bcf:citekey>
+    <bcf:citekey order="13">2beams</bcf:citekey>
+    <bcf:citekey order="14">2beams</bcf:citekey>
+    <bcf:citekey order="15">collisions</bcf:citekey>
+    <bcf:citekey order="16">collisions</bcf:citekey>
+    <bcf:citekey order="17">Lumi</bcf:citekey>
+    <bcf:citekey order="18">Lumi</bcf:citekey>
+    <bcf:citekey order="19">lumi_witold</bcf:citekey>
+    <bcf:citekey order="20">vdm1</bcf:citekey>
+    <bcf:citekey order="21">vdm2</bcf:citekey>
+    <bcf:citekey order="22">run2lumi</bcf:citekey>
+    <bcf:citekey order="23">run2lumi</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 4 -->
+  <bcf:bibdata section="4">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="4">
+    <bcf:citekey order="1">atlas_experiment</bcf:citekey>
+    <bcf:citekey order="2">magnet_tdr1</bcf:citekey>
+    <bcf:citekey order="3">id_tdr1</bcf:citekey>
+    <bcf:citekey order="4">id_tdr2</bcf:citekey>
+    <bcf:citekey order="5">LAr_calo</bcf:citekey>
+    <bcf:citekey order="6">Tile_calo</bcf:citekey>
+    <bcf:citekey order="7">muons_1</bcf:citekey>
+    <bcf:citekey order="8">muons_2</bcf:citekey>
+    <bcf:citekey order="9">lucid_1</bcf:citekey>
+    <bcf:citekey order="10">lucid_2</bcf:citekey>
+    <bcf:citekey order="11">alfa</bcf:citekey>
+    <bcf:citekey order="12">Amaldi:1972uw</bcf:citekey>
+    <bcf:citekey order="13">luminosity</bcf:citekey>
+    <bcf:citekey order="14">daq</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 5 -->
+  <bcf:bibdata section="5">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="5">
+    <bcf:citekey order="1">egamma_perf_2017</bcf:citekey>
+    <bcf:citekey order="2">sshapes_simulation</bcf:citekey>
+    <bcf:citekey order="3">sshapes_simulation</bcf:citekey>
+    <bcf:citekey order="4">geant_corr</bcf:citekey>
+    <bcf:citekey order="5">geant_corr</bcf:citekey>
+    <bcf:citekey order="6">RecoID2011</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 6 -->
+  <bcf:bibdata section="6">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="6">
+    <bcf:citekey order="1">ATLAS:track</bcf:citekey>
+    <bcf:citekey order="2">ATLAS:track</bcf:citekey>
+    <bcf:citekey order="3">ATLAS:track2</bcf:citekey>
+    <bcf:citekey order="4">Fruhwirth:1987fm</bcf:citekey>
+    <bcf:citekey order="5">ATLAS:track2</bcf:citekey>
+    <bcf:citekey order="6">ATLAS:track2</bcf:citekey>
+    <bcf:citekey order="7">PrimVertRun12</bcf:citekey>
+    <bcf:citekey order="8">PrimVertRun3</bcf:citekey>
+    <bcf:citekey order="9">vert_recon</bcf:citekey>
+    <bcf:citekey order="10">vert_recon</bcf:citekey>
+    <bcf:citekey order="11">muons_reco1</bcf:citekey>
+    <bcf:citekey order="12">ILLINGWORTH198887</bcf:citekey>
+    <bcf:citekey order="13">Kaiser:2010zea</bcf:citekey>
+    <bcf:citekey order="14">Kaiser:2010zea</bcf:citekey>
+    <bcf:citekey order="15">electrons_reco1</bcf:citekey>
+    <bcf:citekey order="16">electrons_reco1</bcf:citekey>
+    <bcf:citekey order="17">electrons_reco1</bcf:citekey>
+    <bcf:citekey order="18">Lampl:1099735</bcf:citekey>
+    <bcf:citekey order="19">topoclust2_2016</bcf:citekey>
+    <bcf:citekey order="20">topoclust_2019</bcf:citekey>
+    <bcf:citekey order="21">Cornelissen:2008zza</bcf:citekey>
+    <bcf:citekey order="22">Cornelissen:1020106</bcf:citekey>
+    <bcf:citekey order="23">GSF</bcf:citekey>
+    <bcf:citekey order="24">Aaboud:2018ugz</bcf:citekey>
+    <bcf:citekey order="25">Aaboud:2018yqu</bcf:citekey>
+    <bcf:citekey order="26">electrons_reco1</bcf:citekey>
+    <bcf:citekey order="27">topoclust_2019</bcf:citekey>
+    <bcf:citekey order="28">topoclust_2019</bcf:citekey>
+    <bcf:citekey order="29">Cacciari:2007fd</bcf:citekey>
+    <bcf:citekey order="30">pflow</bcf:citekey>
+    <bcf:citekey order="31">pflow</bcf:citekey>
+    <bcf:citekey order="32">pflow</bcf:citekey>
+    <bcf:citekey order="33">pflow</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 7 -->
+  <bcf:bibdata section="7">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="7">
+    <bcf:citekey order="1">Kretzschmar:2657141</bcf:citekey>
+    <bcf:citekey order="2">Aaboud:2018ugz</bcf:citekey>
+    <bcf:citekey order="3">egamma_perf_2017</bcf:citekey>
+    <bcf:citekey order="4">PERF-2013-05</bcf:citekey>
+    <bcf:citekey order="5">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="6">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="7">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="8">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="9">Andari:2651890</bcf:citekey>
+    <bcf:citekey order="10">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="11">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="12">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="13">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="14">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="15">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="16">Aaboud:2018ugz</bcf:citekey>
+    <bcf:citekey order="16">electrons_reco1</bcf:citekey>
+    <bcf:citekey order="16">topoclust_2019</bcf:citekey>
+    <bcf:citekey order="17">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="18">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="19">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="20">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="21">electrons_reco1</bcf:citekey>
+    <bcf:citekey order="22">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="23">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="24">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="25">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="26">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="27">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="28">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="29">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="30">topoclust_2019</bcf:citekey>
+    <bcf:citekey order="31">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="32">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="33">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="34">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="35">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="36">int_note_electrons</bcf:citekey>
+    <bcf:citekey order="37">muons_reco1</bcf:citekey>
+    <bcf:citekey order="38">int_note_muons</bcf:citekey>
+    <bcf:citekey order="39">int_note_muons</bcf:citekey>
+    <bcf:citekey order="40">int_note_muons</bcf:citekey>
+    <bcf:citekey order="41">int_note_muons</bcf:citekey>
+    <bcf:citekey order="42">int_note_muons</bcf:citekey>
+    <bcf:citekey order="43">int_note_muons</bcf:citekey>
+    <bcf:citekey order="44">int_note_muons</bcf:citekey>
+    <bcf:citekey order="45">int_note_muons</bcf:citekey>
+    <bcf:citekey order="46">int_note_muons</bcf:citekey>
+    <bcf:citekey order="47">int_note_muons</bcf:citekey>
+    <bcf:citekey order="48">muon_align</bcf:citekey>
+    <bcf:citekey order="49">int_note_muons</bcf:citekey>
+    <bcf:citekey order="50">int_note_muons</bcf:citekey>
+    <bcf:citekey order="51">int_note_muons</bcf:citekey>
+    <bcf:citekey order="52">int_note_muons</bcf:citekey>
+    <bcf:citekey order="53">Koehler:2665704</bcf:citekey>
+    <bcf:citekey order="54">int_note_muons</bcf:citekey>
+    <bcf:citekey order="55">int_note_muons</bcf:citekey>
+    <bcf:citekey order="56">int_note_muons</bcf:citekey>
+    <bcf:citekey order="57">int_note_muons</bcf:citekey>
+    <bcf:citekey order="58">int_note_muons</bcf:citekey>
+    <bcf:citekey order="59">int_note_muons</bcf:citekey>
+    <bcf:citekey order="60">int_note_muons</bcf:citekey>
+    <bcf:citekey order="61">int_note_muons</bcf:citekey>
+    <bcf:citekey order="62">int_note_hr</bcf:citekey>
+    <bcf:citekey order="63">int_note_hr</bcf:citekey>
+    <bcf:citekey order="64">int_note_hr</bcf:citekey>
+    <bcf:citekey order="65">int_note_hr</bcf:citekey>
+    <bcf:citekey order="66">int_note_hr</bcf:citekey>
+    <bcf:citekey order="67">int_note_hr</bcf:citekey>
+    <bcf:citekey order="68">int_note_hr</bcf:citekey>
+    <bcf:citekey order="69">int_note_hr</bcf:citekey>
+    <bcf:citekey order="70">int_note_hr</bcf:citekey>
+    <bcf:citekey order="71">int_note_hr</bcf:citekey>
+    <bcf:citekey order="72">drellyan</bcf:citekey>
+    <bcf:citekey order="73">Ais</bcf:citekey>
+    <bcf:citekey order="74">DYNNLO</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 8 -->
+  <bcf:bibdata section="8">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="8">
+    <bcf:citekey order="1">int_note_samples</bcf:citekey>
+    <bcf:citekey order="2">int_note_samples</bcf:citekey>
+    <bcf:citekey order="3">int_note_samples</bcf:citekey>
+    <bcf:citekey order="4">int_note_samples</bcf:citekey>
+    <bcf:citekey order="5">Kretzschmar:2657141</bcf:citekey>
+    <bcf:citekey order="6">Nason:2004rx</bcf:citekey>
+    <bcf:citekey order="6">Frixione:2007vw</bcf:citekey>
+    <bcf:citekey order="6">Alioli:2008gx</bcf:citekey>
+    <bcf:citekey order="6">Alioli:2010xd</bcf:citekey>
+    <bcf:citekey order="7">pythia</bcf:citekey>
+    <bcf:citekey order="8">STDM-2012-23</bcf:citekey>
+    <bcf:citekey order="9">Golonka:2005pn</bcf:citekey>
+    <bcf:citekey order="10">Hoche:2010kg</bcf:citekey>
+    <bcf:citekey order="11">Ball:2012cx</bcf:citekey>
+    <bcf:citekey order="12">ATL-PHYS-PUB-2016-017</bcf:citekey>
+    <bcf:citekey order="13">Catani:2007vq</bcf:citekey>
+    <bcf:citekey order="13">Catani:2009sm</bcf:citekey>
+    <bcf:citekey order="14">Harland-Lang:2014zoa</bcf:citekey>
+    <bcf:citekey order="15">STDM-2015-03</bcf:citekey>
+    <bcf:citekey order="16">HION-2018-02</bcf:citekey>
+    <bcf:citekey order="17">Czakon:2011xx</bcf:citekey>
+    <bcf:citekey order="18">CMS-TOP-16-023</bcf:citekey>
+    <bcf:citekey order="19">int_note_samples</bcf:citekey>
+    <bcf:citekey order="20">int_note_samples</bcf:citekey>
+    <bcf:citekey order="21">int_note_samples</bcf:citekey>
+    <bcf:citekey order="22">int_note_samples</bcf:citekey>
+    <bcf:citekey order="23">int_note_samples</bcf:citekey>
+    <bcf:citekey order="24">int_note_samples</bcf:citekey>
+    <bcf:citekey order="25">int_note_samples</bcf:citekey>
+    <bcf:citekey order="26">int_note_samples</bcf:citekey>
+    <bcf:citekey order="27">mjets_int_note_6</bcf:citekey>
+    <bcf:citekey order="28">mjets_int_note_6</bcf:citekey>
+    <bcf:citekey order="29">mjets_int_note_6</bcf:citekey>
+    <bcf:citekey order="30">mjets_int_note_6</bcf:citekey>
+    <bcf:citekey order="31">mjets_int_note_6</bcf:citekey>
+    <bcf:citekey order="32">mjets_int_note_6</bcf:citekey>
+    <bcf:citekey order="33">mjets_int_note_6</bcf:citekey>
+    <bcf:citekey order="34">mjets_int_note_6</bcf:citekey>
+    <bcf:citekey order="35">mjets_int_note_6</bcf:citekey>
+    <bcf:citekey order="36">mjets_int_note_6</bcf:citekey>
+    <bcf:citekey order="37">int_note_samples</bcf:citekey>
+    <bcf:citekey order="38">int_note_samples</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 9 -->
+  <bcf:bibdata section="9">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="9">
+    <bcf:citekey order="1">Schmitt:2016orm</bcf:citekey>
+    <bcf:citekey order="2">unfolding1</bcf:citekey>
+    <bcf:citekey order="3">unfolding2</bcf:citekey>
+    <bcf:citekey order="4">int_note_1</bcf:citekey>
+    <bcf:citekey order="5">int_note_1</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 10 -->
+  <bcf:bibdata section="10">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="10">
+    <bcf:citekey order="1">gradient</bcf:citekey>
+    <bcf:citekey order="2">sgd1</bcf:citekey>
+    <bcf:citekey order="3">sgd2</bcf:citekey>
+    <bcf:citekey order="4">kingma2014method</bcf:citekey>
+    <bcf:citekey order="5">grad_momentum1</bcf:citekey>
+    <bcf:citekey order="6">grad_momentum2</bcf:citekey>
+    <bcf:citekey order="7">LeCun1998</bcf:citekey>
+    <bcf:citekey order="8">kingma2014method</bcf:citekey>
+    <bcf:citekey order="9">Kurt1991251</bcf:citekey>
+    <bcf:citekey order="10">Cybenko1989</bcf:citekey>
+    <bcf:citekey order="11">RumelhartZipser:86</bcf:citekey>
+    <bcf:citekey order="12">dnn1</bcf:citekey>
+    <bcf:citekey order="13">dnn1</bcf:citekey>
+    <bcf:citekey order="14">batch_normalization</bcf:citekey>
+    <bcf:citekey order="15">scikit-learn</bcf:citekey>
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 11 -->
+  <bcf:bibdata section="11">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="11">
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 12 -->
+  <bcf:bibdata section="12">
+    <bcf:datasource type="file" datatype="bibtex">bibli.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS_Useful.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ATLAS.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/PubNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/ConfNotes.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">bib/CMS.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="12">
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2001,4 +2474,103 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="1"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="2"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="3"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="4"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="5"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="6"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="7"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="8"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="9"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="10"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
 </bcf:controlfile>

@@ -1,7 +1,4 @@
 \chapter{W boson pT spectrum}
-    \chapterprecishere{
-        ``Potentielle citation sans aucun rapport avec le sujet"\par\raggedleft--- \textup{Personne inconnue}, contexte à déterminer
-    }
 
 \section{Unfolding}
 The measured W $p_T$ spectrum is subject to various detector effects (finite resolution and acceptance, reconstruction efficiency, etc.) that distort the true underlying spectrum. Mathematically, the unfolding problem is an integral equation of the following form:
@@ -13,13 +10,13 @@ where we seek the function $f(x)$ assuming that $g(y)$ and the kernel $K(x,y)$ a
 \sum_{i} \textbf{R}_{ij}\cdot \textbf{T}_i + \textbf{B}_j = \textbf{D}_j,
 \end{equation}
 with $\textbf{D}$, $\textbf{T}$ and $\textbf{B}$ being vectors that represent detector-level (measured), truth and background distributions respectively; each vector has $n$ components that represent the bins in the corresponding distribution. The response matrix $\textbf{R}$ represents bin-to-bin migrations caused by the detector effects. \\
-The response matrix is usually obtained through \gls{mc} simulation, along with the corrections for the fiducial volume acceptance and efficiency. Each event is simulated on the truth and reconstructed levels, this means that element $R_{il}$ of the migration matrix contains events that pass both reconstruction and truth cuts (R\&T) and would go to bin $i$ of the truth distribution and to bin $j$ of the reconstructed distribution. Detector acceptance for bin $i$ is defined as the ratio $A_i=\sum_j R{ij}/T_i$. Similarly the reconstruction efficiency for bin $j$ is defined as the ratio $\epsilon_j=\sum_i R{ij}/D_j$.
+The response matrix is usually obtained through \gls{mc} simulation, along with the corrections for the fiducial volume acceptance and selection efficiency. Each event is simulated on the truth and reconstructed levels, this means that element $R_{il}$ of the migration matrix contains events that pass both reconstruction and truth cuts (R\&T) and would go to bin $i$ of the truth distribution and to bin $j$ of the reconstructed distribution. Detector acceptance for bin $i$ is defined as the ratio $A_i=\sum_j R{ij}/T_i$. Similarly the reconstruction efficiency for bin $j$ is defined as the ratio $\epsilon_j=\sum_i R{ij}/D_j$.
 The underlying distribution estimate is presented in the following way:
 \begin{equation}
 \sum_{i} \textbf{V}_{ij}\cdot (\textbf{D}_i - \textbf{B}_i) = \textbf{U}_j,
 \end{equation}
  where $U$ vector provides the underlying distribution estimate and $V$ is the unfolding transformation matrix.\\
- There exist a diverse variety of methods to obtain the unfolding transformation. In the current analysis a Bayesian iterative method is used \cite{unfolding1}, \cite{unfolding2}. The method allows to obtain the unfolding transformation provided that the response matrix, acceptance and efficiency corrections are known and the number of iterations is given. The number of iterations as well as the unfolded distribution binning are adjusted in order to minimize the unfolding bias and keep the uncertainty below the designated level.
+ There exist a diverse variety of methods to obtain the unfolding transformation. In the current analysis a Bayesian iterative method is used \cite{unfolding1}, \cite{unfolding2}. The method allows to obtain the unfolding transformation provided that the response matrix, acceptance and efficiency corrections are known and the number of iterations is given. The number of iterations as well as the unfolded distribution binning are adjusted in order to minimize the unfolding bias and keep the uncertainty below the designated level. 
 
 \begin{figure}[htpb]
 	\centering
@@ -28,11 +25,11 @@ The underlying distribution estimate is presented in the following way:
 	\label{fig::unfolding}
 \end{figure}
 
-\section{Uncertainties propagation}
+\section{Propagation of uncertainties}
 The detector-level uncertainties breakdown for the \pt distribution are presented here. Uncertainties breakdown for the rest of the observables are listed in Appendix A. \\
 These uncertainties now have to be propagated to the unfolded level. 
 \subsection{Statistical uncertainty propagation using Bootstrap method}
-Bootstrap is a computer-based method of dataset parameters estimate and propagation using the analysis distribution resampling. In particular bootstraping used for the propagation of statistical uncertainties. \\
+Bootstrap is a computer-based method of dataset parameters estimate and propagation using the analysis distribution resampling. In particular bootstraping is used for the propagation of statistical uncertainties. \\
 Both data and MC-simulated datasets have limited number of events, hence the statistical uncertainties due to fluctuations. In order to estimate the statistical uncertainty a number of pseudo-data sets is generated for both data and \gls{mc} where each event is assigned a random weight $w$:
 \begin{equation}
 w = \mathcal{P}(n,1),
@@ -76,7 +73,8 @@ C_{kl}^{\textrm tot} = C_{kl}^{\textrm stat,Data} + C_{kl}^{\textrm stat,MC} + \
 \subsection{Unfolded uncertainty breakdown}
 Figures \ref{fig:reco_sys_bkd_elec}, \ref{fig:reco_sys_bkd_muons}, contain the systematic uncertainties breakdown for electron and muon channels for the reconstructed level distributions for 5 and 13 TeV. Similarly figures \ref{fig:unf_sys_bkd_elec}, \ref{fig:unf_sys_bkd_muons} contain unfolded-level uncertainties. \\
 At the detector level the designated level of uncertainty of below 1\% is preserved up to 25 \gev{} for 5 \tev{} datasets and up to 50 \gev{} for 13 \tev{} samples in every channel. An increased role of background uncertainty is observed at 13 \tev{} due to the significantly higher cross-sections of diboson and top-antitop backgrounds.
-The scale and hierarchy of uncertainties are preserved at the unfolded level. 
+The scale and hierarchy of uncertainties are preserved at the unfolded level. \\
+The uncertainties in 5 TeV are dominated by the statistical uncertainty and by the contribution from the hadronic recoil calibration, which is also of statistical nature. On the other hand, at 13 TeV background uncertainty also starts to play a significant role due to increased cross-sections of leading backgrounds.
 
 \begin{figure}[h]
 	\centering
@@ -85,7 +83,7 @@ The scale and hierarchy of uncertainties are preserved at the unfolded level.
 	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusenu_13TeV_test1}}
 	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusenu_13TeV_test1}}
 	
-	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 (c,d) TeV in the electron channel at the reconstructed level}
+	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 (c,d) TeV in the electron channel at the reconstructed level.}
 	\label{fig:reco_sys_bkd_elec}
 \end{figure}
 
@@ -95,7 +93,7 @@ The scale and hierarchy of uncertainties are preserved at the unfolded level.
 	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusenu_5TeV_test1_Unfolded}} \\
 	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusenu_13TeV_test1_Unfolded}}
 	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusenu_13TeV_test1_Unfolded}}
-	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 TeV (c,d) in the electron channel at the unfolded level}
+	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 TeV (c,d) in the electron channel at the unfolded level.}
 	\label{fig:unf_sys_bkd_elec}
 \end{figure}
 
@@ -105,7 +103,7 @@ The scale and hierarchy of uncertainties are preserved at the unfolded level.
 	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusmunu_5TeV_test1}} \\
 	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusmunu_13TeV_test1}}
 	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusmunu_13TeV_test1}}
-	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 (c,d) TeV in the muon channel at the reconstructed level}
+	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 (c,d) TeV in the muon channel at the reconstructed level.}
 	\label{fig:reco_sys_bkd_muons}
 \end{figure}
 
@@ -115,7 +113,7 @@ The scale and hierarchy of uncertainties are preserved at the unfolded level.
 	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusmunu_5TeV_test1_Unfolded}} \\
 	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusmunu_13TeV_test1_Unfolded}}
 	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusmunu_13TeV_test1_Unfolded}}
-	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 TeV (c,d) in the muon channel at the unfolded level}
+	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 TeV (c,d) in the muon channel at the unfolded level.}
 	\label{fig:unf_sys_bkd_muons}
 \end{figure}
 \clearpage
@@ -133,7 +131,7 @@ The results are presented on fig~\ref{fig:BiasResultLargeBins} for 5~GeV bins an
 	{\includegraphics[width=.49\textwidth]{bias_sqrts5_iter3_Wplusenu_fileJan_largebins.pdf}}\\
 	{\includegraphics[width=.49\textwidth]{bias_sqrts13_iter3_Wminusenu_fileJan_largebins.pdf}}
 	{\includegraphics[width=.49\textwidth]{bias_sqrts13_iter3_Wplusenu_fileJan_largebins.pdf}}
-	\caption{Unfolding bias on \ptw\ in the electron channel after 3 iterations, for $W^-$ (left) and $W^+$ (right), at 5~TeV (top) and 13~TeV (bottom).}
+	\caption{Unfolding bias on \ptw\ in the electron channel after 3 iterations, for $W^-$ (left) and $W^+$ (right), at 5~TeV (top) and 13~TeV (bottom)~\cite{int_note_1}.}
 	\label{fig:BiasResultLargeBins}
 \end{figure}
 \clearpage
@@ -147,20 +145,20 @@ The predicions are generated using Powheg AZNLO, Pythia AZ, Sherpa and DYRES. Po
 
 \begin{figure}[h]
 	\centering
-	{\includegraphics[width=.49\textwidth]{ratio_predictions_Wminusenu_5.pdf}}
-	{\includegraphics[width=.49\textwidth]{ratio_predictions_Wplusenu_5.pdf}} \\
-	{\includegraphics[width=.49\textwidth]{ratio_predictions_Wminusenu_13.pdf}}
-	{\includegraphics[width=.49\textwidth]{ratio_predictions_Wplusenu_13.pdf}}
+	{\includegraphics[width=.49\textwidth]{pt_unfolded_Wminusenu5TeV.pdf}}
+	{\includegraphics[width=.49\textwidth]{pt_unfolded_Wplusenu5TeV.pdf}} \\
+	{\includegraphics[width=.49\textwidth]{pt_unfolded_Wminusenu13TeV.pdf}}
+	{\includegraphics[width=.49\textwidth]{pt_unfolded_Wplusenu13TeV.pdf}}
 	\caption{Unfolded measurement results in the $W^-$ (left) and $W^+$ (right) electron channels, at 5~TeV (top) and 13~TeV (bottom).}
 	\label{fig:results_predictions_elec}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	{\includegraphics[width=.49\textwidth]{ratio_predictions_Wminusenu_5.pdf}}
-	{\includegraphics[width=.49\textwidth]{ratio_predictions_Wplusenu_5.pdf}} \\
-	{\includegraphics[width=.49\textwidth]{ratio_predictions_Wminusenu_13.pdf}}
-	{\includegraphics[width=.49\textwidth]{ratio_predictions_Wplusenu_13.pdf}}
+	{\includegraphics[width=.49\textwidth]{pt_unfolded_Wminusmunu5TeV.pdf}}
+{\includegraphics[width=.49\textwidth]{pt_unfolded_Wplusmunu5TeV.pdf}} \\
+{\includegraphics[width=.49\textwidth]{pt_unfolded_Wminusmunu13TeV.pdf}}
+{\includegraphics[width=.49\textwidth]{pt_unfolded_Wplusmunu13TeV.pdf}}
 	\caption{Unfolded measurement results in the $W^-$ (left) and $W^+$ (right) muon channels, at 5~TeV (top) and 13~TeV (bottom).}
 	\label{fig:results_predictions_muon}
 \end{figure}
