@@ -1,2 +1,22 @@
-\section{Conclusion}
-\lipsum[1-2]
+\chapter{Summary}
+This thesis presents author's contributions to the ATLAS experiment combined performance and to the measurement of the W boson transverse momentum distribution.  In this small chapter I have summarized the main conclusions of my work. 
+
+The correction of the electromagnetic shower shapes presented in Chapter 5 can be summarized in the following way:
+\begin{itemize}
+	\item As it was expected, the correction has a positive effect on the the efficiencies (see Fig. \ref{fig::SF}).
+	\item In the end-cap the correction of efficiency reaches 1-3\%, in the barrel the change is smaller. This reflects the fact that the MVA algorithm that makes the ID decision is more sensitive to the shower shapes in the end-cap region, while in the barrel it relies more on the other inputs. 
+	\item The proposed algorithm was adopted as baseline for the official data analysis framework of the ATLAS experiment.
+	\item The correction is introduced on the cell level, which makes it also useful for alternative electron identification algorithms that rely directly on the cell energies rather than on the shower shapes.
+\end{itemize}
+The measurement of the W boson transverse momentum spectrum has lead to a number of results:
+\begin{itemize}
+	\item At $\sqrt{s}=5$ TeV the obtained results demonstrate fair agreement with the \Powheg+\Pythia AZ simulation, tuned at 7 TeV data. At $\sqrt{s}=13$ TeV a significant discrepancy with the \Powheg+\Pythia AZ tune predictions is observed and none of the tested MC generators are able to demonstrate agreement with the data.
+	\item Target precision of 1\% in every bin is achieved.
+	\item The obtained direct measurement of the W boson transverse momentum would allow to reduce the theoretical modelling uncertainty for the W boson mass measurement.
+\end{itemize}
+Using the DNN algorithm for the hadronic recoil reconstruction also allows to make some conclusions:
+\begin{itemize}
+	\item The application of deep learning methods is justified and improves the hadronic recoil resolution.
+	\item The regression turns out to be channel-independent and demonstrates similar performance for different Z and W channels, both in MC simulation and in the data.
+	\item The hadronic recoil reconstructed with the DNNs demonstrates better sensitivity to the W boson mass.
+\end{itemize}

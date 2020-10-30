@@ -1,6 +1,7 @@
 \chapter{Hadronic recoil regression with deep neural networks}
+In the recent years a significant progress was achieved in the field of big datasets analysis. The multivariant analysis techniques, given enough input data, are able to infer very complicated dependencies between the input and target variables. This has motivated me to use deep neural network (DNN) for the regression of the 2-component hadronic recoil vector.
 
-In the recent years a significant progress was achieved in the field of big datasets analysis. There is a number of principles available for solving a wide variety of tasks. In this thesis a deep neural network (DNN) was used for the regression of the 2-component hadronic recoil vector.
+The chapter opens with a theoretical introduction into the underlying principles of the feedforward neural networks used in the analysis. It is followed by the description of the network setup: inputs, hyperparameters and the training process. The results of the regression are benchmarked and discussed in the end of this chapter. The resulting plots for all the W channels are collected in Appendix B. 
 \section{Deep neural networks}
 Normally a machine learning problem has a number of ingredients: a dataset \textbf{X}, a set of parameters \textbf{$\theta$}, a model  $g(\theta)$ and a loss function $C(\textbf{X})$ that tells us how well the model $g(\textbf{\theta})$ describes the dataset. Finding the values of \textbf{$\theta$} that would minimize the loss function we fit the model.
 \subsection{Gradient descent optimization}
@@ -16,7 +17,8 @@ v_t=\eta_t\nabla_{\theta}E(\theta_t),\\
 \theta_{t+1}=\theta_t-v_t,
 \end{array} 
 \end{equation}
-where $\nabla_{\theta}E(\theta_t)$ is the gradient of $E(\theta)$ with respect to $\theta$; factor $\eta_t$ is called the \textit{learning rate} and defines the length of the step in the direction of $\theta$ performed with every iteration. Balancing learning rate is very important for learning process and convergence. A value too low can make the convergence "stuck" in a local minimum, it also increases the number of iterations. Picking a very high learning rate we risk to miss the minimum so the algorithm would never converge to a minimum. Also, if the number of data points $n$ is high, calculating the gradient is a costly task in terms of CPU time. \\
+where $\nabla_{\theta}E(\theta_t)$ is the gradient of $E(\theta)$ with respect to $\theta$; factor $\eta_t$ is called the \textit{learning rate} and defines the length of the step in the direction of $\theta$ performed with every iteration. Balancing learning rate is very important for learning process and convergence. A value too low can make the convergence "stuck" in a local minimum, it also increases the number of iterations. Picking a very high learning rate we risk to miss the minimum so the algorithm would never converge to a minimum. Also, if the number of data points $n$ is high, calculating the gradient is a costly task in terms of CPU time. 
+
 Some of the problems accompanying the use of \gls{gd} are dealt with by using its modification - the \gls{sgd}. The idea is the following: instead of using all the available data points $n$ at each iteration of the \gls{gd}, we split the data into $k$ \textit{minibatches}, each having $M$ data points, such that $k = n/M$. Normally the size of the batch is ~few hundreds of data points, to provide a certain degree of variance and incorporating stochasticity. The transition to \gls{sgd} algorithm is done in the following way:
 \begin{equation}
 \nabla_{\theta}E(\theta) = \sum^n_{i=1} \nabla_{\theta}e_i(x_i,\theta) \rightarrow \sum_{i \in B_l} \nabla_{\theta}e_i(x_i,\theta),
@@ -29,7 +31,8 @@ v_t=\eta_t\nabla_{\theta}E^{EM}(\theta_t),\\
 \theta_{t+1}=\theta_t-v_t.
 \end{array} 
 \end{equation}
-A full iteration over all the $n/M$ batches is called an \textit{epoch}. Now stochasticity prevents the gradient algorithm from getting stuck in a local minimum. Also computing the gradient over fewer data point notably decreases the CPU time spent. \\
+A full iteration over all the $n/M$ batches is called an \textit{epoch}. Now stochasticity prevents the gradient algorithm from getting stuck in a local minimum. Also computing the gradient over fewer data point notably decreases the CPU time spent. 
+
 The algorithm may be further improved, adding a "memory", that is to say making every next step $t$ dependent on the direction of the previous step $t-1$:
 \begin{equation}
 \begin{array}{lcl} 
@@ -37,8 +40,9 @@ v_t=\gamma v_{t-1}\eta_t\nabla_{\theta}E^{EM}(\theta_t),\\
 \theta_{t+1}=\theta_t-v_t.
 \end{array} 
 \end{equation}
-Because of an analogy from physics the parameter $\gamma$ is called a \textit{momentum}, having $0\le\gamma \le 1$ \cite{grad_momentum1}, \cite{grad_momentum2}. This parameter provides a certain "inertia" in the change of the direction of the gradient descent. Introduction of the momentum helps for quicker convergence in the case of a slow but steady change of a certain parameter during the gradient descent.\\
-The convergence of the \gls{gd} may be significantly improved if the learning rate could be different in different directions, depending on the landscape of the parameter space $\theta$: the steeper the gradient in a certain direction - the smaller the corresponding step. The optimal step could be estimated by obtaining the \textit{Hessian matrix} in the vicinity of a point $\theta_0$, providing a description of the local curvature in a multidimensional space. Although calculating Hessian matrix is complicated and slow-converging process \cite{LeCun1998}. However, a number of methods use the second moment of the gradient to efficiently estimate the optimal learning rate. One of such methods is called ADAM (ADAptive Momentum) \cite{kingma2014method}, its iterative relations are the following:
+Because of an analogy from physics the parameter $\gamma$ is called a \textit{momentum}, having $0\le\gamma \le 1$ \cite{grad_momentum1}, \cite{grad_momentum2}. This parameter provides a certain "inertia" in the change of the direction of the gradient descent. Introduction of the momentum helps for quicker convergence in the case of a slow but steady change of a certain parameter during the gradient descent.
+
+The convergence of the \gls{gd} may be significantly improved if the learning rate could be different in different directions, depending on the landscape of the parameter space $\theta$: the steeper the gradient in a certain direction - the smaller the corresponding step. The optimal step could be estimated by obtaining the \textit{Hessian matrix} in the vicinity of a point $\theta_0$, providing a description of the local curvature in a multidimensional space (although calculating Hessian matrix is complicated and slow-converging process \cite{LeCun1998}). However, a number of methods use the second moment of the gradient to efficiently estimate the optimal learning rate. One of such methods is called ADAM (ADAptive Momentum) \cite{kingma2014method}, its iterative relations are the following:
 \begin{equation}
 \begin{array}{lcl} 
 g_t=\nabla_{\theta}E(\theta_t)\\
@@ -60,8 +64,10 @@ where $\textbf{w}^i=(w^i_1,w^i_2,...,w^i_k)$ is a set of $k$ weights assigned to
 \begin{equation}
 a_i(\textbf{x})=\sigma_i(z^{i}).
 \end{equation}
-There exists a number of options for the non-linear function $\sigma$; in current thesis a $\tanh$ is used. When the neurons are arranged in layers in a feed-forward neural network - the outputs from neurons of the previous layer serve as inputs for the succeeding layers neurons. The universal approximation theorem states, that a neural network with a single hidden layer can approximate any continuous multiparametric function with arbitrary accuracy \cite{Kurt1991251}, \cite{Cybenko1989}. However, in practice it is easier to reach the possible precision having more hidden layers. \\
-So in terms of a \gls{dnn} fitting the model means tuning the weights and biases $(\textbf{w}^i,b^i)$ in such a way that a loss function applied to the new dataset would be minimal. It is reached through iterative process called \textit{training}, that involves the \gls{gd} with an algorithm called \textit{backpropagation} \cite{RumelhartZipser:86}. The backpropagation algorithm allows to calculate the gradients and adjust the corresponding parameters in a very computation-efficient way. \\
+There exists a number of options for the non-linear function $\sigma$; in current thesis a $\tanh$ is used. When the neurons are arranged in layers in a feed-forward neural network - the outputs from neurons of the previous layer serve as inputs for the succeeding layers neurons. The universal approximation theorem states, that a neural network with a single hidden layer can approximate any continuous multi-parametric function with arbitrary accuracy \cite{Kurt1991251}, \cite{Cybenko1989}. However, in practice it is easier to reach the possible precision having more hidden layers. 
+
+So in terms of a \gls{dnn} fitting the model means tuning the weights and biases $(\textbf{w}^i,b^i)$ in such a way that a loss function applied to the new dataset would be minimal. It is reached through iterative process called \textit{training}, that involves the \gls{gd} with an algorithm called \textit{backpropagation} \cite{RumelhartZipser:86}. The backpropagation algorithm allows to calculate the gradients and adjust the corresponding parameters in a very computation-efficient way. 
+
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.5\textwidth,keepaspectratio]{dnn.png}
@@ -111,7 +117,7 @@ Batch normalization is a regularization scheme that helps to improve the speed a
 \label{eq::bn1}
 \hat{x}^k=\frac{x^k-E[x^k]}{\sqrt{Var[x^k]}},
 \end{equation}
-where $E[x^k]$ and $Var[x^k]$ are the expectation and variance of the parameter $x$, calculated over the training dataset, respectively. Although we have to be sure that we preserve the non-linearity of the activation function output. In order to do this the two additional parameters are introduced:
+where $E[x^k]$ and $Var[x^k]$ are the expectation and variance of the parameter $x$, calculated over the training dataset, respectively. At the same time, we have to be sure that we preserve the non-linearity of the activation function output. In order to do this the two additional parameters are introduced:
 \begin{equation}
 \label{eq::bn2}
 y^k=\gamma  \hat{x}^k + \beta^k ,
@@ -130,7 +136,7 @@ where $\epsilon$ is a small regularization constant.
 \section{HR regression}
 Considering that hadronic recoil is an observable that uses many inputs from \gls{id}, \gls{emc} and \gls{hc} it is reasonable to expect improvement of the result using modern \gls{mva} techniques. 
 \subsection{Input features and model}
- Training, testing and validation was performed using a simulated MC sample $W^+\rightarrow\mu\nu$ at 13 TeV, following the selection presented in Section \ref{sec:samples_selection}. From the 3625136 events that have passed the selection 12 734 109 were used for training and 3 034 130 for testing the performance. 
+ Training, testing and validation was performed using a simulated MC sample $W^+\rightarrow\mu\nu$ at 13 TeV, following the selection presented in Section \ref{sec:samples_selection}. Out of 15 768 239 events that have passed the selection 12 734 109 were used for training and 3 034 130 for testing the performance. 
  Below is the list of 38 input features: 
  \begin{itemize}
  \item \textbf{Vector sums} of charged \gls{pfos}, neutral \gls{pfos} (see Section \ref{sec:pfo}) and the vector sum of both. All three vector sums are included into the input features having two Cartesian components each, making 6 input features. 
@@ -150,7 +156,8 @@ The model contains 3 dense layers with 256 neurons each, alternated with batch n
 	\caption{A model of the \gls{dnn} used in the analysis. }
 	\label{fig::nnmodel}
 \end{figure}
-The model has used Adam optimizer with learning step $0.001$ and batch size of $4000$ data points. Twenty percent of events were used for validation. The two target values were Cartesian components of the truth $p_T^W$ vector. \\
+The model has used Adam optimizer with learning step $0.001$ and batch size of $4000$ data points. Twenty percent of events were used for validation. The two target values were Cartesian components of the truth $p_T^W$ vector. 
+
 The loss function used is the mean square error, which means that for every batch of size $B$ the loss is defined as:
 \begin{equation}
  \mathcal{L}=\sum_{i=1}^B(x_i^{pred}-x_i^{target})^2,
@@ -167,9 +174,12 @@ Figure \ref{fig::nntraining} shows dependence of loss on training epochs. Eventu
 	\label{fig::nntraining}
 \end{figure}
 \subsection{Kinematic distributions} 
-The results presented here show the regression plots obtained with the trained DNN. The regression was tested for the four W channels in MC and for the two Z channels in both data and MC. Below the plots for $W^-\rightarrow \mu \nu$ channel are presented, the rest of the results are presented in Appendix B.\\
-In Figure \ref{fig:mva_deltas} the difference between the reconstructed hadronic recoil and truth distributions (targets) are shown. For the two target components $u_X$ and $u_Y$ a sharper peak centred at zero is observed in the MVA-reconstructed recoil comparing to the standard algorithm. Similar comparison is shown in Fig. \ref{mva_deltas_polar} for HR vector components in polar coordinates. The polar angle $u_{\phi}$ of the HR vector shows a very small, nearly negligible improvement from the MVA. The $u_T$ vector magnitude demonstrates a shift from zero for the $u_T^{MVA}$, indicating a bias. Figure \ref{fig:mva_upar_pT} shows that the MVA-reconstructed recoil has a softer spectrum comparing to both $p_T^{truth}$ and standard recoil spectra.\\
-The bias is shown in Fig. \ref{mva_bias_uperp} together with the $u_{perp}$ component. Indeed the $u_T^{MVA}$ demonstrates a larger bias as compared to the standard algorithm. At the same time the standard deviation of the $u_{\perp}$ component indicates an improvement in the resolution.\\
+The results presented here show the regression plots obtained with the trained DNN. The regression was tested for the four W channels in MC and for the two Z channels in both data and MC. Below the plots for $W^-\rightarrow \mu \nu$ channel are presented, the rest of the results are presented in Appendix B.
+
+In Figure \ref{fig:mva_deltas} the difference between the reconstructed hadronic recoil and truth distributions (targets) are shown. For the two target components $u_X$ and $u_Y$ a sharper peak centred at zero is observed in the MVA-reconstructed recoil comparing to the standard algorithm. Similar comparison is shown in Fig. \ref{fig:mva_deltas_polar} for HR vector components in polar coordinates. The polar angle $u_{\phi}$ of the HR vector shows a very small, nearly negligible improvement from the MVA. The $u_T$ vector magnitude demonstrates a shift from zero for the $u_T^{MVA}$, indicating a bias. Figure \ref{fig:mva_upar_pT} shows that the MVA-reconstructed recoil has a softer spectrum comparing to both $p_T^{truth}$ and standard recoil spectra.
+
+The bias is shown in Fig. \ref{fig:mva_bias_uperp} together with the $u_{perp}$ component. Indeed the $u_T^{MVA}$ demonstrates a larger bias as compared to the standard algorithm. At the same time the standard deviation of the $u_{\perp}$ component indicates an improvement in the resolution.
+
 	\begin{figure}[tph]
 	\centering
 	\includegraphics[width=.49\textwidth]{histosDeltaUxminusmunu}%
@@ -220,9 +230,85 @@ The same neural network was applied for the HR regression for both Z channels, f
 	\includegraphics[width=.49\textwidth]{histosUperpRelativezeedata}
 	\includegraphics[width=.49\textwidth]{histosUperpRelativezmumumc}%
 	\includegraphics[width=.49\textwidth]{histosUperpRelativezmumudata}
-	\caption{}
+	\caption{Relative resolution for Z channels in MC (left) and in data (right).}
 	\label{fig:mva_Zbenchmark}
 \end{figure}
+\clearpage
+\section{Rescaling of the MVA hadronic recoil }
+As we can see from the pT plot the average scale of the MVA-reconstructed hadronic recoil is smaller than that of the nominal hadronic recoil. This leads to an increased bias. Using the $u_{\parallel}-p_T$ dependence we can rescale the MVA hadronic recoil to match the nominal recoil scale. 
 
-\section{Conclusions}
-The application of contemporary analysis methods like the regression using DNNs shows a promising potential for improving the measurements precision. 
+	\begin{figure}[tph]
+	\centering
+	\includegraphics[width=.49\textwidth]{Scaled/hist_uXplusmunu.pdf}%
+	\includegraphics[width=.49\textwidth]{Scaled/hist_uYplusmunu.pdf}
+	\includegraphics[width=.49\textwidth]{Scaled/hist_uTplusmunu.pdf}%
+	\includegraphics[width=.49\textwidth]{Scaled/outMVA_Uparplusmunu.pdf}
+	\caption{The target distributions $u_x$ and $u_y$ (top plots). Bottom plots show th uT spectra (left) and $u_{\parallel}$ distributions (right).}
+	\label{fig:mva_scaled_xy}
+\end{figure}
+\begin{figure}[tph]
+		\centering
+		\includegraphics[width=.49\textwidth]{Scaled/histosDeltaUxplusmunu.pdf}%
+		\includegraphics[width=.49\textwidth]{Scaled/histosDeltaUyplusmunu.pdf}
+		\includegraphics[width=.49\textwidth]{Scaled/histosDeltaUtplusmunu.pdf}%
+		\includegraphics[width=.49\textwidth]{Scaled/outMVA_biasplusmunu.pdf}
+		\caption{Difference plots between the target and truth values.}
+		\label{fig:mva_scaled_deltas}
+\end{figure}
+
+\begin{figure}[tph]
+	\centering
+	\includegraphics[width=.49\textwidth]{Scaled/histosMeanUparplusmunu.pdf}%
+	\includegraphics[width=.49\textwidth]{Scaled/histosSigmaUperpplusmunu.pdf}
+	\includegraphics[width=.49\textwidth]{Scaled/histosMeanBiasplusmunu.pdf}%
+	\includegraphics[width=.49\textwidth]{Scaled/histosUperpRelativeplusmunu.pdf}
+	\caption{Bias, $u_{\parallel}$, $\sigma(u_{\perp})$ and $\sigma(u_{\perp})/<u_T>$ dependencies on the $p_T^{truth}$.}
+	\label{fig:mva_scaled_mean}
+\end{figure}
+The plots demonstrate that rescaling of the MVA-derived hadronic recoil makes the average bias roughly the same as in the nominal hadronic recoil. At the same time the relative resolution retains the improvement seen in the non-scaled MVA hadronic recoil.
+\clearpage
+\section{Template fits for W boson mass}
+A way to estimate the improvement is to test if the new hadronic recoil definition results in the improved sensitivity for the W boson mass. In order to do this a set of templates is produced where the mass of the W boson is shifted from its nominal value. The kinematic distributions are reweighted to reflect the shift of the W mass. 
+Every template is compared to the nominal distribution using the $\chi^2$ test. The more sensitive is the observable to the $m^W$ change - the larger is the $\chi^2$ value of the corresponding template. The procedure is described in detail in the W mass paper internal note~\cite{Wmass7TeVIntNote}. In Fig. \ref{fig:chi2_parabola} an example of the $\chi^2$ parabola fit is demonstrated. The MVA-derived hadronic recoil shows a considerably higher sensitivity to the W boson mass shift. 
+\begin{figure}[tph]
+	\centering
+	\includegraphics[width=0.8\textwidth]{met_mass_plusmunu_cut7.pdf}
+	\caption{An example of a $\chi^2$ fit of the $E_T^{miss}$ distribution templates for the three hadronic recoil definitions.}
+	\label{fig:chi2_parabola}
+\end{figure}
+
+The next step is to produce bootstrap toys in order to estimate the statistical uncertainty of the W mass fits and the correlation between the observables. For every HR definition a set of 1000 toys has been generated. Every toy is fitted using the generated templates, providing a value for the W mass. Putting these values onto a 2D scatter plot allows to estimate the correlation. The standard deviation of the distributions provides the statistical uncertainty.
+
+\begin{figure}[tph]
+	\centering
+	\includegraphics[width=.33\textwidth]{Scaled/Nominal_HR_plT_vs_mT.pdf}%
+	\includegraphics[width=.33\textwidth]{Scaled/MVA_HR_plT_vs_mT.pdf}
+	\includegraphics[width=.33\textwidth]{Scaled/MVA_scaled_HR_plT_vs_mT.pdf}
+	\includegraphics[width=.33\textwidth]{Scaled/Nominal_HR_met_vs_mT.pdf}%
+	\includegraphics[width=.33\textwidth]{Scaled/MVA_HR_met_vs_mT.pdf}
+	\includegraphics[width=.33\textwidth]{Scaled/MVA_scaled_HR_met_vs_mT.pdf}
+	\includegraphics[width=.33\textwidth]{Scaled/Nominal_HR_met_vs_lpT.pdf}%
+	\includegraphics[width=.33\textwidth]{Scaled/MVA_HR_met_vs_lpT.pdf}
+	\includegraphics[width=.33\textwidth]{Scaled/MVA_scaled_HR_met_vs_lpT.pdf}
+	\caption{Scatter plots that illustrate the correlation between the observables for the three hadronic recoil definitions: Nominal (left column), MVA (central column) and scaled MVA (right column).}
+	\label{fig:mva_scatter}
+\end{figure}
+
+Here we see that the smaller scale of the MVA hadronic recoil increases the correlation between the observables. On the other hand the transverse mass and missing transverse energy uncertainties are smaller in the MVA case.
+
+\begin{table}
+	\centering
+	\begin{tabular}{|c| c| c| c|}
+		\hline
+		Stat. uncertainty, [MeV] & $m_T$ & $E_T^{miss}$  & $p_T^{l}$ \\
+		\hline
+		Nominal & 4.54 &  8.76 & 5.44\\
+		\hline
+		MVA & 4.15 & 5.3 & 5.43\\
+		\hline
+		Scaled MVA & 4.52 & 7.88 & 5.41 \\
+		\hline
+	\end{tabular}\\
+	\caption{Estimate of the Z vertex reweighting effect on the W boson mass.}
+	\label{tab::mva_template}
+\end{table}

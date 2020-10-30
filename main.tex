@@ -8,7 +8,7 @@
 %\DeclareLanguageMapping{}{english}
 \DeclareLanguageMapping{frenchb}{english}
 
-\graphicspath{{Front-back_covers/images/}}
+\graphicspath{{Saclay_cover/}}
 \usetikzlibrary{calc}
 %\usepackage[backend=bibtex,style=verbose-trad2]{biblatex}
 \usepackage{luacode}
@@ -33,15 +33,33 @@
 %\usepackage{latex/atlashepparticle}
 \usepackage{latex/atlasmisc}
 \makeglossaries
-\graphicspath{{Chapitre_1/pictures/}{Chapitre_2/pictures/}{Chapitre_3/pictures/}{Chapitre_4/pictures/}{Chapitre_5/pictures/}{Chapitre_6/pictures/}{Chapitre_7/pictures/}{Chapitre_8/pictures/}{Chapitre_9/pictures/}{Chapitre_10/pictures/}{Appendix_A/pictures/}{Appendix_B/pictures/}{Front-back_covers/images/}}
+\graphicspath{{Chapitre_1/pictures/}{Chapitre_2/pictures/}{Chapitre_3/pictures/}{Chapitre_4/pictures/}{Chapitre_5/pictures/}{Chapitre_6/pictures/}{Chapitre_7/pictures/}{Chapitre_8/pictures/}{Chapitre_9/pictures/}{Chapitre_10/pictures/}{Appendix_A/pictures/}{Appendix_B/pictures/}{Front-back_covers/images/}{Saclay_cover/}}
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{amsmath}
+  \usepackage{amsfonts}
+  \usepackage{fancyhdr}
+  \usepackage{amssymb}
+  \usepackage{color} % où xcolor selon l'installation
+  \definecolor{Prune}{RGB}{99,0,60}
+  \usepackage{mdframed}
+  \usepackage{multirow} %% Pour mettre un texte sur plusieurs rangées
+  \usepackage{multicol} %% Pour mettre un texte sur plusieurs colonnes
+  \usepackage{scrextend} %Forcer la 4eme  de couverture en page pair
+  \usepackage{tikz}
+  \usepackage{graphicx}
+  \usepackage[absolute]{textpos} 
+  \usepackage{colortbl}
+  \usepackage{array}
+%  \usepackage[numbers,sort&compress]{biblatex}
   
 \begin{document} 
 %\layout
-\input{Front-back_covers/Front-back_covers}
+\input{Saclay_cover/Modele_These_UParisSaclay_2020}
 %\newgeometry{twoside}
 %\newpage
 %\thispagestyle{empty}
@@ -49,22 +67,21 @@
 \end{tikzpicture}
 %\newpage
 
-\pagestyle{myheadings}
+%\pagestyle{myheadings}
 \markright{} 
 
 %\setcounter{chapter}{0}             % to start with the chapter no 1 
 %\setcounter{page}{1}                % to start with the page number 
 %\setcounter{figure}{0}              % to start the numbering of figures 
 
-%\input{introduction/introduction}
+\input{introduction/introduction}
 %\newpage
 
 
 
 \tableofcontents*
 \printglossaries
-\listoffigures*
-\listoftables*
+
 \mainmatter
 \normalsize 
 
@@ -72,41 +89,41 @@
 \newpage
 \thispagestyle{empty}
 \pagestyle{myheadings} % All pages have headers and footers
-\input{introduction/introduction.tex}
-\printbibliography
 \input{Chapitre_1/Chapitre_1.tex}
-\printbibliography
-\newpage
+%\printbibliography
 \input{Chapitre_2/Chapitre_2.tex}
-\printbibliography
-\newpage
+%\printbibliography
 \input{Chapitre_3/Chapitre_3.tex}
-\printbibliography
-\newpage
+%\printbibliography
 \input{Chapitre_4/Chapitre_4.tex}
-\printbibliography
-\newpage
+%\printbibliography
 \input{Chapitre_5/Chapitre_5.tex}
-\printbibliography
-\newpage
+%\printbibliography
 \input{Chapitre_6/Chapitre_6.tex}
-\printbibliography
-\newpage
+%\printbibliography
 \input{Chapitre_7/Chapitre_7.tex}
-\printbibliography
-\newpage
+%\printbibliography
+
 \input{Chapitre_8/Chapitre_8.tex}
-\printbibliography
-\newpage
+%\printbibliography
+
 \input{Chapitre_9/Chapitre_9.tex}
-\printbibliography
-\newpage
+%\printbibliography
+
 \input{Chapitre_10/Chapitre_10.tex}
+%\printbibliography
+
+\input{conclusion/conclusion.tex}
+
+\clearpage
+
 \printbibliography
-\newpage
+
 %\backmatter
 %\input{conclusion/conclusion.tex}
 \input{Appendix_A/Appendix_A.tex}
 \input{Appendix_B/Appendix_B.tex}
-%\printbibliography
+\clearpage
+\listoffigures*
+\listoftables*
 \end{document}

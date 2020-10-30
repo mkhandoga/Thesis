@@ -1,5 +1,5 @@
 \chapter{W boson pT spectrum}
-
+The final result would require to unfold the hadronic recoil distribution. The unfolding procedure, corresponding uncertainties and the final result are discussed in this chapter. A comparison of the measured underlying spectrum with a number of Monte-Carlo generators is provided. 
 \section{Unfolding}
 The measured W $p_T$ spectrum is subject to various detector effects (finite resolution and acceptance, reconstruction efficiency, etc.) that distort the true underlying spectrum. Mathematically, the unfolding problem is an integral equation of the following form:
 \begin{equation}
@@ -9,13 +9,15 @@ where we seek the function $f(x)$ assuming that $g(y)$ and the kernel $K(x,y)$ a
 \begin{equation}
 \sum_{i} \textbf{R}_{ij}\cdot \textbf{T}_i + \textbf{B}_j = \textbf{D}_j,
 \end{equation}
-with $\textbf{D}$, $\textbf{T}$ and $\textbf{B}$ being vectors that represent detector-level (measured), truth and background distributions respectively; each vector has $n$ components that represent the bins in the corresponding distribution. The response matrix $\textbf{R}$ represents bin-to-bin migrations caused by the detector effects. \\
+with $\textbf{D}$, $\textbf{T}$ and $\textbf{B}$ being vectors that represent detector-level (measured), truth and background distributions respectively; each vector has $n$ components that represent the bins in the corresponding distribution. The response matrix $\textbf{R}$ represents bin-to-bin migrations caused by the detector effects. 
+
 The response matrix is usually obtained through \gls{mc} simulation, along with the corrections for the fiducial volume acceptance and selection efficiency. Each event is simulated on the truth and reconstructed levels, this means that element $R_{il}$ of the migration matrix contains events that pass both reconstruction and truth cuts (R\&T) and would go to bin $i$ of the truth distribution and to bin $j$ of the reconstructed distribution. Detector acceptance for bin $i$ is defined as the ratio $A_i=\sum_j R{ij}/T_i$. Similarly the reconstruction efficiency for bin $j$ is defined as the ratio $\epsilon_j=\sum_i R{ij}/D_j$.
 The underlying distribution estimate is presented in the following way:
 \begin{equation}
 \sum_{i} \textbf{V}_{ij}\cdot (\textbf{D}_i - \textbf{B}_i) = \textbf{U}_j,
 \end{equation}
- where $U$ vector provides the underlying distribution estimate and $V$ is the unfolding transformation matrix.\\
+ where $U$ vector provides the underlying distribution estimate and $V$ is the unfolding transformation matrix.
+ 
  There exist a diverse variety of methods to obtain the unfolding transformation. In the current analysis a Bayesian iterative method is used \cite{unfolding1}, \cite{unfolding2}. The method allows to obtain the unfolding transformation provided that the response matrix, acceptance and efficiency corrections are known and the number of iterations is given. The number of iterations as well as the unfolded distribution binning are adjusted in order to minimize the unfolding bias and keep the uncertainty below the designated level. 
 
 \begin{figure}[htpb]
@@ -25,18 +27,48 @@ The underlying distribution estimate is presented in the following way:
 	\label{fig::unfolding}
 \end{figure}
 
+The MC simulation of the detector response models the efficiency and fake rate, as well as the correspondence between the truth and the measured W transverse momentum. Here efficiency stands for the fraction of events that pass the truth cuts, but do not pass the reconstructed level cuts. Fake rate stands for the events that pass the reconstructed level cuts, but do not pass the truth cuts. The examples of such distributions are provided on Fig. \ref{fig:unfolding_parameters}.
+
+
+     \begin{figure}[pt]
+  \subfloat[a]{\includegraphics[width=.49\textwidth]{Unfolding_plots/UnfFakes_plusenu5TeV.pdf}}
+   \subfloat[b]{\includegraphics[width=.49\textwidth]{Unfolding_plots/UnfFakes_plusenu13TeV.pdf}}
+   \subfloat[c]{\includegraphics[width=.49\textwidth]{Unfolding_plots/UnfEfficiency_plusenu5TeV.pdf}} 
+   \subfloat[d]{\includegraphics[width=.49\textwidth]{Unfolding_plots/UnfEfficiency_plusenu13TeV.pdf}} 
+   \subfloat[e]{\includegraphics[width=.49\textwidth]{Unfolding_plots/RespMatrix_plusenu5TeV.pdf}}
+   \subfloat[f]{\includegraphics[width=.49\textwidth]{Unfolding_plots/RespMatrix_plusenu13TeV.pdf}}
+	\caption{Distributions for the $W\rightarrow e\nu$ channel at 5 TeV (left) and 13 TeV (right). Fake rates are presented in subplots [a] and [b], efficiencies - in [c] and [d]. The two bottom plots contain the response matrices.}
+	\label{fig:unfolding_parameters}
+\end{figure}
+
+     \begin{figure}[pt]
+	\subfloat[a]{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_plusenu_5TeV_log_norm_3iter_closure.pdf}}
+	\subfloat[b]{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_minusenu_5TeV_log_norm_3iter_closure.pdf}}
+	\subfloat[c]{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_plusmunu_5TeV_log_norm_3iter_closure.pdf}} 
+	\subfloat[d]{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_minusmunu_5TeV_log_norm_3iter_closure.pdf}} 
+	\caption{The technical closure of the unfolding procedure is demonstrated at 5 TeV for all the channels.}
+	\label{fig:closure_plots_5Tev}
+\end{figure}
+     \begin{figure}[pt]
+	\subfloat[a]{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_plusenu_13TeV_log_norm_3iter_closure.pdf}}
+	\subfloat[b]{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_minusenu_13TeV_log_norm_3iter_closure.pdf}}
+	\subfloat[c]{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_plusmunu_13TeV_log_norm_3iter_closure.pdf}} 
+	\subfloat[d]{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_minusmunu_13TeV_log_norm_3iter_closure.pdf}} 
+	\caption{The technical closure of the unfolding procedure is demonstrated at 13 TeV for all the channels.}
+	\label{fig:closure_plots_13TeV}
+\end{figure}
 \section{Propagation of uncertainties}
-The detector-level uncertainties breakdown for the \pt distribution are presented here. Uncertainties breakdown for the rest of the observables are listed in Appendix A. \\
-These uncertainties now have to be propagated to the unfolded level. 
+The detector-level uncertainties breakdown for the \pt distribution are presented here. Uncertainties breakdown for the rest of the observables are listed in Appendix A. These uncertainties now have to be propagated to the unfolded level. 
 \subsection{Statistical uncertainty propagation using Bootstrap method}
-Bootstrap is a computer-based method of dataset parameters estimate and propagation using the analysis distribution resampling. In particular bootstraping is used for the propagation of statistical uncertainties. \\
+Bootstrap is a computer-based method of dataset parameters estimate and propagation using the analysis distribution resampling. In particular bootstraping is used for the propagation of statistical uncertainties. 
+
 Both data and MC-simulated datasets have limited number of events, hence the statistical uncertainties due to fluctuations. In order to estimate the statistical uncertainty a number of pseudo-data sets is generated for both data and \gls{mc} where each event is assigned a random weight $w$:
 \begin{equation}
 w = \mathcal{P}(n,1),
 \end{equation}
-where $n$ is a random number generated with Poisson distribution with mean $\lambda=1$, value $\mathcal{P}(n,1)$ is a Poissonian probability of observing n events while expecting an average of 1 event.\\
-The boostrapping defined in this way allows to take into account the correlated effect of statistical fluctuations across all observables and distributions in the analysis. For the determination of statistical uncertainty of the unfolded spectrum 400 bootstrap samples were generated.
-In both data and MC cases the statistical uncertainty is estimated by composing the covariant matrix $C_{kl}^{\textrm stat}$:
+where $n$ is a random number generated with Poisson distribution with mean $\lambda=1$, value $\mathcal{P}(n,1)$ is a Poissonian probability of observing n events while expecting an average of 1 event.
+
+The boostrapping defined in this way allows to take into account the correlated effect of statistical fluctuations across all observables and distributions in the analysis. For the determination of statistical uncertainty of the unfolded spectrum 400 bootstrap samples were generated. In both data and MC cases the statistical uncertainty is estimated by composing the covariant matrix $C_{kl}^{\textrm stat}$:
 \begin{equation}
 C_{kl}^{\textrm stat} = \frac{1}{N_{bs}-1} \sum_{\alpha=1}^{N_{bs}} (U^\alpha_k-\langle{U}_k\rangle) \, (U^\alpha_l-\langle{U}_l\rangle),
 \label{eq:covexpr}
@@ -48,10 +80,29 @@ U_j^{\alpha,(MC)} = V_{ij}^\alpha \sum_{i} (D_i - B_i),
   \begin{equation*}
 U_j^{\alpha,(Data)}  = V_{ij} \sum_{i} (D_i^\alpha - B_i).
  \end{equation*}
+ 
  In the MC case it is the response matrix $V^\alpha$ to be varied ($\alpha$ index corresponds to the variation number), whereas in Data the toys are obtained by varying the measured distribution $D^\alpha_i$. The statistical uncertainty for both cases is defined as:
  \begin{equation}
  \delta U_k = \sqrt{C_{kk}^{\textrm stat}}.
  \end{equation}
+ 
+ \begin{figure}[pt]
+ 	\subfloat[a]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBSMCReco_plusenu5TeV.pdf}}
+ 	\subfloat[b]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBSDataReco_plusenu5TeV.pdf}}
+ 	\subfloat[c]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBSMCUnf_plusenu5TeV.pdf}} 
+ 	\subfloat[d]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBSDataUnf_plusenu5TeV.pdf}} 
+ 	\caption{Correlation matrices  for the $W\rightarrow e\nu$ channel at 5 TeV for MC (left) and data (right). The upper plots contain correlation matrices at the reconstructed level, bottom plots show the unfolded level.}
+ 	\label{fig:bootstrap_5TeV}
+ \end{figure}
+  \begin{figure}[pt]
+ \subfloat[a]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBSMCReco_plusenu13TeV.pdf}}
+\subfloat[b]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBSDataReco_plusenu13TeV.pdf}}
+\subfloat[c]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBSMCUnf_plusenu13TeV.pdf}} 
+\subfloat[d]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBSDataUnf_plusenu13TeV.pdf}} 
+ 	\caption{Correlation matrices  for the $W\rightarrow e\nu$ channel at 13 TeV for MC (left) and data (right). The upper plots contain correlation matrices at the reconstructed level, bottom plots show the unfolded level.}
+ 	\label{fig:bootstrap_13TeV}
+ \end{figure}
+ 
 \subsection{Systematic uncertainty propagation}
 Systematic uncertainties are broken down into a number of uncorrelated uncertainty sources, which include signal and background modelling uncertainties, calibration and efficiency uncertainties, physics modelling uncertainties. The systematic variations used for uncertainty estimate on the detector level are propagated to the level of underlying distribution in two different ways. For the background uncertainties:
  \begin{equation*}
@@ -70,18 +121,56 @@ The total covariance matrix is calculated as a sum:
 \begin{equation}
 C_{kl}^{\textrm tot} = C_{kl}^{\textrm stat,Data} + C_{kl}^{\textrm stat,MC} + \sum_a C_{kl}^a.
 \end{equation}	
+
+ \begin{figure}[pt]
+	\subfloat[a]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixHRReco_plusenu5TeV.pdf}}
+	\subfloat[b]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixHRReco_plusenu13TeV.pdf}}
+	\subfloat[c]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixHRUnf_plusenu5TeV.pdf}} 
+	\subfloat[d]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixHRUnf_plusenu13TeV.pdf}} 
+	\caption{Correlation matrices for the hadronic recoil systematic variations for $W\rightarrow e\nu$ channel at 5 TeV (left) and 13 TeV (right). The upper plots contain correlation matrices at the reconstructed level, bottom plots show the unfolded level.}
+	\label{fig:HR_syst}
+\end{figure}
+
+ \begin{figure}[pt]
+	\subfloat[a]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBGReco_plusenu5TeV.pdf}}
+	\subfloat[b]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBGReco_plusenu13TeV.pdf}}
+	\subfloat[c]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBGUnf_plusenu5TeV.pdf}} 
+	\subfloat[d]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixBGUnf_plusenu13TeV.pdf}} 
+	\caption{Correlation matrices for the background systematic variations for $W\rightarrow e\nu$ channel at 5 TeV (left) and 13 TeV (right). The upper plots contain correlation matrices at the reconstructed level, bottom plots show the unfolded level.}
+	\label{fig:BG_syst}
+\end{figure}
+
+ \begin{figure}[pt]
+	\subfloat[a]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixSFReco_plusenu5TeV.pdf}}
+	\subfloat[b]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixSFReco_plusenu13TeV.pdf}}
+	\subfloat[c]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixSFUnf_plusenu5TeV.pdf}} 
+	\subfloat[d]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixSFUnf_plusenu13TeV.pdf}} 
+	\caption{Correlation matrices for the scalefactors systematic variations for $W\rightarrow e\nu$ channel at 5 TeV (left) and 13 TeV (right). The upper plots contain correlation matrices at the reconstructed level, bottom plots show the unfolded level.}
+	\label{fig:SF_syst}
+\end{figure}
+
+ \begin{figure}[pt]
+	\subfloat[a]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixCalibReco_plusenu5TeV.pdf}}
+	\subfloat[b]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixCalibReco_plusenu13TeV.pdf}}
+	\subfloat[c]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixCalibUnf_plusenu5TeV.pdf}} 
+	\subfloat[d]{\includegraphics[width=.49\textwidth]{Unfolding_plots/CorrMatrixCalibUnf_plusenu13TeV.pdf}} 
+	\caption{Correlation matrices for the electron calibration systematic variations for $W\rightarrow e\nu$ channel at 5 TeV (left) and 13 TeV (right). The upper plots contain correlation matrices at the reconstructed level, bottom plots show the unfolded level.}
+	\label{fig:Calib_syst}
+\end{figure}
+
 \subsection{Unfolded uncertainty breakdown}
-Figures \ref{fig:reco_sys_bkd_elec}, \ref{fig:reco_sys_bkd_muons}, contain the systematic uncertainties breakdown for electron and muon channels for the reconstructed level distributions for 5 and 13 TeV. Similarly figures \ref{fig:unf_sys_bkd_elec}, \ref{fig:unf_sys_bkd_muons} contain unfolded-level uncertainties. \\
-At the detector level the designated level of uncertainty of below 1\% is preserved up to 25 \gev{} for 5 \tev{} datasets and up to 50 \gev{} for 13 \tev{} samples in every channel. An increased role of background uncertainty is observed at 13 \tev{} due to the significantly higher cross-sections of diboson and top-antitop backgrounds.
-The scale and hierarchy of uncertainties are preserved at the unfolded level. \\
+Figures \ref{fig:reco_sys_bkd_elec}, \ref{fig:reco_sys_bkd_muons}, contain the systematic uncertainties breakdown for electron and muon channels for the reconstructed level distributions for 5 and 13 TeV. Similarly figures \ref{fig:unf_sys_bkd_elec}, \ref{fig:unf_sys_bkd_muons} contain unfolded-level uncertainties. 
+
+At the detector level the designated level of uncertainty of below 1\% is preserved up to 25 \gev{} for 5 \tev{} datasets and up to 50 \gev{} for 13 \tev{} samples in every channel. An increased role of background uncertainty is observed at 13 \tev{} due to the significantly higher cross-sections of diboson and top-antitop backgrounds. The scale and hierarchy of uncertainties are preserved at the unfolded level. 
+
 The uncertainties in 5 TeV are dominated by the statistical uncertainty and by the contribution from the hadronic recoil calibration, which is also of statistical nature. On the other hand, at 13 TeV background uncertainty also starts to play a significant role due to increased cross-sections of leading backgrounds.
 
 \begin{figure}[h]
 	\centering
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusenu_5TeV_test1}}
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusenu_5TeV_test1}} \\
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusenu_13TeV_test1}}
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusenu_13TeV_test1}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_minusenu_5TeV__3iter}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_plusenu_5TeV__3iter}} \\
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_minusenu_13TeV__3iter}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_plusenu_13TeV__3iter}}
 	
 	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 (c,d) TeV in the electron channel at the reconstructed level.}
 	\label{fig:reco_sys_bkd_elec}
@@ -89,59 +178,96 @@ The uncertainties in 5 TeV are dominated by the statistical uncertainty and by t
 
 \begin{figure}[h]
 	\centering
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusenu_5TeV_test1_Unfolded}}
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusenu_5TeV_test1_Unfolded}} \\
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusenu_13TeV_test1_Unfolded}}
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusenu_13TeV_test1_Unfolded}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_minusenu_5TeV__3iter_Unfolded}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_plusenu_5TeV__3iter_Unfolded}} \\
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_minusenu_13TeV__3iter_Unfolded}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_minusenu_13TeV__3iter_Unfolded}}
 	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 TeV (c,d) in the electron channel at the unfolded level.}
 	\label{fig:unf_sys_bkd_elec}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusmunu_5TeV_test1}}
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusmunu_5TeV_test1}} \\
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusmunu_13TeV_test1}}
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusmunu_13TeV_test1}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_minusmunu_5TeV__3iter}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_plusmunu_5TeV__3iter}} \\
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_minusmunu_13TeV__3iter}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_plusmunu_13TeV__3iter}}
 	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 (c,d) TeV in the muon channel at the reconstructed level.}
 	\label{fig:reco_sys_bkd_muons}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusmunu_5TeV_test1_Unfolded}}
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusmunu_5TeV_test1_Unfolded}} \\
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_minusmunu_13TeV_test1_Unfolded}}
-	{\includegraphics[width=.49\textwidth]{errors_WpT_Reco_cut7_plusmunu_13TeV_test1_Unfolded}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_minusmunu_5TeV__3iter_Unfolded}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_plusmunu_5TeV__3iter_Unfolded}} \\
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_minusmunu_13TeV__3iter_Unfolded}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/errors_WpT_Reco_cut7_plusmunu_13TeV__3iter_Unfolded}}
 	\caption{ Breakdown of systematic uncertainties for 5 (a,b) and 13 TeV (c,d) in the muon channel at the unfolded level.}
 	\label{fig:unf_sys_bkd_muons}
 \end{figure}
+
+
 \clearpage
 \section{Unfolding bias}
-One of the uncertainties associated with unfolding usage is called unfolding bias and may arise because the procedure relies on the MC simulation of the distribution, which is used as a prior hypothesis for the Bayesian algorithm. Possible discrepancies between the modelled and true distribution lead to erroneous  bin-to-bin migrations and can lead to distortions of the spectrum.\\
-In order to estimate the bias induced by the unfolding procedure it is necessary to quantify how much the unfolded result is impacted by the assumed MC distribution. A set of samples with a different distribution at the truth level though compatible at the detector level is generated. \\
+One of the uncertainties associated with unfolding usage is called unfolding bias and may arise because the procedure relies on the MC simulation of the distribution, which is used as a prior hypothesis for the Bayesian algorithm. Possible discrepancies between the modelled and true distribution lead to erroneous  bin-to-bin migrations and can lead to distortions of the spectrum.
 
-The truth distribution is reweighted until a good agreement between the data and MC is reached at the reconstruction level. The agreement is estimated in the kinematic region of $u_T<100\gev$ using the $\chi^2$ criterion. The truth reweighting procedure is applied to MC samples with a different distribution: \Pythia, Sherpa and DYRES were used. Fig. demonstrates the initial difference in the distributions.\\
+In order to estimate the bias induced by the unfolding procedure it is necessary to quantify how much the unfolded result is impacted by the assumed MC distribution. A set of samples with a different distribution at the truth level though compatible at the detector level is generated. 
+
+The truth distribution is reweighted until a good agreement between the data and MC is reached at the reconstruction level. The agreement is estimated in the kinematic region of $u_T<100\gev$ using the $\chi^2$ criterion. The truth reweighting procedure is applied to MC samples with a different distribution: \Pythia, Sherpa and DYRES were used. Fig. demonstrates the initial difference in the distributions.
 
 The results are presented on fig~\ref{fig:BiasResultLargeBins} for 5~GeV bins and 3 unfolding iterations. The obtained bias is close to the precision goal of the measurement ($\sim~1\%$) for the 5~\TeV dataset. The 13~\TeV\ dataset shows a larger bias, which can be explained by a larger discrepancy between data and Monte-Carlo. Worse resolution in 13~\TeV\ suggests a neccesity to try a broader binning comparing to 5~\GeV.
 
 \begin{figure}[h]
 	\centering
-	{\includegraphics[width=.49\textwidth]{bias_sqrts5_iter3_Wminusenu_fileJan_largebins.pdf}}
-	{\includegraphics[width=.49\textwidth]{bias_sqrts5_iter3_Wplusenu_fileJan_largebins.pdf}}\\
-	{\includegraphics[width=.49\textwidth]{bias_sqrts13_iter3_Wminusenu_fileJan_largebins.pdf}}
-	{\includegraphics[width=.49\textwidth]{bias_sqrts13_iter3_Wplusenu_fileJan_largebins.pdf}}
+	{\includegraphics[width=.49\textwidth]{DataRew_minusenu5TeV.pdf}}
+	{\includegraphics[width=.49\textwidth]{DataRew_plusenu5TeV.pdf}}\\
+	{\includegraphics[width=.49\textwidth]{DataRew_minusenu13TeV.pdf}}
+	{\includegraphics[width=.49\textwidth]{DataRew_plusenu13TeV.pdf}}
 	\caption{Unfolding bias on \ptw\ in the electron channel after 3 iterations, for $W^-$ (left) and $W^+$ (right), at 5~TeV (top) and 13~TeV (bottom)~\cite{int_note_1}.}
 	\label{fig:BiasResultLargeBins}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	{\includegraphics[width=.49\textwidth]{DataRew_minusmunu5TeV.pdf}}
+	{\includegraphics[width=.49\textwidth]{DataRew_plusmunu5TeV.pdf}}\\
+	{\includegraphics[width=.49\textwidth]{DataRew_minusmunu13TeV.pdf}}
+	{\includegraphics[width=.49\textwidth]{DataRew_plusmunu13TeV.pdf}}
+	\caption{Unfolding bias on \ptw\ in the muon channel after 3 iterations, for $W^-$ (left) and $W^+$ (right), at 5~TeV (top) and 13~TeV (bottom)~\cite{int_note_1}.}
+	\label{fig:BiasResultLargeBins_mu}
 \end{figure}
 \clearpage
 
 
 
 \section{Results}
+
+The plots containing the unfolded spectrum are presented in Figs. \ref{fig:results_cross_sec_elec} and \ref{fig:results_cross_sec_muon}. The 5 TeV plots demonstrate a decent degree of agreement between the data and Powheg MC simulation. For the 13 TeV the agreement is considerably worse, the data demonstrates higher cross-section in the harder part of the spectrum comparing to the simulation.  The assumed reason for this is because the generator was tuned using 7 TeV data which scales fine to 5 TeV but the extrapolation becomes unreliable at 13 TeV.
+
+\begin{figure}[h]
+	\centering
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_plusenu_5TeV_log_norm_3iter_unfolded}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_minusenu_5TeV_log_norm_3iter_unfolded}} \\
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_plusenu_13TeV_log_norm_3iter_unfolded}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_minusenu_13TeV_log_norm_3iter_unfolded}}
+	\caption{Unfolded cross-section in the $W^-$ (left) and $W^+$ (right) electron channels, at 5~TeV (top) and 13~TeV (bottom).}
+	\label{fig:results_cross_sec_elec}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_plusmunu_5TeV_log_norm_3iter_unfolded.pdf}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_minusmunu_5TeV_log_norm_3iter_unfolded.pdf}} \\
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_plusmunu_13TeV_log_norm_3iter_unfolded.pdf}}
+	{\includegraphics[width=.49\textwidth]{Unfolding_plots/WpT_Reco_cut7_minusmunu_13TeV_log_norm_3iter_unfolded.pdf}}
+	\caption{Unfolded cross-section in the $W^-$ (left) and $W^+$ (right) muon channels, at 5~TeV (top) and 13~TeV (bottom).}
+	\label{fig:results_cross_sec_muon}
+\end{figure}
+
+
 The comparison of unfolded spectrum to different theoretical predictions is presented at Figure~\ref{fig:results_predictions_elec} for electron channel and at~\ref{fig:results_predictions_muon} for the muon channel. The estimated experimental uncertainties raise from 1\% at low \ptw to about 5\% (2\%) at \ptw=100~GeV, at 5~TeV (13~TeV).
 
-The predicions are generated using Powheg AZNLO, Pythia AZ, Sherpa and DYRES. Powheg and Pythia agree with the data to a similar extent. A softer spectrum is predicted by Sherpa, while DYRES is on the opposite side compared to the data. The observed behaviour holds for both energies, both charges and both decay channels.
+The predictions are generated using Powheg AZNLO, Pythia AZ, Sherpa and DYRES. Powheg and Pythia agree with the data to a similar extent. A softer spectrum is predicted by Sherpa, while DYRES is on the opposite side compared to the data. The observed behaviour holds for both energies, both charges and both decay channels.
 
 \begin{figure}[h]
 	\centering
@@ -162,3 +288,13 @@ The predicions are generated using Powheg AZNLO, Pythia AZ, Sherpa and DYRES. Po
 	\caption{Unfolded measurement results in the $W^-$ (left) and $W^+$ (right) muon channels, at 5~TeV (top) and 13~TeV (bottom).}
 	\label{fig:results_predictions_muon}
 \end{figure}
+
+\section{Conclusions}
+
+There are still some ongoing studies for the optimization of number of unfolding iterations and binning of the truth distributions. But some conclusions could already be made based on the obtained results:
+\begin{enumerate}
+	\item The \Powheg+\Pythia~ AZ tune tuned at the Z $p_T$ spectrum measured at 7 TeV shows a reasonable agreement with the data at 5 TeV at both reconstructed and unfolded levels. On the other hand, at 13 TeV none of the tested MC generators was able to demonstrate good agreement with the data. 
+	\item The observed discrepancies can not be explained by the unfolding bias and lie beyond the measurement uncertainties.
+	\item The aim of having 1\% relative uncertainty in each bin at $p_T<30~GeV$ is achievable at both energies.
+	\item Obtained result can be used to reduce the uncertainty of the W boson mass measurement.
+\end{enumerate}

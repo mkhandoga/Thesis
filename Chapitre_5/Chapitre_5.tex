@@ -1,9 +1,10 @@
-\chapter{Electromagnetic shower shapes correction in the electromagnetic calorimeter }
+\chapter{Electromagnetic shower shapes correction }
 	\label{ch::sshapes}
-
+	The chapter considers the electromagnetic shower development in the ATLAS \gls{emc} and its role in particle identification (ID). The existing mismodelling of the shower development in the Monte-Carlo simulation causes discrepancies in electron ID. A correction method that allows to achieve good correspondence between the data and the simulation is proposed, implemented and tested.
   \section{Introduction}
-  The design and functionality of the ATLAS electromagnetic calorimeter was described in \ref{emc}. Let's consider a bit more in detail the physical processes happening in the \gls{emc}. \\
-  It order to measure particle's energy within the calorimeter we must make the particle to loose its entire energy within the calorimeter. For the electrons and photons with energies over few MeV (which is the case for the ATLAS experiment) the primary energy loss mechanism lies in bremsstrahlung radiation and pair creation). The two processes complete each other, so when a high-energy electron or photon gets into the calorimeter, it creates an avalanche-like processus called the electromagnetic shower when a bremsstrahlung-radiated photons create more electron-positron pairs which in turn radiate more bremsstrahlung photons and so on and so forth (see fig. \ref{fig::em_shower}.)\\
+  The design and functionality of the ATLAS electromagnetic calorimeter was described in \ref{emc}. Let's consider a bit more in detail the physical processes happening in the \gls{emc}. 
+  
+  It order to measure particle's energy within the calorimeter we must make the particle to loose its entire energy within the calorimeter. For the electrons and photons with energies over few MeV (which is the case for the ATLAS experiment) the primary energy loss mechanism lies in bremsstrahlung radiation and pair creation. The two processes complete each other, so when a high-energy electron or photon gets into the calorimeter, it creates an avalanche-like process called the electromagnetic shower when a bremsstrahlung-radiated photons create more electron-positron pairs which in turn radiate more bremsstrahlung photons and so on and so forth (see Fig. \ref{fig::em_shower}.)\\
   	\begin{figure}[htbp]
   	\begin{subfigure}[t]{0.5\textwidth}
   		\includegraphics[width=\textwidth,keepaspectratio]{em_shower.png}
@@ -19,8 +20,9 @@
   	\caption{The schematic portrayal of EM shower development}
   	\label{fig::em_shower}
   \end{figure}
-    The longitudinal and transverse development of the shower depends on the type of the initial particle and on its energy. The energy is well measured by the calorimeter, but identifying the particle still remains a challenging task. The transverse granularity of the ATLAS calorimeter allows to resolve the energy distribution withn the electromagnetic shower in the transverse plane. This information can later be used for particle identification.\\
-  When an e/$\gamma$ particle hits the calorimeter its footprint in the second layer of the calorimeter is visible as a cluster of calorimeter cells centered at the central cell having the most energy deposited (sometimes referred to as "the hottest cell"). Roughly 90$\%$ of shower energy is contained in the core 3x3 cells.  We have considered a cluster of 7x11 ($\eta$ x $\phi$) cells, which is schematically depicted on fig. \ref{fig::profile_log}.
+    The longitudinal and transverse development of the shower depends on the type of the initial particle and on its energy. The energy is well measured by the calorimeter, but identifying the particle still remains a challenging task. The transverse granularity of the ATLAS calorimeter allows to resolve the energy distribution within the electromagnetic shower in the transverse plane. This information can later be used for particle identification.
+    
+  When an e/$\gamma$ particle hits the calorimeter its footprint in the second layer of the calorimeter is visible as a cluster of calorimeter cells centered at the central cell having the most energy deposited (sometimes referred to as "the hottest cell"). Roughly 90$\%$ of shower energy is contained in the core 3x3 cells.  We have considered a cluster of 7x11 ($\eta$ x $\phi$) cells, which is schematically depicted on Fig. \ref{fig::profile_log}.
   
   
     	\begin{figure}[htbp]
@@ -63,7 +65,7 @@
   	\item $R_{\eta}$ - ratio of the energy in 3x7 cells over the energy in 7x7 cells centered around the hottest cell.
   \end{itemize}
   
-  The shower shapes distributions for different types of particles is shown in fig. \ref{sshapes_simul} - although the distributions overlap, combining the shower shapes information with the inputs from other detectors allow to identify the particle.  
+  The shower shapes distributions for different types of particles is shown in Fig. \ref{fig::sshapes_simul} - although the distributions overlap, combining the shower shapes information with the inputs from other detectors allow to identify the particle.  
     	\begin{figure}[htbp]
 	\begin{subfigure}[t]{0.4\textwidth}
 		\includegraphics[width=\textwidth,keepaspectratio]{Weta2Simulation.png}
@@ -80,9 +82,9 @@
 	\label{fig::sshapes_simul}
 \end{figure}
 
-  Figure \ref{reta_simul} shows how $R_{\eta}$ distribution is different in jets, signal electrons and background electrons. Background electrons denote non-prompt electrons which are not originated from primary vertex. \\
+  Figure \ref{fig::sshapes_simul} shows how $R_{\eta}$ distribution is different in jets, signal electrons and background electrons. Background electrons denote non-prompt electrons which are not originated from primary vertex. \\
  
-   The shower shapes appear to be extremely sensitive to the detector material modelling. A simplification in the geometry of the EMCal absorber geometry in GEANT4 9.2 (a layered structure of the accordion was represented as a homogenous material) has lead to visible discrepancies in the shower shapes between the data and MC. This was corrected in GEANT4 9.4 significantly improving the agreement, although not eliminating it completely (see fig. \ref{fig::sshapes_geant}).  The origin for the remaining discrepancy is not clear.\\
+   The shower shapes appear to be extremely sensitive to the detector material modelling. A simplification in the geometry of the EMCal absorber geometry in GEANT4 9.2 (a layered structure of the accordion was represented as a homogeneous material) has lead to visible discrepancies in the shower shapes between the data and MC. This was corrected in GEANT4 9.4 significantly improving the agreement, although not eliminating it completely (see Fig. \ref{fig::sshapes_geant}).  The origin for the remaining discrepancy is not clear.\\
       	\begin{figure}[htbp]
   	\begin{subfigure}[t]{0.4\textwidth}
   		\includegraphics[width=\textwidth,keepaspectratio]{Reta_G}
@@ -104,10 +106,10 @@
   
   \section{ Shower shapes measurement and correction  }
   \subsection{Event selection}
-  For this study we have considered electrons from the $Z\rightarrow ee$ decay. A set of recommended single electron triggers was used (HLT\_e26\_lhtight\_nod0\_ivarloose, HLT\_e60\_lhmedium\_nod0,\\
+  For this study we have considered electrons from the $Z\rightarrow ee$ decay. A set of recommended single electron triggers was used (HLT\_e26\_lhtight\_nod0\_ivarloose,\\ HLT\_e60\_lhmedium\_nod0,\\
    HLT\_e140\_lhloose\_nod0,HLT\_e300\_etcut). Each event was required to have 2 electrons at least one of which has $p_T>25$ GeV.  In order to suppress the background both electrons had to pass gradient isolation. Z invariant mass cut was applied with a window of $80-120$GeV. To avoid identification bias from triggering the tag and probe approach was used with only probe electrons taken into consideration \cite{RecoID2011}. The electron cluster in the second calorimeter layer was required to contain information from 77 calorimeter cells. No pile-up reweighting has been applied. Datasets of 264786295 events in data (2017 proton-proton collisions) and 79340000 events in MC (Powheg+Pythia8) were used. 
   \subsection{Data/MC discrepancies}
-  Our consideration begins with the energy deposit of an electron in the second layer of the calorimeter. A window of 7 cells in $\eta$ and 11 cells in $\phi$ is centered around the cell with the highest energy.
+  Our consideration begins with the energy deposit of an electron in the second layer of the calorimeter. A window of 7 cells in $\eta$ and 11 cells in $\phi$ is centred around the cell with the highest energy.
 
   Shower shapes were considered in 14 $\eta$ bins in the range between $|\eta| = (0,2.4)$ in order to investigate how the discrepancy depends on $\eta$. 
     	\begin{figure}[htbp]
@@ -160,7 +162,7 @@
 
 
 
-  The $\eta$-dependent shower shapes in data are wider than the MC and show a larger discrepancy in the endcap ($|\eta| = (1.52,2.4)$). For $\phi$ dimension the situation is the opposite: MC is wider than the data and the barrel ($|\eta| = (0,1.52)$) shows larger discrepancy. Figures \ref{Reta2}, \ref{Rphi2}, \ref{Weta22} contain examples of shower shapes in different eta bins. 
+  The $\eta$-dependent shower shapes in data are wider than the MC and show a larger discrepancy in the endcap ($|\eta| = (1.52,2.4)$). For $\phi$ dimension the situation is the opposite: MC is wider than the data and the barrel ($|\eta| = (0,1.52)$) shows larger discrepancy. Figures \ref{fig::reta_norew}, \ref{fig::rphi_norew}, \ref{fig::weta2_norew} contain examples of shower shapes in different eta bins. 
   \subsection{The correction procedure}
   \subsubsection{The correction matrix}
   The correction procedure is based on the redistribution of energy between the cluster cells in MC so that the distribution becomes consistent with the data. For every $\eta$ bin a correction matrix is derived in the following way:
@@ -177,23 +179,23 @@
   \end{equation}
   This redistributes the energy among the cells keeping the total energy exactly the same.
   \subsubsection{Bremsstrahlung tails}
-  The magnetic field directed along the $\phi$ dimension leads to a significant asymmetry in energy deposits for electrons and positrons (figure \ref{chargeAsym}). 
+  The magnetic field directed along the $\phi$ dimension leads to a significant asymmetry in the energy deposits for electrons and positrons (Fig. \ref{fig::chargeAsym}). 
   
   
       \begin{figure}[htbp]
   	\begin{subfigure}[t]{0.5\textwidth}
   		\includegraphics[width=\textwidth,keepaspectratio]{phiProfileDataMC_Eta_4_6.pdf}
   		\caption{$R_{\phi}$ in $|\eta| = (0.4,0.6)$ }
-  		\label{fig::rphi_norew_04}
+  		\label{fig::phi_profile_04}
   	\end{subfigure}
   	\hfill
   	\begin{subfigure}[t]{0.5\textwidth} 
   		\includegraphics[width=\textwidth,keepaspectratio]{phiProfileDataMC_Eta_16_18.pdf}
   		\caption{$R_{\phi}$ in $|\eta| = (1.8,2.0)$ }
-  		\label{fig::rphi_norew_18}
+  		\label{fig::phi_profile_18}
   	\end{subfigure}
-  	\caption{$R_{\phi}$ in the barel and in the end-cap, Data vs MC}
-  	\label{fig::rphi_norew}
+  	\caption{$R_{\phi}$ in the barrel and in the end-cap for $e^+$ and $e^-$ in Data and MC. The ratio panel shows $e^+/e^-$ energy deposits in Data (black) and MC (red).}
+  	\label{fig::chargeAsym}
   \end{figure}
 
   
@@ -208,7 +210,8 @@
   Good agreement of data and MC description of $e^+$ and $e^-$ asymmetry gives a hint that the material mismodelling cannot be the main source of the data/MC disagreement.\\
   
   \section{Results}
-  Figures \ref{fig::reta}, \ref{fig::rphi_rew}, \ref{fig::weta2_rew} show the effect of the correction. The shower shapes in MC become very close to the data, correcting a significant discrepancy. \\
+  Figures \ref{fig::reta}, \ref{fig::rphi_rew}, \ref{fig::weta2_rew} show the effect of the correction. The shower shapes in MC become very close to the data, correcting a significant discrepancy. 
+  
   Figures \ref{fig::integrated} contain shower shapes vs $p_T$ integrated over $\eta$. They demonstrate that the correction does not depend on the $p_T$ which allows to expect the decreased systematic uncertainties for $p_T$ regions distant from $40-50$GeV.\\
   Finally, figure \ref{SF} shows the effect of the correction on electron ID efficiency. We can see a visible improvement, notably in the endcap region.
   Nevertheless the barrel region shows little improvement. It can be explained by the fact that electron ID MVA relies on many variables while only a number of them were corrected during current study.\\
@@ -218,13 +221,13 @@
   	\begin{subfigure}[t]{0.5\textwidth}
   		\includegraphics[width=\textwidth,keepaspectratio]{Reta_Eta_4_6_Athena.pdf}
   		\caption{Reweighted  $R_{\eta }$ in $|\eta| = (0.4,0.6)$.  }
-  		\label{fig::id}
+  		\label{fig::idreta}
   	\end{subfigure}
   	\hfill
   	\begin{subfigure}[t]{0.5\textwidth} 
   		\includegraphics[width=\textwidth,keepaspectratio]{Reta_Eta_18_20_Athena.pdf}
   		\caption{Reweighted  $R_{\eta }$ in $|\eta| = (1.8,2.0)$.  }
-  		\label{fig::pd}
+  		\label{fig::pdreta}
   	\end{subfigure}
   	\caption{$R_{\eta }$  in the barrel and in the end-cap}
   	\label{fig::reta}
@@ -279,9 +282,9 @@
   
   \begin{figure}[htbp]
   	\centering
-  	\includegraphics[width=7cm,keepaspectratio]{MCeffm247tom237.pdf}\\
+  	\includegraphics[width=0.99\textwidth,keepaspectratio]{MCeffm247tom237.pdf}\\
   	\caption{Electron identification efficiency as a function of the electron pseudo-rapidity}
-  	\label{SF}
+  	\label{fig::SF}
   \end{figure}
   \section{Appendix: control plots}
 
@@ -318,7 +321,7 @@
 		\quad
 	\subfloat{%
 		\includegraphics[width=0.33\textwidth]{Reta_Eta_22_24_Athena}}
-	\caption{ 	\label{fig::reta_} Reta 2}
+	\caption{ 	\label{fig::reta_} $R_{\eta}$ in all eta slices.}
 \end{figure*}
 
   \begin{figure*}[ht!]
@@ -354,7 +357,7 @@
 	\quad
 	\subfloat{%
 		\includegraphics[width=0.33\textwidth]{Rphi_Eta_22_24_Athena}}
-	\caption{ 	\label{fig::rphi_} Rphi in all eta slices}
+	\caption{ 	\label{fig::rphi_} $R_{\phi}$ in all eta slices.}
 \end{figure*}
 
   \begin{figure*}[ht!]
@@ -390,44 +393,9 @@
 	\quad
 	\subfloat{%
 		\includegraphics[width=0.33\textwidth]{Weta2_Eta_22_24_Athena}}
-	\caption{ 	\label{fig::weta2_} Reta 2}
+	\caption{ 	\label{fig::weta2_2} $W_{\eta2}$in all eta slices.}
 \end{figure*}
 
-  \begin{figure*}[ht!]
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_0_2_Athena}}
-	\quad
-	\subfloat {%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_2_4_Athena}}
-	\quad
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_4_6_Athena}}\\
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_6_8_Athena}}
-	\quad
-	\subfloat {%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_8_10_Athena}}
-	\quad
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_10_12_Athena}}\\
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_12_13_Athena}}
-	\quad
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_152_16_Athena}}
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_16_18_Athena}}\\
-	\quad
-	\subfloat {%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_16_18_Athena}}
-	\quad
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_20_22_Athena}}
-	\quad
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{Weta2_Eta_22_24_Athena}}
-	\caption{ 	\label{fig::weta2_} Reta 2}
-\end{figure*}
 
   \begin{figure*}[ht!]
 	\subfloat{%
@@ -462,7 +430,7 @@
 	\quad
 	\subfloat{%
 		\includegraphics[width=0.33\textwidth]{etaProfile_Eta_22_24_Athena}}
-	\caption{ 	\label{fig::etaProfile_} Reta 2}
+	\caption{ 	\label{fig::etaProfile_} Energy profile in $\eta$ dimension for all $\eta$ slices.}
 \end{figure*}
 
 
@@ -499,41 +467,5 @@
 	\quad
 	\subfloat{%
 		\includegraphics[width=0.33\textwidth]{phiProfile_Eta_22_24_Athena}}
-	\caption{ 	\label{fig::phiProfile_} Reta 2}
-\end{figure*}
-
-  \begin{figure*}[ht!]
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_0_2}}
-	\quad
-	\subfloat {%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_2_4}}
-	\quad
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_4_6}}\\
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_6_8}}
-	\quad
-	\subfloat {%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_8_10}}
-	\quad
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_10_12}}\\
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_12_13}}
-	\quad
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_13_137}}
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_16_18}}\\
-	\quad
-	\subfloat {%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_16_18}}
-	\quad
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_20_22}}
-	\quad
-	\subfloat{%
-		\includegraphics[width=0.33\textwidth]{wtots1_Eta_22_24}}
-	\caption{ 	\label{fig::wtots1_} Reta 2}
+	\caption{ 	\label{fig::phiProfile_} Energy profile in $\phi$ dimension for all $\eta$ slices.}
 \end{figure*}

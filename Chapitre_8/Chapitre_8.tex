@@ -1,17 +1,19 @@
-\chapter{MC samples and selection}
+\chapter{Event selection, datasets and MC samples}
     \label{sec:samples_selection}
+    This chapter contains the description of the data and MC samples, used in the analysis, as well as the applied cuts. It also describes the event-level correction of the Z axis position of the primary vertex. The chapter concludes with the set of control plots of the main observables.
     \section{Data and MC samples}
      \subsection{Data samples}
-    The data and MC samples for this study were collected under special beam conditions that ensure low pile-up. The data samples were collected in three runs:
+    The data samples for this study were collected with special beam conditions that ensure low pile-up. The MC samples were generated to match these conditions.s The data samples were collected in three runs:
     \begin{itemize}
     \item $\sqrt{s} = 5.02\tev$ data taken in November 2017, ATLAS data
     period M, preliminary calibrated luminosity $256.827\,\ipb$ with an uncertainty
-    of $\pm 1.6\%$
+    of $\pm 1.6\%$.
     \item $\sqrt{s} = 13\tev$ data taken in November 2017, ATLAS data
-    period N, preliminary online luminosity $146.6\ipb$
+    period N, preliminary online luminosity $146.6\ipb$.
     \item $\sqrt{s} = 13\tev$ data taken in June 2018, ATLAS data
-    period G4+J, preliminary online luminosity $193.2\ipb$
+    period G4+J, preliminary online luminosity $193.2\ipb$.
     \end{itemize}
+
 	The luminosity  calibration for the 13 TeV runs is not available yet, the corresponding uncertainty is not known, but is expected to be around 3\%. The runs of November 2017 and the run of June 2018 had the same bunch spacing of 25 ns, but a different filling scheme. The two main differences from the high-$\mu$ data collection are the following:
 	\begin{itemize}
 	\item In order to optimize topo-cluster response for the \gls{hr} lower topo-cluster thresholds were used. 
@@ -20,6 +22,7 @@
 	prescale, most notably \texttt{HLT\_e15\_lhloose\_nod0\_L1EM12} and
 	\texttt{HLT\_mu14}.
 	\end{itemize}	
+
 	At the beginning of 5 TeV fills the pile-up reached $\mu \sim 5$, slowly descending to $\mu \sim 1$ by the end of the run. In the case of 13 TeV the luminosity was levelled at $\mu = 2$ in the course of the run. The corresponding distributions for $\mu$ and $N_{PV}$ for the 5 TeV and 13 TeV runs are shown in Fig. \ref{fig:mu5} and Fig. \ref{fig:mu13}.
 	\begin{figure}[tph]
 		\centering
@@ -58,15 +61,20 @@
 	\end{figure}
 	
     \subsection{MC samples and cross-sections}
-    Signal and background processes (except for the multijet background) are modelled using fully simulated and reconstructed \gls{mc} samples, specifically tuned for the special run conditions, namely the low pileup, lower topo-cluster noise thresholds and adapted trigger menu. No pileup reweighting is performed.\\
-    The information on the simulated samples and their properties is given in Tables \ref{tab:samples13}, \ref{tab:samples13_sherpaz}, \ref{tab:samples13_sherpaw},  \ref{tab:samples5} \cite{Kretzschmar:2657141}. The predicted event counts are normalized to the data luminosity using the cross-sections quoted in the table.\\
-    The primary signal event samples for W and Z production are obtained using \Powheg~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2008gx,Alioli:2010xd} event generator with CT10 PDF, linked with \Pythia~\cite{pythia} with AZNLO tune~\cite{STDM-2012-23}. \Powheg+\Pythia samples are interfaced to \Photos~\cite{Golonka:2005pn}  for final state \gls{qed} effects simulation.\\
+    Signal and background processes (except for the multijet background) are modelled using fully simulated and reconstructed \gls{mc} samples, specifically tuned for the special run conditions, namely the low pileup, lower topo-cluster noise thresholds and adapted trigger menu. No pileup reweighting is performed.
+    
+    The information on the simulated samples and their properties is given in Tables \ref{tab:samples13}, \ref{tab:samples13_sherpaz}, \ref{tab:samples13_sherpaw},  \ref{tab:samples5} \cite{Kretzschmar:2657141}. The predicted event counts are normalized to the data luminosity using the cross-sections quoted in the table.
+    
+    The primary signal event samples for W and Z production are obtained using \Powheg~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2008gx,Alioli:2010xd} event generator with CT10 PDF, linked with \Pythia~\cite{pythia} with AZNLO tune~\cite{STDM-2012-23}. \Powheg+\Pythia samples are interfaced to \Photos~\cite{Golonka:2005pn}  for final state \gls{qed} effects simulation.
+    
     A set of alternative samples at $\sqrt{s} = 13\tev$ was prepared with \Sherpa 2.2.2~\cite{Hoche:2010kg} using the NNPDF3.0 PDFs and merging
-    $V+0,1,2$ at NLO accuracy with $V+3,4$ at LO accuracy with the MEPS@NLO scheme. A similar set for $\sqrt{s} = 5\tev$ was prepared with \Sherpa 2.2.5 with a setup similar to 13 TeV samples.\\
-    Pileup is modelled by overlaying simulated soft events over the original hard-scattering event. These soft events were modelled using \Pythia\ with NNPDF2.3LO set of PDFs~\cite{Ball:2012cx} and the A3 tune~\cite{ATL-PHYS-PUB-2016-017}.\\
+    $V+0,1,2$ at NLO accuracy with $V+3,4$ at LO accuracy with the MEPS@NLO scheme. A similar set for $\sqrt{s} = 5\tev$ was prepared with \Sherpa 2.2.5 with a setup similar to 13 TeV samples.
+    
+    Pileup is modelled by overlaying simulated soft events over the original hard-scattering event. These soft events were modelled using \Pythia\ with NNPDF2.3LO set of PDFs~\cite{Ball:2012cx} and the A3 tune~\cite{ATL-PHYS-PUB-2016-017}.
+    
     The $W$ and $Z$ processes samples are normalized to NNLO
     calculations for the cross-sections performed using DYTURBO, an optimised version
-    of DYNNLO~\cite{Catani:2007vq,Catani:2009sm} using the MMHT2014nnlo PDF
+    of DYRES~\cite{Catani:2007vq,Catani:2009sm} using the MMHT2014nnlo PDF
     set~\cite{Harland-Lang:2014zoa}. Corresponding numerical values were taken from
     the corresponding ATLAS publications of the 2015 data at 13
     TeV~\cite{STDM-2015-03} and 5.02 TeV~\cite{HION-2018-02} and are presented in Table~\ref{tab:samples13} for 13 TeV and Table~\ref{tab:samples5} for 5 TeV. The
@@ -318,6 +326,7 @@
 	\item $m_\text{T}>50$~GeV.
 	\item lepton isolation.
 \end{itemize}
+
 The production of multijet events is mainly concentrated at lower values of $p_T^l$, \met and \mt, such that the largest part of the multijet background events is removed by the cuts described above. The background estimate is obtained by fitting the signal and multijet yields in $p_T^l$, \met and \mt kinematic distributions, but with \met and \mt cuts relaxed. These kinematic distributions for the signal are modelled using the MC simulation and include the calibrations and corrections presented in the previous chapter. The templates of the multijet distributions are obtained using the data with the same kinematic selection, but with inverted isolation cuts. The multijet yield is obtained in the region with relaxed kinematic cuts and then extrapolated to the signal region, correcting for the efficiency of kinematic cuts.\\
 The first step consists in defining four different regions in phase-isolation space:
 \begin{itemize}
@@ -326,6 +335,7 @@ The first step consists in defining four different regions in phase-isolation sp
 	\item control region 1 (CR1): anti-isolated leptons with FR kinematic requirements;
 	\item control region 2 (CR2): anti-isolated leptons with SR kinematic requirements.
 \end{itemize}
+
  The multijet template is extracted from CR1 and normalized using the fraction fit, obtained from fit region (FR). Then the multijet(MJ) yield is estimated in the SR through the ratio of MJ events in the two control regions: $\epsilon = N_{MJ}^{CR2}/N_{MJ}^{CR1}$.
  The number of MJ background events is estimated in the following way:
  \begin{itemize}
@@ -353,12 +363,15 @@ The first step consists in defining four different regions in phase-isolation sp
  N_{MJ}^{SR} = \varepsilon N_{MJ}^{FR}.
  \end{equation}
 \end{itemize}
- This method relies on the anti-isolation procedure which may introduce a bias into the results. The dependence of the MJ yield on the isolation criteria must be taken into account. In order to do this the control regions CR1 and CR2 are esimated in the slices of anti-isolation with \texttt{ptvarcone20/pT} ranging in the following intervals: [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40].\\
+
+ This method relies on the anti-isolation procedure which may introduce a bias into the results. The dependence of the MJ yield on the isolation criteria must be taken into account. In order to do this the control regions CR1 and CR2 are esimated in the slices of anti-isolation with \texttt{ptvarcone20/pT} ranging in the following intervals: [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40].
+ 
  The change of isolation criterion also biases the hadronic recoil reconstruction procedure, where the cone replacement appears to be isolation-dependent. This bias is overcome by introducing a correction to the hadronic recoil vector:
  \begin{eqnarray}
  \vec{u}^\text{corr} &=& \vec{u}^\text{baseline} + \vec{u}^\text{iso}, \text{ where}\\
  \vec{u}^\text{iso} &\equiv& \texttt{ptcone20} \cdot \vec{n_\ell}.
  \end{eqnarray}
+ 
  The unit vector $\vec{n_\ell}$ is aligned with the lepton direction. This correction vanishes at low isolation in the signal region but introduces a sizable correction in the anti-isolated region (see Fig. \ref{fig:calib_upar}).
  \begin{figure}
  	\centering
@@ -379,8 +392,9 @@ where $H_{X}^{[x,y]}$ is the normalized distribution of $X$ in CR2 (anti-isolate
 $\Delta[X]$ is supposed to be the difference between MJ sprectrum in the signal region (\texttt{ptvarcone20/pT}$<0.1$)  and the isolation slice next to it (0.10 < \texttt{ptvarcone20/pT} < 0.20).
 So the extrapolated distribution to the signal region is the following:
 \begin{equation}
-H_{X}^{sig} = H_{X}^{[0.1,0.2]} - \Delta[X]
+H_{X}^{sig} = H_{X}^{[0.1,0.2]} - \Delta[X].
 \end{equation}
+
 The applied shift $\Delta[X]$ is assigned a 100\% relative uncertainty because of the large statistical uncertainty. Figures \ref{fig:mjbkg-elp-corr-scan} and \ref{fig:mjbkg-mup-corr-scan} contain the results of the isolation scan in electron and muon channels respectively. 
 
 \begin{figure}[htbp]
@@ -438,7 +452,7 @@ The multijet yields for all channels and energies are presented in Table \ref{ta
 The 5 TeV MC samples have been generated to be perfectly matched to the data 
 Although this is not the case for 13 TeV samples, which can be seen at Fig. \ref{fig:zvtx}. 
 It is also seen from these plots that the 2017 and 2018 data were collected at two different runs under different beam conditions. 
-To avoid possible impact on the acceptance the MC samples were reweighted to the data using \Zee and \Zmm selections.
+To avoid possible impact on the acceptance the MC samples were reweighted to the data using \Zee and \Zmm selections. Throughout the analysis the data collected at 13 TeV during the two runs in 2017 and 2018 are used in a combination. For this reason the correction for the MC is obtained from the combination of the two datasets (see Fig. \ref{fig:zvtx}).  
 
 \begin{figure}[tph]
 	\centering
@@ -458,6 +472,56 @@ To avoid possible impact on the acceptance the MC samples were reweighted to the
 		selected events in the 2017 dataset~\cite{int_note_samples}.}
 	\label{fig:zvtx}
 \end{figure}
+
+The reweighting derived from Z events is also used for the W MC samples events. The plots shown on Fig. \ref{fig:wzvtx} demonstrate that the correction derived from the Z events works well for all the W channels.  
+\begin{figure}[tph]
+	\centering
+	\includegraphics[width=.5\textwidth]{plusenu}%
+	\includegraphics[width=.5\textwidth]{plusmunu}
+	\includegraphics[width=.5\textwidth]{minusenu}%
+	\includegraphics[width=.5\textwidth]{minusmunu}
+	\caption{Distributions for 13 \TeV{} 
+		low-$\mu$ dataset(s) in a $W^{+}$ (top row) and a $W^{-}$ (bottom row)
+		selection in electron (left) and muon (right) channels. The combined 2017 and 2018 data (black) is compared to W MC signal before (red) and after (blue) the reweighting.
+		All distributions are normalised to the same number of
+		selected events in 2017+2018 dataset~\cite{int_note_samples}.}
+	\label{fig:wzvtx}
+\end{figure}
+
+The reweighting causes minor effect on the kinematic distributions. The ratios of these distributions before and after the Z vertex reweighting are demonstrated for the  $W^{+}\rightarrow \mu\nu$ channel in Fig. \ref{fig:observables_wzvtx}. 
+
+\begin{figure}[tph]
+	\centering
+	\includegraphics[width=.5\textwidth]{MC_plusmunu_WlPt_cut7_13TeV_0404_0708.pdf}%
+	\includegraphics[width=.5\textwidth]{MC_plusmunu_WSETUE_cut7_13TeV_0404_0708.pdf}
+	\includegraphics[width=.5\textwidth]{MC_plusmunu_WlEta_cut7_13TeV_0404_0708.pdf}%
+	\includegraphics[width=.5\textwidth]{MC_plusmunu_WmT_cut7_13TeV_0404_0708.pdf}
+	\includegraphics[width=.5\textwidth]{MC_plusmunu_Wmet_cut7_13TeV_0404_0708.pdf}%
+	\includegraphics[width=.5\textwidth]{MC_plusmunu_WWpT_Reco_cut7_13TeV_0404_0708.pdf}
+	\caption{Distributions for 13 \TeV{} 
+		low-$\mu$ dataset(s) in a $W^{+}$ (top row) and a $W^{-}$ (bottom row)
+		selection in electron (left) and muon (right) channels. The combined 2017 and 2018 data (black) is compared to W MC signal before (red) and after (blue) the reweighting.
+		All distributions are normalised to the same number of
+		selected events in 2017+2018 dataset~\cite{int_note_samples}.}
+	\label{fig:observables_wzvtx}
+\end{figure}
+
+The procedure of the vertex reweighting follows the ideology of the W mass measurement performed at 7 TeV~\cite{wboson}. Despite the effect of the reweighting was found to be small for the measurement of the W boson transverse spectrum, the reweighting might still have a notable effect on the W mass measurement, that would use the obtained W pT spectrum as an input. 
+A possible way to estimate the effect of the reweighting on the W boson mass is to use a template fit. The method of the template fits is described in more detail in the internal note for the 7 TeV measurement~\cite{Wmass7TeVIntNote}. Considering the observables that are sensitive to $m_W$ we can estimate the shift of the W mass value due to the reweighting. The results for $W\rightarrow \mu \nu$ channel are provided in the Table \ref{tab::z_vert_template}. They demonstrate a non-negligible effect.
+\begin{table}
+\centering
+\begin{tabular}{|c| c| c| c|}
+	\hline
+	Observable & $m_T$ & $E_T^{miss}$  & $p_T^{\l}$ \\
+	\hline
+	$\Delta m_W$& 1.4 MeV&  5.1 MeV & 0.2 MeV \\
+	\hline
+\end{tabular}\\
+\caption{Estimate of the Z vertex reweighting effect on the W boson mass.}
+\label{tab::z_vert_template}
+\end{table}
+
+
 \section{W analysis event selection and control plots}
 \label{sec:selection}
 
@@ -467,7 +531,7 @@ In both cases of 5 and 13~\TeV\, events with \Wln{} candidate were selected base
 The trigger for \Wen event candidate $\texttt{HLT\_e15\_lhloose\_nod0\_L1EM12}$, requires at least one reconstructed electron with \ET larger than 15~\GeV\ passing \emph{loose} identification requirements. Candidates for \Wmn were triggered by $\texttt{HLT\_mu14}$ trigger, requiring one medium muon with \ET larger than 14~\GeV.
 
 Events are required to contain exactly one lepton (muon or electron) candidate having $p_T > 25\gev$. Electrons are required to have $|\eta|<2.47$ excluding transition region $1.37 < |\eta|< 1.52$. Muons   
-Events with additional leptons of the same flavour with transverse momentum greater than 20 ~\GeV{} satisfying some ID criteria are discarded, to better reject the \Zboson\ background. The ID point is $medium$ for the muon channel, and $loose$ for the electron channel. There is no requirement on the number of leptons with different flavour than the channel under study.
+Events with additional leptons of the same flavour with transverse momentum greater than 20 ~\GeV{} satisfying some ID criteria are discarded, to better reject the \Zboson\ background. The ID point is $medium$ for the muon channel, and $loose$ for the electron channel. There is no requirement on the number of leptons from the different channel than the channel under study.
 
 To suppress background, in particular from multijet processes,
 events are required to have \MET{} greater than 25~\GeV{}.
@@ -489,7 +553,7 @@ Events denoted as \Wln{} in the tables and the plots contain the sum of backgrou
 
 \subsection{$\sqrt{s} = 13$~\TeV\ dataset control plots}
 \label{subsec:controlplots13}
-Control plots for the 13~\TeV\ \lowmu\ dataset are provided here after applying all corrections described in Section 7, and after applying the selection described above in this section. In each figure, the right(left)-hand column shows distributions for the \Wplus\ (\Wminus) process. The top (bottom) row shows the muon (electron) decay channel. In the ratio panels, the grey band is the total systematic uncertainty, whilst the brown band adds the MC statistical uncertainty in quadrature on top of it. In regions of the distributions insensitive to the modelling of \ptw\ there is generally good agreement between data and predictions. The bulk of the \mt\ distribution is a typical example of distribution that is mostly insensitive to the modeling of \ptw. The \ut\ distribution is an exception, and it can therefore be concluded that the baseline simulation is not modeling \ptw\ satisfactorily.
+Control plots for the 13~\TeV\ \lowmu\ dataset are provided here after applying all corrections described in Section 7, and after applying the selection described above in this section. In each figure, the right(left)-hand column shows distributions for the \Wplus\ (\Wminus) process. The top (bottom) row shows the muon (electron) decay channel. In the ratio panels, the grey band is the total systematic uncertainty, whilst the brown band adds the MC statistical uncertainty in quadrature on top of it. In regions of the distributions insensitive to the modelling of \ptw\ there is generally good agreement between data and predictions. The bulk of the \mt\ distribution is a typical example of distribution that is mostly insensitive to the modelling of \ptw. The \ut\ distribution depends a lot on the modelling of the W boson transverse momentum and it demonstrates the highest discrepancy between the data and MC. Therefore it can be concluded that the baseline simulation is not modelling \ptw\ satisfactorily.
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%_log.
 %%%%% ************************* 13 TeV ****************************
@@ -567,7 +631,7 @@ Control plots for the 13~\TeV\ \lowmu\ dataset are provided here after applying 
 	
 	{\includegraphics[width=.49\textwidth]{control_norm/WpT_Reco_cut7_minusenu_13TeV_log_norm_NormErr.pdf}\label{f:}}
 	{\includegraphics[width=.49\textwidth]{control_norm/WpT_Reco_cut7_plusenu_13TeV_log_norm_NormErr.pdf}\label{f:}}
-	\caption{  W transverse momentum distribution in the muon and electron channel  for the $\sqrt{s} = 13$~\TeV\ dataset. }\end{figure}
+	\caption{  Hadronic recoil distribution in the muon and electron channel  for the $\sqrt{s} = 13$~\TeV\ dataset. }\end{figure}
 
 %%%%% ************************* 5 TeV ****************************
 
@@ -650,7 +714,7 @@ Control plots for the 5~\TeV\ \lowmu\ dataset are provided here after applying a
 
 	{\includegraphics[width=.49\textwidth]{control_norm/WpT_Reco_cut7_minusenu_5TeV_log_norm_NormErr.pdf}\label{f:}}
 	{\includegraphics[width=.49\textwidth]{control_norm/WpT_Reco_cut7_plusenu_5TeV_log_norm_NormErr.pdf}\label{f:}}
-	\caption{  W transverse momentum distribution in the muon and electron channel  for the $\sqrt{s} = 5$~\TeV\ dataset. }\end{figure}
+	\caption{  Hadronic recoil distribution in the muon and electron channel  for the $\sqrt{s} = 5$~\TeV\ dataset. }\end{figure}
 	\newpage
 	\clearpage
 %

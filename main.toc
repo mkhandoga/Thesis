@@ -1,122 +1,115 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\contentsline {section}{\numberline {0.1}Introduction}{1}{section.0.1}
-\contentsline {subsection}{\numberline {0.1.1}Historical retrospective}{1}{subsection.0.1.1}
-\contentsline {subsection}{\numberline {0.1.2}Current challenges}{2}{subsection.0.1.2}
-\contentsline {subsection}{\numberline {0.1.3}Thesis composition outline}{4}{subsection.0.1.3}
-\contentsline {section}{Bibliography}{5}{subsection.0.1.3}
-\contentsline {chapter}{\chapternumberline {1}The Standard Model}{7}{chapter.1}
-\contentsline {section}{\numberline {1.1}General composition and key parameters}{7}{section.1.1}
-\contentsline {section}{\numberline {1.2}Classical fields and gauge invariance principle}{10}{section.1.2}
-\contentsline {section}{\numberline {1.3}Quantum electrodynamics}{12}{section.1.3}
-\contentsline {section}{\numberline {1.4}Electroweak theory and the Higgs mechanism}{13}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Electroweak gauge fields}{14}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Fermion sector}{14}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Higgs field breaking the symmetry}{15}{subsection.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}Physical interpretation of gauge fields and parameters}{16}{subsection.1.4.4}
-\contentsline {section}{\numberline {1.5}Chromodynamics}{17}{section.1.5}
-\contentsline {section}{Bibliography}{19}{figure.caption.5}
-\contentsline {chapter}{\chapternumberline {2}The W boson}{23}{chapter.2}
-\contentsline {section}{\numberline {2.1}The motivation for the W mass measurement}{23}{section.2.1}
-\contentsline {section}{\numberline {2.2}Massive boson production at hadron colliders}{24}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Deep Inelastic scattering}{25}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}The Drell-Yan process}{27}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Transverse momentum of massive vector bosons }{29}{section.2.3}
-\contentsline {section}{Bibliography}{32}{figure.caption.13}
-\contentsline {chapter}{\chapternumberline {3}The Large Hadron Collider}{35}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{35}{section.3.1}
-\contentsline {section}{\numberline {3.2}The LHC running sequence}{35}{section.3.2}
-\contentsline {section}{\numberline {3.3}Special low pile-up run during LHC Run 2}{39}{section.3.3}
-\contentsline {section}{Bibliography}{40}{table.caption.19}
-\contentsline {chapter}{\chapternumberline {4}The ATLAS detector}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}General description and layout}{43}{section.4.1}
-\contentsline {section}{\numberline {4.2}Coordinate system}{43}{section.4.2}
-\contentsline {section}{\numberline {4.3}Magnet system and magnetic field}{44}{section.4.3}
-\contentsline {section}{\numberline {4.4}Inner detector}{44}{section.4.4}
-\contentsline {section}{\numberline {4.5}Calorimeter system }{46}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Electromagnetic calorimeter }{48}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Hadronic calorimeter }{50}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Muon detectors}{51}{section.4.6}
-\contentsline {section}{\numberline {4.7}Forward detectors}{53}{section.4.7}
-\contentsline {section}{\numberline {4.8}Trigger system}{55}{section.4.8}
-\contentsline {section}{Bibliography}{57}{figure.caption.31}
-\contentsline {chapter}{\chapternumberline {5}Electromagnetic shower shapes correction in the electromagnetic calorimeter }{59}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{59}{section.5.1}
-\contentsline {section}{\numberline {5.2} Shower shapes measurement and correction }{62}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Event selection}{62}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Data/MC discrepancies}{62}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}The correction procedure}{64}{subsection.5.2.3}
-\contentsline {subsubsection}{The correction matrix}{64}{subsubsection*.40}
-\contentsline {subsubsection}{Bremsstrahlung tails}{64}{subsubsection*.41}
-\contentsline {section}{\numberline {5.3}Results}{65}{section.5.3}
-\contentsline {section}{\numberline {5.4}Appendix: control plots}{66}{section.5.4}
-\contentsline {section}{Bibliography}{68}{figure.caption.55}
-\contentsline {chapter}{\chapternumberline {6}Event reconstruction}{77}{chapter.6}
-\contentsline {section}{\numberline {6.1}Charged particles track reconstruction}{77}{section.6.1}
-\contentsline {section}{\numberline {6.2}Determining the primary vertex of the event}{78}{section.6.2}
-\contentsline {section}{\numberline {6.3}Muon reconstruction and identification}{80}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Muon reconstruction}{80}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Muon identification}{82}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Muon isolation}{83}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Electron reconstruction and identification}{83}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Electron reconstruction}{83}{subsection.6.4.1}
-\contentsline {subsubsection}{Sliding window}{83}{subsubsection*.62}
-\contentsline {subsubsection}{Topocluster reconstruction}{84}{subsubsection*.63}
-\contentsline {subsubsection}{Track-cluster matching}{86}{subsubsection*.65}
-\contentsline {subsubsection}{Supercluster reconstruction}{86}{subsubsection*.66}
-\contentsline {subsection}{\numberline {6.4.2}Electron identification}{87}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Electron isolation}{88}{subsection.6.4.3}
-\contentsline {section}{\numberline {6.5}Particle flow objects}{90}{section.6.5}
-\contentsline {section}{Bibliography}{92}{equation.6.5.9}
-\contentsline {chapter}{\chapternumberline {7}Calibrations and corrections}{95}{chapter.7}
-\contentsline {section}{\numberline {7.1}Electron corrections}{95}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Energy scale and resolution correction}{95}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Electron selection efficiency}{100}{subsection.7.1.2}
-\contentsline {subsubsection}{Reconstruction efficiency}{100}{subsubsection*.76}
-\contentsline {subsubsection}{Identification efficiency}{103}{subsubsection*.79}
-\contentsline {subsubsection}{Isolation efficiency}{104}{subsubsection*.82}
-\contentsline {subsubsection}{Trigger efficiency}{104}{subsubsection*.84}
-\contentsline {subsection}{\numberline {7.1.3}SF uncertainties propagation}{104}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Muon corrections}{112}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Muon momentum calibration}{112}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Correction for charge-dependent momentum bias}{113}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Muon efficiency measurements}{120}{subsection.7.2.3}
-\contentsline {section}{\numberline {7.3}Hadronic recoil calibration}{125}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}SET-$u_T$ reweighting }{126}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}$u_X$ and $u_Y$ correction}{129}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Resolution and response corrections}{130}{subsection.7.3.3}
-\contentsline {subsection}{\numberline {7.3.4}Hadronic recoil calibration uncertainties}{132}{subsection.7.3.4}
-\contentsline {section}{\numberline {7.4}Angular coefficients correction}{133}{section.7.4}
-\contentsline {section}{Bibliography}{134}{equation.7.4.20}
-\contentsline {chapter}{\chapternumberline {8}MC samples and selection}{137}{chapter.8}
-\contentsline {section}{\numberline {8.1}Data and MC samples}{137}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Data samples}{137}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}MC samples and cross-sections}{139}{subsection.8.1.2}
-\contentsline {section}{\numberline {8.2}Multijet background}{144}{section.8.2}
-\contentsline {section}{\numberline {8.3}Z vertex reweighting }{150}{section.8.3}
-\contentsline {section}{\numberline {8.4}W analysis event selection and control plots}{150}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}Event selection}{151}{subsection.8.4.1}
-\contentsline {subsection}{\numberline {8.4.2}$\sqrt {s} = 13$\nobreakspace {}\TeV \ dataset control plots}{151}{subsection.8.4.2}
-\contentsline {subsection}{\numberline {8.4.3}$\sqrt {s} = 5$\nobreakspace {}\TeV \ dataset control plots}{161}{subsection.8.4.3}
-\contentsline {section}{Bibliography}{168}{figure.caption.140}
-\contentsline {chapter}{\chapternumberline {9}W boson pT spectrum}{171}{chapter.9}
-\contentsline {section}{\numberline {9.1}Unfolding}{171}{section.9.1}
-\contentsline {section}{\numberline {9.2}Propagation of uncertainties}{172}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}Statistical uncertainty propagation using Bootstrap method}{172}{subsection.9.2.1}
-\contentsline {subsection}{\numberline {9.2.2}Systematic uncertainty propagation}{173}{subsection.9.2.2}
-\contentsline {subsection}{\numberline {9.2.3}Unfolded uncertainty breakdown}{173}{subsection.9.2.3}
-\contentsline {section}{\numberline {9.3}Unfolding bias}{178}{section.9.3}
-\contentsline {section}{\numberline {9.4}Results}{180}{section.9.4}
-\contentsline {section}{Bibliography}{181}{figure.caption.148}
-\contentsline {chapter}{\chapternumberline {10}Hadronic recoil regression with deep neural networks}{183}{chapter.10}
-\contentsline {section}{\numberline {10.1}Deep neural networks}{183}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Gradient descent optimization}{183}{subsection.10.1.1}
-\contentsline {subsection}{\numberline {10.1.2}DNN structure and training}{185}{subsection.10.1.2}
-\contentsline {subsection}{\numberline {10.1.3}Batch normalization}{187}{subsection.10.1.3}
-\contentsline {section}{\numberline {10.2}HR regression}{188}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}Input features and model}{188}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}Kinematic distributions}{190}{subsection.10.2.2}
-\contentsline {section}{\numberline {10.3}Conclusions}{192}{section.10.3}
-\contentsline {section}{Bibliography}{194}{section.10.3}
-\contentsline {chapter}{\chapternumberline {11}Appendix A}{197}{chapter.11}
-\contentsline {section}{\numberline {11.1}Experimental uncertainties of main observables}{197}{section.11.1}
-\contentsline {chapter}{\chapternumberline {12}Appendix B}{205}{chapter.12}
+\contentsline {section}{\numberline {0.1}Introduction}{4}{section.0.1}
+\contentsline {subsection}{\numberline {0.1.1}Historical retrospective}{4}{subsection.0.1.1}
+\contentsline {subsection}{\numberline {0.1.2}Current challenges}{6}{subsection.0.1.2}
+\contentsline {subsection}{\numberline {0.1.3}Thesis composition outline}{7}{subsection.0.1.3}
+\contentsline {chapter}{\chapternumberline {1}The Standard Model}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}General composition and key parameters}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Classical fields and gauge invariance principle}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Quantum electrodynamics}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Electroweak theory and the Higgs mechanism}{7}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Electroweak gauge fields}{7}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Fermion sector}{8}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Higgs field breaking the symmetry}{8}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Physical interpretation of gauge fields and parameters}{9}{subsection.1.4.4}
+\contentsline {section}{\numberline {1.5}Chromodynamics}{10}{section.1.5}
+\contentsline {chapter}{\chapternumberline {2}The W boson}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}The motivation for the W mass measurement}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Massive boson production at hadron colliders}{14}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Deep Inelastic scattering}{15}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}The Drell-Yan process}{17}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Transverse momentum of massive vector bosons }{18}{section.2.3}
+\contentsline {section}{\numberline {2.4}The measurement of W boson transverse momentum}{21}{section.2.4}
+\contentsline {chapter}{\chapternumberline {3}The Large Hadron Collider}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}The LHC running sequence}{23}{section.3.2}
+\contentsline {section}{\numberline {3.3}Special low pile-up run during LHC Run 2}{26}{section.3.3}
+\contentsline {chapter}{\chapternumberline {4}The ATLAS detector}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}General description and layout}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Coordinate system}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}Magnet system and magnetic field}{30}{section.4.3}
+\contentsline {section}{\numberline {4.4}Inner detector}{30}{section.4.4}
+\contentsline {section}{\numberline {4.5}Calorimeter system }{32}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Electromagnetic calorimeter }{32}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Hadronic calorimeter }{34}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Muon detectors}{36}{section.4.6}
+\contentsline {section}{\numberline {4.7}Forward detectors}{38}{section.4.7}
+\contentsline {section}{\numberline {4.8}Trigger system}{40}{section.4.8}
+\contentsline {chapter}{\chapternumberline {5}Electromagnetic shower shapes correction }{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{43}{section.5.1}
+\contentsline {section}{\numberline {5.2} Shower shapes measurement and correction }{46}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Event selection}{46}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Data/MC discrepancies}{46}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}The correction procedure}{47}{subsection.5.2.3}
+\contentsline {subsubsection}{The correction matrix}{47}{subsubsection*.41}
+\contentsline {subsubsection}{Bremsstrahlung tails}{48}{subsubsection*.42}
+\contentsline {section}{\numberline {5.3}Results}{49}{section.5.3}
+\contentsline {section}{\numberline {5.4}Appendix: control plots}{49}{section.5.4}
+\contentsline {chapter}{\chapternumberline {6}Event reconstruction}{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}Charged particles track reconstruction}{57}{section.6.1}
+\contentsline {section}{\numberline {6.2}Determining the primary vertex of the event}{58}{section.6.2}
+\contentsline {section}{\numberline {6.3}Muon reconstruction and identification}{59}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Muon reconstruction}{60}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Muon identification}{61}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Muon isolation}{62}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Electron reconstruction and identification}{63}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Electron reconstruction}{63}{subsection.6.4.1}
+\contentsline {subsubsection}{Sliding window}{63}{subsubsection*.61}
+\contentsline {subsubsection}{Topocluster reconstruction}{64}{subsubsection*.62}
+\contentsline {subsubsection}{Track-cluster matching}{65}{subsubsection*.64}
+\contentsline {subsubsection}{Supercluster reconstruction}{65}{subsubsection*.65}
+\contentsline {subsection}{\numberline {6.4.2}Electron identification}{66}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Electron isolation}{67}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Particle flow objects}{68}{section.6.5}
+\contentsline {chapter}{\chapternumberline {7}Calibrations and corrections}{71}{chapter.7}
+\contentsline {section}{\numberline {7.1}Electron corrections}{71}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Energy scale and resolution correction}{71}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Electron selection efficiency}{75}{subsection.7.1.2}
+\contentsline {subsubsection}{Reconstruction efficiency}{75}{subsubsection*.75}
+\contentsline {subsubsection}{Identification efficiency}{78}{subsubsection*.78}
+\contentsline {subsubsection}{Isolation efficiency}{79}{subsubsection*.81}
+\contentsline {subsubsection}{Trigger efficiency}{79}{subsubsection*.83}
+\contentsline {subsection}{\numberline {7.1.3}SF uncertainties propagation}{79}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Muon corrections}{83}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Muon momentum calibration}{83}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Correction for charge-dependent momentum bias}{83}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Muon efficiency measurements}{88}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Hadronic recoil calibration}{90}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}SET-$u_T$ reweighting }{91}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}$u_X$ and $u_Y$ correction}{93}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Resolution and response corrections}{94}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}Hadronic recoil calibration uncertainties}{96}{subsection.7.3.4}
+\contentsline {section}{\numberline {7.4}Angular coefficients correction}{97}{section.7.4}
+\contentsline {chapter}{\chapternumberline {8}Event selection, datasets and MC samples}{99}{chapter.8}
+\contentsline {section}{\numberline {8.1}Data and MC samples}{99}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Data samples}{99}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}MC samples and cross-sections}{101}{subsection.8.1.2}
+\contentsline {section}{\numberline {8.2}Multijet background}{106}{section.8.2}
+\contentsline {section}{\numberline {8.3}Z vertex reweighting }{111}{section.8.3}
+\contentsline {section}{\numberline {8.4}W analysis event selection and control plots}{112}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Event selection}{114}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}$\sqrt {s} = 13$\nobreakspace {}\TeV \ dataset control plots}{115}{subsection.8.4.2}
+\contentsline {subsection}{\numberline {8.4.3}$\sqrt {s} = 5$\nobreakspace {}\TeV \ dataset control plots}{123}{subsection.8.4.3}
+\contentsline {chapter}{\chapternumberline {9}W boson pT spectrum}{129}{chapter.9}
+\contentsline {section}{\numberline {9.1}Unfolding}{129}{section.9.1}
+\contentsline {section}{\numberline {9.2}Propagation of uncertainties}{130}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Statistical uncertainty propagation using Bootstrap method}{130}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}Systematic uncertainty propagation}{133}{subsection.9.2.2}
+\contentsline {subsection}{\numberline {9.2.3}Unfolded uncertainty breakdown}{134}{subsection.9.2.3}
+\contentsline {section}{\numberline {9.3}Unfolding bias}{142}{section.9.3}
+\contentsline {section}{\numberline {9.4}Results}{145}{section.9.4}
+\contentsline {section}{\numberline {9.5}Conclusions}{146}{section.9.5}
+\contentsline {chapter}{\chapternumberline {10}Hadronic recoil regression with deep neural networks}{149}{chapter.10}
+\contentsline {section}{\numberline {10.1}Deep neural networks}{149}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Gradient descent optimization}{149}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}DNN structure and training}{151}{subsection.10.1.2}
+\contentsline {subsection}{\numberline {10.1.3}Batch normalization}{153}{subsection.10.1.3}
+\contentsline {section}{\numberline {10.2}HR regression}{153}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Input features and model}{154}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Kinematic distributions}{156}{subsection.10.2.2}
+\contentsline {section}{\numberline {10.3}Rescaling of the MVA hadronic recoil }{159}{section.10.3}
+\contentsline {section}{\numberline {10.4}Template fits for W boson mass}{161}{section.10.4}
+\contentsline {chapter}{\chapternumberline {11}Summary}{163}{chapter.11}
+\contentsline {chapter}{\chapternumberline {12}Appendix A}{165}{chapter.12}
+\contentsline {section}{\numberline {12.1}Experimental uncertainties of main observables}{165}{section.12.1}
+\contentsline {chapter}{\chapternumberline {13}Appendix B}{173}{chapter.13}

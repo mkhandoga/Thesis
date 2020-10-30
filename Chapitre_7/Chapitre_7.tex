@@ -1,5 +1,5 @@
 \chapter{Calibrations and corrections}
-    
+    The object reconstruction procedure uses the same algorithms for the real data and for the simulation. However, the simulation is never flawless en every aspect. So in order to put the Monte-Carlo simulated events on the same page with the data a number of calibrations and corrections are introduced to the reconstructed objects and to the observables. The current chapter describes the calibrations and corrections, applied in the framework of the W boson transverse momentum measurement analysis.
     \section{Electron corrections}
     This section describes the electron calibrations and corrections used in $p_T^W$ analysis. They were derived from the low-$\mu$ special run data collected in 2017 and 2018 at 5 and 13 \tev{} and the dedicated \gls{mc} samples \cite{Kretzschmar:2657141}, as well as from the standard ATLAS high pileup data collected during the Run 2.
     \subsection{Energy scale and resolution correction}
@@ -39,18 +39,16 @@ Two binnings were considered:
  As can be seen from Fig. \ref{fig:alpha-lowmu-manybinnings}, the
 statistical instability for the endcap bins is significantly reduced if wider bins are used. 
 Since the $\alpha$ factors are quite similar in 48 and 24 bin cases, the latter is chosen as the baseline.
-
 \begin{table}
-		\resizebox{\linewidth}{!}{%
 		\begin{tabular}{c}
 			\toprule
 			-2.47 -2.4 -2.1 -1.8 -1.55 -1.37 -1.2 -1 -0.8 -0.6 -0.4 -0.2 0 0.2 0.4 0.6 0.8 1 1.2 1.37 1.55 1.8 2.1 2.4 2.47\\
 			\bottomrule
-		\end{tabular}%
-	}
+		\end{tabular}
 	\caption{Values of $\eta_{\text{calo}}$ bin frontiers for energy scale factors for low pile-up runs~\cite{int_note_electrons}.}\label{tab:lowmucalibbins}
 	\label{tab:CS_BinFrontier}
 \end{table}
+
 
 \begin{figure}[htp]
 	\begin{center}
@@ -177,22 +175,21 @@ The comparison between the data and MC invariant mass distributions around the \
     \begin{figure}[htbp]
     	\centering
     	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SF000top010}%
-    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp010top060}%
-    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp060top080}
-    	
     	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp080top115}%
-    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp115top137}%
-    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp152top181}
+        \includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp237top247}
+%   	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp010top060}%
+%    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp060top080}
     	
-    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp181top201}%
-    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp201top237}%
-    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp237top247}
+
+%    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp115top137}%
+%    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp152top181}
+    	
+%    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp181top201}%
+%    	\includegraphics[width=0.35\textwidth]{Efficiencies/Reco/Merge/SFp201top237}%
+
     	
     	\caption{Comparison of electron reconstruction SFs with 5 TeV and 13
-    		TeV data as well as the 5+13 TeV combination in nine $\eta$ ranges
-    		as written in the plot legend, from most central $\eta=0-0.1$ (top
-    		left) to most forward $\eta=2.37-2.47$ (bottom right). The bottom panel shows the ratio
-    		of 5 TeV and 13 TeV SFs. The total
+    		TeV data as well as the 5+13 TeV, selected  ranges from most central $\eta=0-0.1$ (left) to most forward $\eta=2.37-2.47$ (right). The bottom panel shows the ratio of 5 TeV and 13 TeV SFs. The total
     		uncertainties are shown~\cite{int_note_electrons}.}  \label{fig:reco_merge}
     \end{figure}
     
@@ -201,12 +198,13 @@ The comparison between the data and MC invariant mass distributions around the \
     
     \begin{figure}[htbp]
     	\centering
-    	\includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF25to30}
-    	\includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF30to35}\\
-    	\includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF35to40}
-    	\includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF40to45} \\
-    	\includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF45to50}
-    	\includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF50to60}
+%    	\includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF25to30}
+    	\includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF30to35}%
+    	 \includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF40to45} \\
+%    	\includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF35to40}
+
+%    	\includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF45to50}
+%    	\includegraphics[width=0.46\textwidth]{Efficiencies/Iso/SF/SF50to60}
     	\caption{Electron isolation efficiencies (top panels) and scale
     		factors (lower panels) for the \emph{ptvarcone20}$/\pt^e < 0.1$
     		working point using 13 TeV $339\,\ipb$ low-pileup data as function
@@ -218,12 +216,12 @@ The comparison between the data and MC invariant mass distributions around the \
     
     \begin{figure}[htbp]
     	\centering
-    	\includegraphics[width=0.46\textwidth]{Efficiencies/Trig/SF/SF25to30}
-    	\includegraphics[width=0.46\textwidth]{Efficiencies/Trig/SF/SF30to35}\\
-    	\includegraphics[width=0.46\textwidth]{Efficiencies/Trig/SF/SF35to40}
+%    	\includegraphics[width=0.46\textwidth]{Efficiencies/Trig/SF/SF25to30}
+    	\includegraphics[width=0.46\textwidth]{Efficiencies/Trig/SF/SF30to35}
     	\includegraphics[width=0.46\textwidth]{Efficiencies/Trig/SF/SF40to45} \\
-    	\includegraphics[width=0.46\textwidth]{Efficiencies/Trig/SF/SF45to50}
-    	\includegraphics[width=0.46\textwidth]{Efficiencies/Trig/SF/SF50to60}
+%    	\includegraphics[width=0.46\textwidth]{Efficiencies/Trig/SF/SF35to40}
+%    	\includegraphics[width=0.46\textwidth]{Efficiencies/Trig/SF/SF45to50}
+%    	\includegraphics[width=0.46\textwidth]{Efficiencies/Trig/SF/SF50to60}
     	\caption{Electron trigger efficiencies (top panels) and scale
     		factors (lower panels) for \texttt{HLT\_e15\_lhloose\_nod0\_L1EM12}
     		using 13 TeV $339\,\ipb$ low-pileup data as function
@@ -246,27 +244,27 @@ The comparison between the data and MC invariant mass distributions around the \
     
     \begin{figure}[htbp]
     	\centering
-    	\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/Total/p010_p060}
-    	\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/Total/p080_p115}\\
-    	\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/Total/p115_p137} 
-    	\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/Total/p152_p181}\\
+%    	\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/Total/p010_p060}
+    	\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/Total/p080_p115}
+ %   	\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/Total/p115_p137} 
+%    	\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/Total/p152_p181}\\
     	\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/Total/p181_p201}
-    	\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/Total/p201_p237} \\
-    	\caption{Total relative uncertainties of electron scale factors at 13 TeV measured with tag-and-probe method~\cite{int_note_electrons}.}
+%    	\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/Total/p201_p237} \\
+    	\caption{Examples of total relative uncertainties of electron scale factors at 13 TeV measured with tag-and-probe method~\cite{int_note_electrons} in the barrel ($|\eta| = 0.8-1.15$) and the end-cap ($|\eta| = 1.81-2.01$).}
     	\label{fig:all_uncertainty_tp}
     \end{figure}
     
     \begin{figure}[htbp]
     	\begin{center}
-    		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/13TeVMedium_extra_new/syspt}
-    		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/13TeVMedium_extra_new/syseta}
+%    		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/13TeVMedium_extra_new/syspt}
+%    		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/13TeVMedium_extra_new/syseta}
     		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/13TeVMedium_extra_new/sys_met}
-    		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/13TeVMedium_extra_new/sys_mT}
+ %   		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/13TeVMedium_extra_new/sys_mT}
     		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/13TeVMedium_extra_new/boson_pT}
-    		\caption{Contributions to the electron uncertainties related to
+    		\caption{Examples of contributions to the electron uncertainties related to
     			efficiency SF (reconstruction, identification, isolation and
     			trigger) in a $W^{+}\rightarrow e^{+}\nu$ selection at 13 TeV as
-    			function of typical kinematic variables~\cite{int_note_electrons}.}
+    			function of MET and W pT~\cite{int_note_electrons}.}
     		\label{fig:total_sys_13_medium}
     	\end{center}
     \end{figure}
@@ -274,15 +272,15 @@ The comparison between the data and MC invariant mass distributions around the \
     
     \begin{figure}[htbp]
     	\begin{center}
-    		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/5TeVMedium_extra_new/syspt}
-    		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/5TeVMedium_extra_new/syseta}
+ %   		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/5TeVMedium_extra_new/syspt}
+ %   		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/5TeVMedium_extra_new/syseta}
     		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/5TeVMedium_extra_new/sys_met}
-    		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/5TeVMedium_extra_new/sys_mT}
+ %   		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/5TeVMedium_extra_new/sys_mT}
     		\includegraphics[width=0.48\textwidth]{Efficiencies/Uncer/5TeVMedium_extra_new/boson_pT}
-    		\caption{Contributions to the electron uncertainties related to
+    		\caption{Examples of contributions to the electron uncertainties related to
     			efficiency SF (reconstruction, identification, isolation and
     			trigger) in a $W^{+}\rightarrow e^{+}\nu$ selection at 5 TeV as
-    			function of typical kinematic variables~\cite{int_note_electrons}.}
+    			function of of MET and W pT~\cite{int_note_electrons}.}
     		\label{fig:total_sys_5_medium}
     	\end{center}
     \end{figure}
@@ -316,52 +314,52 @@ where $p_T^{MC,Det}$ is the uncorrected $p_T$ in MC simulation, $g_m$ are normal
 	
 	\begin{figure}[htb!]
 		\begin{center}
-			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Jpsi_ID_Scale_Eta1.pdf}
-			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Jpsi_ID_Resolution_Eta0.pdf}\\
-			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Jpsi_ME_Scale_Eta1.pdf}
-			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Jpsi_ME_Resolution_Eta0.pdf}\\
+%			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Jpsi_ID_Scale_Eta1.pdf}
+%			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Jpsi_ID_Resolution_Eta0.pdf}\\
+%			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Jpsi_ME_Scale_Eta1.pdf}
+%			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Jpsi_ME_Resolution_Eta0.pdf}\\
 			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Jpsi_CB_Scale_Eta1.pdf}
 			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Jpsi_CB_Resolution_Eta0.pdf}
-			\caption{Mean~(left) and width~(right) of the $J/\psi \to \mu\mu$ mass peak as a function of the leading muon $\eta$ in 5.02~\TeV\ data and MC. The mean and width are extracted from Crystal Ball components of the fits. In case of the simulation, both the uncorrected~(dashed histogram) and corrected parameters~(solid histogram) are shown. The fit results are presented for mass peaks constructed using kinematics of the muon ID tracks~(top), ME tracks~(middle) or CB tracks~(bottom). The bottom panels in each plot show the data/MC ratio for uncorrected~(dashed histogram) and corrected simulation~(points)~\cite{int_note_muons}.}
+			\caption{Mean~(left) and width~(right) of the $J/\psi \to \mu\mu$ mass peak as a function of the leading muon $\eta$ in 5.02~\TeV\ data and MC. The mean and width are extracted from Crystal Ball components of the fits. In case of the simulation, both the uncorrected~(dashed histogram) and corrected parameters~(solid histogram) are shown. The fit results are presented for mass peaks constructed using kinematics of the muon CB tracks. The bottom panels in each plot show the data/MC ratio for uncorrected~(dashed histogram) and corrected simulation~(points)~\cite{int_note_muons}.}
 			\label{fig:calib-Jpsi-5TeV}
 		\end{center}
 	\end{figure}
 	
 	\begin{figure}[htb!]
 		\begin{center}
-			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Jpsi_ID_Scale_Eta1.pdf}
-			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Jpsi_ID_Resolution_Eta0.pdf}\\
-			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Jpsi_ME_Scale_Eta1.pdf}
-			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Jpsi_ME_Resolution_Eta0.pdf}\\
+%			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Jpsi_ID_Scale_Eta1.pdf}
+%			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Jpsi_ID_Resolution_Eta0.pdf}\\
+%			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Jpsi_ME_Scale_Eta1.pdf}
+%			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Jpsi_ME_Resolution_Eta0.pdf}\\
 			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Jpsi_CB_Scale_Eta1.pdf}
 			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Jpsi_CB_Resolution_Eta0.pdf}
-			\caption{Mean~(left) and width~(right) of the $J/\psi \to \mu\mu$ mass peak as a function of the leading muon $\eta$ in 2017 13~\TeV\ data and MC at low pile-up. The mean and width are extracted from Crystal Ball components of the fits. In case of the simulation, both the uncorrected~(dashed histogram) and corrected parameters~(solid histogram) are shown. The fit results are presented for mass peaks constructed using kinematics of the muon ID tracks~(top), ME tracks~(middle) or CB tracks~(bottom). The bottom panels in each plot show the data/MC ratio for uncorrected~(dashed histogram) and corrected simulation~(points)~\cite{int_note_muons}.}
+			\caption{Mean~(left) and width~(right) of the $J/\psi \to \mu\mu$ mass peak as a function of the leading muon $\eta$ in 2017 13~\TeV\ data and MC at low pile-up. The mean and width are extracted from Crystal Ball components of the fits. In case of the simulation, both the uncorrected~(dashed histogram) and corrected parameters~(solid histogram) are shown. The fit results are presented for mass peaks constructed using kinematics of the muon CB tracks. The bottom panels in each plot show the data/MC ratio for uncorrected~(dashed histogram) and corrected simulation~(points)~\cite{int_note_muons}.}
 			\label{fig:calib-Jpsi-13TeV}
 		\end{center}
 	\end{figure}
 
 	\begin{figure}[htb!]
 		\begin{center}
-			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Z_ID_Scale_Eta1.pdf}
-			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Z_ID_Resolution_Eta0.pdf}\\
-			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Z_ME_Scale_Eta1.pdf}
-			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Z_ME_Resolution_Eta0.pdf}\\
+%			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Z_ID_Scale_Eta1.pdf}
+%			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Z_ID_Resolution_Eta0.pdf}\\
+%			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Z_ME_Scale_Eta1.pdf}
+%			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Z_ME_Resolution_Eta0.pdf}\\
 			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Z_CB_Scale_Eta1.pdf}
 			\includegraphics[width=0.49\textwidth]{calibration/5TeV/Z_CB_Resolution_Eta0.pdf}
-			\caption{Mean~(left) and width~(right) of the \Zmm\ mass peak as a function of the leading muon $\eta$ in 5.02~\TeV\ data and MC. The mean and width are extracted from Crystal Ball components of the fits. In case of the simulation, both the uncorrected~(dashed histogram) and corrected parameters~(solid histogram) are shown. The fit results are presented for mass peaks constructed using kinematics of the muon ID tracks~(top), ME tracks~(middle) or CB tracks~(bottom). The bottom panels in each plot show the data/MC ratio for uncorrected~(dashed histogram) and corrected simulation~(points)~\cite{int_note_muons}.}
+			\caption{Mean~(left) and width~(right) of the \Zmm\ mass peak as a function of the leading muon $\eta$ in 5.02~\TeV\ data and MC. The mean and width are extracted from Crystal Ball components of the fits. In case of the simulation, both the uncorrected~(dashed histogram) and corrected parameters~(solid histogram) are shown. The fit results are presented for mass peaks constructed using kinematics of the muon CB tracks. The bottom panels in each plot show the data/MC ratio for uncorrected~(dashed histogram) and corrected simulation~(points)~\cite{int_note_muons}.}
 			\label{fig:calib-Z-5TeV}
 		\end{center}
 	\end{figure}
 	
 	\begin{figure}[htb!]
 		\begin{center}
-			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Z_ID_Scale_Eta1.pdf}
-			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Z_ID_Resolution_Eta0.pdf}\\
-			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Z_ME_Scale_Eta1.pdf}
-			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Z_ME_Resolution_Eta0.pdf}\\
+%			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Z_ID_Scale_Eta1.pdf}
+%			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Z_ID_Resolution_Eta0.pdf}\\
+%			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Z_ME_Scale_Eta1.pdf}
+%			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Z_ME_Resolution_Eta0.pdf}\\
 			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Z_CB_Scale_Eta1.pdf}
 			\includegraphics[width=0.49\textwidth]{calibration/13TeV_2017/Z_CB_Resolution_Eta0.pdf}
-			\caption{Mean~(left) and width~(right) of the \Zmm\ mass peak as a function of the leading muon $\eta$ in 2017 13~\TeV\ data and MC at low pile-up. The mean and width are extracted from Crystal Ball components of the fits. In case of the simulation, both the uncorrected~(dashed histogram) and corrected parameters~(solid histogram) are shown. The fit results are presented for mass peaks constructed using kinematics of the muon ID tracks~(top), ME tracks~(middle) or CB tracks~(bottom). The bottom panels in each plot show the data/MC ratio for uncorrected~(dashed histogram) and corrected simulation~(points)~\cite{int_note_muons}.}
+			\caption{Mean~(left) and width~(right) of the \Zmm\ mass peak as a function of the leading muon $\eta$ in 2017 13~\TeV\ data and MC at low pile-up. The mean and width are extracted from Crystal Ball components of the fits. In case of the simulation, both the uncorrected~(dashed histogram) and corrected parameters~(solid histogram) are shown. The fit results are presented for mass peaks constructed using kinematics of the muon CB tracks. The bottom panels in each plot show the data/MC ratio for uncorrected~(dashed histogram) and corrected simulation~(points)~\cite{int_note_muons}.}
 			\label{fig:calib-Z-13TeV}
 		\end{center}
 	\end{figure}
@@ -379,7 +377,7 @@ where $p_T^{MC,Det}$ is the uncorrected $p_T$ in MC simulation, $g_m$ are normal
     	\end{equation}
     	where $p_{track}$ is the momentum measured in the \gls{id}, E is the energy measured in the \gls{emc}, from which we can get the $p^{calo}_T=E\cdot \sin{\theta}$ transverse momentum. The $<>$ brackets denote the averaging in $\eta$ bins. 
     	\item The $p_T(\mu)$ method is used by \gls{mcp} and alignment groups in high-$\mu$ data compares the muons and anti-muons spectra in \Zmm events. It compares the $p_T^{\mu+}$ and $p_T^{\mu-}$ distributions in data and MC and interprets the discrepancy as a charge-dependent misalignment.
-    	\item The Z-mass method uses the Z mass peak. This is the main method used my \gls{mcp} and alignment groups, the results are denoted as $M_{\mu\mu}\_MCP$ and $M_{\mu\mu}\_Align$ on the plots (see \cite{muon_align}). The sagitta bias is calculated iteratively minimizing the difference between the reconstructed and expected position of the \Zmm mass peak position. This method catches the rapidity dependence of the sagitta bias, but is sensitive to overall offset.
+    	\item The Z-mass method uses the Z mass peak. This is the main method used by \gls{mcp} and alignment groups, the results are denoted as $M_{\mu\mu}\_MCP$ and $M_{\mu\mu}\_Align$ on the plots (see \cite{muon_align}). The sagitta bias is calculated iteratively minimizing the difference between the reconstructed and expected position of the \Zmm mass peak position. This method catches the rapidity dependence of the sagitta bias, but is sensitive to overall offset.
     \end{itemize}
 	The results of these methods are presented in Fig. \ref{fig:allsagitta}. The sagitta bias in low-pile-up data was found to be 10 times higher than in the MC simulation. Further results in the measurement rely on the following method: the differences between the data and MC are averaged over $\eta$ using a fit, and also introduce a global offset. The results are shown in Fig. \ref{fig:sagittacorrection}.
 	
@@ -424,20 +422,20 @@ where $p_T^{MC,Det}$ is the uncorrected $p_T$ in MC simulation, $g_m$ are normal
 	\begin{equation*}
 	W_{event}^{W\rightarrow e\nu}=SF_{reco/ID} \cdot SF_{trig} \cdot SF_{TTVA} \cdot SF_{iso}.
 	\end{equation*}
-	All muon efficiencies and scale factors used in current analysis are measured in-situ using the low-$\mu$ datasets at 5 and 13 TeV by the \gls{mcp} group. The results for their measurements are presented in Fig. \ref{app:fig:lowMu2}, \ref{app:fig:ttva-lowMu1}, \ref{trig:1d2018} and \ref{fig:iso-sf-13TeV-2018}.
+	All muon efficiencies and scale factors used in current analysis are measured in-situ using the low-$\mu$ datasets at 5 and 13 TeV by the \gls{mcp} group. The results for their measurements are presented in Fig. \ref{app:fig:lowMu2} and \ref{app:fig:ttva-lowMu1}.
 	
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.495\textwidth]{lowMuComp_2017_13_reco/Eff_EtaVar_Aux_EtaVar_IDProbesWithMS_AllPt10_MediumMuons}%
-		\includegraphics[width=0.495\textwidth]{lowMuComp_2017_13_reco/Eff_PtWVar_Aux_PtWVar_IDProbesWithMS_AllPt10_MediumMuons}
-		\includegraphics[width=0.495\textwidth]{lowMuComp_2017_5_reco/Eff_EtaVar_Aux_EtaVar_IDProbesWithMS_AllPt10_MediumMuons}%
-	\includegraphics[width=0.495\textwidth]{lowMuComp_2017_5_reco/Eff_PtWVar_Aux_PtWVar_IDProbesWithMS_AllPt10_MediumMuons}
+%		\includegraphics[width=0.495\textwidth]{lowMuComp_2017_13_reco/Eff_EtaVar_Aux_EtaVar_IDProbesWithMS_AllPt10_MediumMuons}%
+%		\includegraphics[width=0.495\textwidth]{lowMuComp_2017_13_reco/Eff_PtWVar_Aux_PtWVar_IDProbesWithMS_AllPt10_MediumMuons}
+%		\includegraphics[width=0.495\textwidth]{lowMuComp_2017_5_reco/Eff_EtaVar_Aux_EtaVar_IDProbesWithMS_AllPt10_MediumMuons}%
+%	\includegraphics[width=0.495\textwidth]{lowMuComp_2017_5_reco/Eff_PtWVar_Aux_PtWVar_IDProbesWithMS_AllPt10_MediumMuons}
 		\includegraphics[width=0.495\textwidth]{lowMuComp_2018_reco/Eff_EtaVar_Aux_EtaVar_IDProbesWithMS_AllPt10_MediumMuons}%
 	\includegraphics[width=0.495\textwidth]{lowMuComp_2018_reco/Eff_PtWVar_Aux_PtWVar_IDProbesWithMS_AllPt10_MediumMuons}
 	
 		\caption{Comparison of reconstruction efficiencies for Medium muons
-			using the low-$\mu$ runs of 2017 and 2018 at a centre-of-mass energy of
-			$\sqrt{s}=13\,$TeV and $\sqrt{s}=5\,$TeV. Efficiencies are
+			using the low-$\mu$ run of 2018 at a centre-of-mass energy of
+			$\sqrt{s}=13\,$TeV. Efficiencies are
 			shown as a function of muon $\eta, \pT$. Red (orange) points correspond to low-$\mu$ data (MC),
 			while the black (blue) points are high-$\mu$ data (MC). The bottom
 			panels show the data/MC ratio for the low-$\mu$ (orange) and
@@ -448,47 +446,45 @@ where $p_T^{MC,Det}$ is the uncorrected $p_T$ in MC simulation, $g_m$ are normal
 	\begin{figure}  \centering
 		\includegraphics[width=0.49\textwidth]{lowMuComp_201718_ttva/Eff_Eta1D22_Aux_Eta1D22_LooseProbes_noProbeIP_All_IPCutEff}%
 		\includegraphics[width=0.49\textwidth]{lowMuComp_201718_ttva/Eff_Pt1D20_Aux_Pt1D20_LooseProbes_noProbeIP_All_IPCutEff}
-		\includegraphics[width=0.49\textwidth]{lowMuComp_201718_ttva/Eff_Mu10_Aux_Mu10_LooseProbes_noProbeIP_All_IPCutEff}%
-		\includegraphics[width=0.49\textwidth]{lowMuComp_2017_5_ttva/Eff_Eta_Aux_Eta_LooseProbes_noProbeIP_All_IPCutEff}
-		\includegraphics[width=0.49\textwidth]{lowMuComp_2017_5_ttva/Eff_PtNoVar_Aux_PtNoVar_LooseProbes_noProbeIP_All_IPCutEff}%
-		\includegraphics[width=0.49\textwidth]{lowMuComp_2017_5_ttva/Eff_Mu10_Aux_Mu10_LooseProbes_noProbeIP_All_IPCutEff}
+%		\includegraphics[width=0.49\textwidth]{lowMuComp_201718_ttva/Eff_Mu10_Aux_Mu10_LooseProbes_noProbeIP_All_IPCutEff}%
+%		\includegraphics[width=0.49\textwidth]{lowMuComp_2017_5_ttva/Eff_Eta_Aux_Eta_LooseProbes_noProbeIP_All_IPCutEff}
+%		\includegraphics[width=0.49\textwidth]{lowMuComp_2017_5_ttva/Eff_PtNoVar_Aux_PtNoVar_LooseProbes_noProbeIP_All_IPCutEff}%
+%		\includegraphics[width=0.49\textwidth]{lowMuComp_2017_5_ttva/Eff_Mu10_Aux_Mu10_LooseProbes_noProbeIP_All_IPCutEff}
 	
 		\caption{Comparison of TTVA efficiencies for Medium muons using the
-			low-$\mu$ runs of 2017+18 at $\sqrt{s}=13$~\TeV{} (top row) and
-			low-$\mu$ runs of 2017 at $\sqrt{s}=5$~\TeV{} (lower row).
+			low-$\mu$ runs of 2017+18 at $\sqrt{s}=13$~\TeV{}.
 			The low-$\mu$ results compared to a high-$\mu$ data set as specified in the plot legend.
 			Efficiencies are shown as function of muon $\eta$ (left) and
-			$\pT$ (middle) and the mean number of interactions $<\mu>$
-			(right). Red (orange) points correspond to low-$\mu$ data (MC),
+			$\pT$ (right). Red (orange) points correspond to low-$\mu$ data (MC),
 			while the black (blue) points are high-$\mu$ data (MC). The bottom
 			panels show the data/MC ratio for the low-$\mu$ (orange) and
 			high-$\mu$ (blue) sets with statistical and total
 			uncertainties~\cite{int_note_muons}.}\label{app:fig:ttva-lowMu1}
 	\end{figure}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.49\textwidth]{trigger/13TeVEffs_medium_periodJ_Eff_BarrelEtaCoarse_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
-		\includegraphics[width=0.49\textwidth]{trigger/13TeVEffs_medium_periodJ_Eff_Pt_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
-		\includegraphics[width=0.49\textwidth]{trigger/13TeVEffs_medium_periodN_Eff_BarrelEtaCoarse_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
-		\includegraphics[width=0.49\textwidth]{trigger/13TeVEffs_medium_periodN_Eff_Pt_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
-		\includegraphics[width=0.49\textwidth]{trigger/5TeVEffs_medium_Eff_BarrelEtaCoarse_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
-		\includegraphics[width=0.49\textwidth]{trigger/5TeVEffs_medium_Eff_Pt_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=0.49\textwidth]{trigger/13TeVEffs_medium_periodJ_Eff_BarrelEtaCoarse_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
+%		\includegraphics[width=0.49\textwidth]{trigger/13TeVEffs_medium_periodJ_Eff_Pt_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
+%		\includegraphics[width=0.49\textwidth]{trigger/13TeVEffs_medium_periodN_Eff_BarrelEtaCoarse_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
+%		\includegraphics[width=0.49\textwidth]{trigger/13TeVEffs_medium_periodN_Eff_Pt_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
+%		\includegraphics[width=0.49\textwidth]{trigger/5TeVEffs_medium_Eff_BarrelEtaCoarse_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
+%		\includegraphics[width=0.49\textwidth]{trigger/5TeVEffs_medium_Eff_Pt_LooseProbes_noProbeIP_All_HLT_mu14_noDDBkg}
 		
-		\caption{1D trigger efficiency and systematic uncertainty in data and MC, 5 and 13 TeV from 2017 and 2018 for probes from the eta barrel region and inclusive $\phi$, $\pt$ distributions. Trigger sectors in the barrel and endcap regions are different, only the barrel trigger is shown here. The bin edges correspond to physical edges of the trigger sectors~\cite{int_note_muons}. } \label{trig:1d2018}
-	\end{figure}
+%		\caption{1D trigger efficiency and systematic uncertainty in data and MC, 5 and 13 TeV from 2017 and 2018 for probes from the eta barrel region and inclusive $\phi$, $\pt$ distributions. Trigger sectors in the barrel and endcap regions are different, only the barrel trigger is shown here. The bin edges correspond to physical edges of the trigger sectors~\cite{int_note_muons}. } \label{trig:1d2018}
+%	\end{figure}
 
-	\begin{figure}[pt]
-		\begin{center}
-			\includegraphics[width=0.49\textwidth]{isolation/13TeV_2018/Eff_Eta_IsoSFNom_All_IsoFixedCutLoose.pdf}
-			\includegraphics[width=0.49\textwidth]{isolation/13TeV_2018/Eff_PtLimited_IsoSFNom_All_IsoFixedCutLoose.pdf}\\
-			\includegraphics[width=0.49\textwidth]{isolation/13TeV_2017/Eff_Eta_IsoSFNom_All_IsoLowMuWZPtvarcone30.pdf}
-			\includegraphics[width=0.49\textwidth]{isolation/13TeV_2017/Eff_PtLimited_IsoSFNom_All_IsoLowMuWZPtvarcone30.pdf}\\
-			\includegraphics[width=0.49\textwidth]{isolation/5TeV/Eff_Eta_IsoSFNom_All_IsoLowMuWZPtvarcone20.pdf}
-			\includegraphics[width=0.49\textwidth]{isolation/5TeV/Eff_PtLimited_IsoSFNom_All_IsoLowMuWZPtvarcone20.pdf}
-			\caption{Efficiencies for Ptvarcone20 isolation selections measured in 2017 and 2018 data and MC 13~\TeV\  and 5~\TeV\ as a function of muon $\eta$~(left) and \pt~(right). The bottom panels show the data/MC scale factors with statistical uncertainties represented by blue boxes, while a sum in quadrature of statistical and systematic uncertainties is represented by orange boxes~\cite{int_note_muons}.}
-			\label{fig:iso-sf-13TeV-2018}
-		\end{center}
-	\end{figure}
+%	\begin{figure}[pt]
+%		\begin{center}
+%			\includegraphics[width=0.49\textwidth]{isolation/13TeV_2018/Eff_Eta_IsoSFNom_All_IsoFixedCutLoose.pdf}
+%			\includegraphics[width=0.49\textwidth]{isolation/13TeV_2018/Eff_PtLimited_IsoSFNom_All_IsoFixedCutLoose.pdf}\\
+%			\includegraphics[width=0.49\textwidth]{isolation/13TeV_2017/Eff_Eta_IsoSFNom_All_IsoLowMuWZPtvarcone30.pdf}
+%			\includegraphics[width=0.49\textwidth]{isolation/13TeV_2017/Eff_PtLimited_IsoSFNom_All_IsoLowMuWZPtvarcone30.pdf}\\
+%			\includegraphics[width=0.49\textwidth]{isolation/5TeV/Eff_Eta_IsoSFNom_All_IsoLowMuWZPtvarcone20.pdf}
+%			\includegraphics[width=0.49\textwidth]{isolation/5TeV/Eff_PtLimited_IsoSFNom_All_IsoLowMuWZPtvarcone20.pdf}
+%			\caption{Efficiencies for Ptvarcone20 isolation selections measured in 2017 and 2018 data and MC 13~\TeV\  and 5~\TeV\ as a function of muon $\eta$~(left) and \pt~(right). The bottom panels show the data/MC scale factors with statistical uncertainties represented by blue boxes, while a sum in quadrature of statistical and systematic uncertainties is represented by orange boxes~\cite{int_note_muons}.}
+%			\label{fig:iso-sf-13TeV-2018}
+%		\end{center}
+%	\end{figure}
 	
 	\clearpage
 
@@ -524,7 +520,7 @@ where $p_T^{MC,Det}$ is the uncorrected $p_T$ in MC simulation, $g_m$ are normal
 	 which is expected to be centred around zero. In data, of course, we don't know the \ptv of the truth boson. However, in Z decay events we can use the dilepton transverse momentum \ptll as an axis for \uperp and \upar decomposition - considering the difference in \ut resolution between \ptv and \ptll is negligible. In W data events it is only possible to use $p_T^l$ for \ut decomposition.
 	 
      \subsection{SET-$u_T$ reweighting }
-     Despite the fact that the two electroweak bosons, W and Z, share  lot of similarities, there are also small but notable differences in valence quark content and PDFs, energy scale, etc. This leads to differences in underlying event and \ptv spectra, which manifest themselves in the observables like \set and \setue. For the high-precision measurements it is important to ensure that these quantities as well as their correlations are modelled properly. It is also important to match these correlations in data and MC simulations. Figure \ref{fig:setSherpa} demonstrates that the baseline \Powheg MC simulations lead to a significant mismodelling of the \setue-\ptz correlation, while \Sherpa shows much better agreement with the data from the very beginning. After applying a special pile-up reweighting of \Sherpa samples a very good agreement with the data is achieved.
+     Despite the fact that the two electroweak bosons, W and Z, share  lot of similarities, there are also small but notable differences in valence quark content and PDFs, energy scale, etc. This leads to differences in underlying event and \ptv spectra, which manifest themselves in the observables like \set and \setue. For the high-precision measurements it is important to ensure that these quantities as well as their correlations are modelled properly. It is also important to match these correlations in data and MC simulations. Figure \ref{fig:setSherpa} demonstrates that the baseline \Powheg~MC simulations lead to a significant mismodelling of the \setue-\ptz correlation, while \Sherpa~shows much better agreement with the data from the very beginning. After applying a special pile-up reweighting of \Sherpa samples a very good agreement with the data is achieved.
      
 	\begin{figure}[tp]
 		\centering
@@ -585,9 +581,9 @@ where $p_T^{MC,Det}$ is the uncorrected $p_T$ in MC simulation, $g_m$ are normal
      	\label{fig:setCalibDataMCRatio5}
      \end{figure}
      
-     The closure of the procedure is checked with \Sherpa MC simulation used as pseudo-data, as we don't have the \ptv distribution from the data. The residual non-closure of less than 1\% is treated as a systematic uncertainty.
+     The closure of the procedure is checked with \Sherpa~ MC simulation used as pseudo-data, as we don't have the \ptv distribution from the data. The residual non-closure of less than 1\% is treated as a systematic uncertainty.
      \subsection{$u_X$ and $u_Y$ correction}
-     The azimuthal angle distribution iof the recoil s another source of discrepancy between the MC simulation and the data. While the simulated events have a flat $u^{\phi}$ distribution, the data events show a non-uniform distribution which is probably caused by detector imperfections or ageing. The correction is performed by introducing additive corrections to the $u_X$ and $u_Y$ components of the \gls{hr}. The corrections are derived as a mean difference between the data and MC as a function of \setue in Z events:
+     The azimuthal angle distribution of the recoil s another source of discrepancy between the MC simulation and the data. While the simulated events have a flat $u^{\phi}$ distribution, the data events show a non-uniform distribution which is probably caused by detector imperfections or ageing. The correction is performed by introducing additive corrections to the $u_X$ and $u_Y$ components of the \gls{hr}. The corrections are derived as a mean difference between the data and MC as a function of \setue in Z events:
      \begin{equation}
      \begin{array}{c}
      u_X^{\mathrm{MC, corr}} = u_X^{\mathrm{MC}} + [(\langle{u_X^{\mathrm{data}}}\rangle-\langle{u_X^{\mathrm{MC}}}\rangle)(\setue)] \\
