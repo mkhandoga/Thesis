@@ -108,7 +108,7 @@
 \contentsline {section}{\numberline {10.4}Template fits for W boson mass}{165}{section.10.4}
 \contentsline {chapter}{Summary}{167}{chapter*.178}
 \contentsline {chapter}{Appendix A: Experimental uncertainties}{169}{chapter*.179}
-\contentsline {chapter}{Appendix B: hadronic recoil reconstruction using MVA}{177}{chapter*.187}
+\contentsline {chapter}{Appendix B: Hadronic recoil reconstruction using MVA}{177}{chapter*.187}
 \contentsline {chapter}{Bibliography}{195}{section*.205}
 \contentsline {chapter}{Acknowledgements}{209}{chapter*.206}
 \contentsline {chapter}{Synthèse en français}{211}{chapter*.207}
