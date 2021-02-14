@@ -30,7 +30,7 @@ Interpreting the detector signals and reconstructing the event along with the as
   		\hfill
   		\begin{subfigure}[t]{0.33\textwidth} 
   			\includegraphics[width=\textwidth,keepaspectratio]{track_overlap.png}
-  			\caption[Share]{Tracks sharing space-points.}
+  			\caption[Tracks sharing space-points]{Tracks sharing space-points.}
   			\label{fig::tr_overlap}
   		\end{subfigure}
   		\caption{Ambiguity solving process~\cite{ATLAS:track2}.}
@@ -51,7 +51,7 @@ Interpreting the detector signals and reconstructing the event along with the as
   \begin{figure}[htbp]
   	\centering
   	\includegraphics[width=0.5\textwidth,keepaspectratio]{primary_vertex.png}
-  	\caption[Vertices]{Primary, secondary and pile-up vertices \cite{vert_recon}.}
+  	\caption[Types of vertices]{Primary, secondary and pile-up vertices \cite{vert_recon}.}
   	\label{fig::pv}
   \end{figure}
     \section{Muon reconstruction and identification}
@@ -61,7 +61,7 @@ Interpreting the detector signals and reconstructing the event along with the as
      \begin{figure}[htbp]
     	\centering
     	\includegraphics[width=0.5\textwidth,keepaspectratio]{sagitta.png}
-    	\caption[sagitta]{Sagitta used for the determination of the muon momentum \cite{Kaiser:2010zea}.}
+    	\caption[Muons sagitta]{Sagitta used for the determination of the muon momentum \cite{Kaiser:2010zea}.}
     	\label{fig::sagitta}
     \end{figure}
     Then the track candidates are built by fitting hits from different layers. This algorithm starts a combinatorial search first using the segments from the middle layers as seeds, as there are more trigger hits in the middle layer. The search is later extended to include the segments from other layers as seeds. Segment selection criteria are based on hit multiplicity and fit quality. The segments are matched using their relative positions and angles. In all the regions, except barrel-endcap transition region, at least two matching segments are needed to build a track (one segment is enough in the transition region).
@@ -85,7 +85,7 @@ Interpreting the detector signals and reconstructing the event along with the as
       \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth,keepaspectratio]{muons_info.png}
-	\caption[Muon reconstruction]{The four types of reconstructed muons~\cite{muons_reco1}.}
+	\caption[Reconstructed muon types]{The four types of reconstructed muons~\cite{muons_reco1}.}
 	\label{fig::muon_combined}
 	\end{figure}
      \subsection{Muon identification}
@@ -132,7 +132,7 @@ Interpreting the detector signals and reconstructing the event along with the as
  	  	\begin{figure}[htbp]
  	 	\centering
  	 	\includegraphics[width=0.8\textwidth,keepaspectratio]{topoclusters.png}
- 	 	\caption[topocluster]{The algorithm scheme for topocluster reconstruction.}
+ 	 	\caption[Topocluster reconstruction]{The algorithm scheme for topocluster reconstruction.}
  	 	\label{fig::topocluster}
  	 \end{figure}
  	 The algorithm for topocluster reconstruction \cite{topoclust2_2016}, \cite{topoclust_2019} starts with composing proto-clusters in the calorimeter using the noise threshold:
@@ -154,7 +154,7 @@ Interpreting the detector signals and reconstructing the event along with the as
  	\begin{figure}[htbp]
  		\centering
  		\includegraphics[width=\textwidth,keepaspectratio]{supercluster_el.png}
- 		\caption[Supercluster]{Supercluster reconstruction for electrons. Seed clusters are shown in red, satellite clusters in blue.}
+ 		\caption[Supercluster reconstruction]{Supercluster reconstruction for electrons. Seed clusters are shown in red, satellite clusters in blue.}
  		\label{fig::supercluster}
  	\end{figure}
  	The composition of an electron supercluster is performed in two stages: first, the candidate EM topocluster is tested to be used as a seed for the supercluster. In the second stage the nearby EM topoclusters can be identified as satellite clusters, emerging from Bremsstrahlung radiation or topocluster splitting.
@@ -191,7 +191,7 @@ Interpreting the detector signals and reconstructing the event along with the as
 	 \begin{figure}[htbp]
 		\centering
 		\includegraphics[width=0.5\textwidth,keepaspectratio]{calo_iso.png}
-		\caption[Isolation plot]{The isolation cone is centred at the candidate electron. All topological clusters, shown in red, are included in the raw isolation variable. The $5\times 7$ cells included into core subtraction method are marked in yellow~\cite{topoclust_2019}.}
+		\caption[Isolation cone]{The isolation cone is centred at the candidate electron. All topological clusters, shown in red, are included in the raw isolation variable. The $5\times 7$ cells included into core subtraction method are marked in yellow~\cite{topoclust_2019}.}
 		\label{fig::calo_iso}
 	\end{figure}
 	As depicted in Fig. \ref{fig::calo_iso} the raw isolation energy $E_{isol}^{T,raw}$ includes the energy of all the topoclusters, barycentres of which fall within the isolation radius $\Delta R$. It also includes core energy of the electron candidate $E_{isol}^{T,core}$ which comprises the $5\times 7$ cells within the area of $\Delta \eta \times \Delta \phi = 0.125 \times 0.175$. The fixed size of the core ensures simplicity and stability, although it may happen that the topocluster is larger than the size of the core resulting in attributing the proper energy of the electron to the outside activity. This leakage effect is corrected for using no pile-up simulated events, parametrizing the leakage with a Crystal Ball function as a function of the transverse energy $E_{T,leakage}=E_{T,leakage}(E_T)$.
@@ -219,7 +219,7 @@ Interpreting the detector signals and reconstructing the event along with the as
       	\begin{figure}[htbp]
       	\centering
       	\includegraphics[width=1\textwidth,keepaspectratio]{pflow.png}
-      	\caption[pflow]{The algorithm scheme for particle flow object reconstruction~\cite{pflow}.}
+      	\caption[Particle flow algorithm]{The algorithm scheme for particle flow object reconstruction~\cite{pflow}.}
       	\label{fig::pflow}
       \end{figure}
   	  The process starts with getting \textit{tight} tracks from the \gls{id}, meaning these tracks must have at least nine hits in the silicon detectors and no holes n the pixel detector. The tracks must have $|\eta| < 2.5$ and $0.5 < p_T < 40$ GeV, corresponding to the kinematic region where tracks offer better resolution than the calorimeter. The tracks associated to leptons are removed. 

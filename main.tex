@@ -1,4 +1,6 @@
 \documentclass[11pt,a4paper,oldfontcommands,twoside,openright]{memoir}
+\usepackage{chngcntr}
+\counterwithin*{figure}{chapter}
 \input{packages}
 \input{colors}
 \input{hansen}
@@ -33,7 +35,7 @@
 %\usepackage{latex/atlashepparticle}
 \usepackage{latex/atlasmisc}
 \makeglossaries
-\graphicspath{{Chapitre_1/pictures/}{Chapitre_2/pictures/}{Chapitre_3/pictures/}{Chapitre_4/pictures/}{Chapitre_5/pictures/}{Chapitre_6/pictures/}{Chapitre_7/pictures/}{Chapitre_8/pictures/}{Chapitre_9/pictures/}{Chapitre_10/pictures/}{Appendix_A/pictures/}{Appendix_B/pictures/}{Front-back_covers/images/}{Saclay_cover/}}
+\graphicspath{{Chapitre_1/pictures/}{Chapitre_2/pictures/}{Chapitre_3/pictures/}{Chapitre_4/pictures/}{Chapitre_5/pictures/}{Chapitre_6/pictures/}{Chapitre_7/pictures/}{Chapitre_8/pictures/}{Chapitre_9/pictures/}{Chapitre_10/pictures/}{Appendix_A/pictures/}{Appendix_B/pictures/}{synthese/pictures/}{Front-back_covers/images/}{Saclay_cover/}}
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
@@ -56,74 +58,87 @@
   \usepackage{colortbl}
   \usepackage{array}
 %  \usepackage[numbers,sort&compress]{biblatex}
+  %\usepackage{tocloft}
+%\usepackage[nottoc,numbib]{tocbibind}
+
+
   
+%  \addtolength\cftKnumwidth{1}  
 \begin{document} 
 %\layout
-\input{Saclay_cover/Modele_These_UParisSaclay_2020}
+%  \setlength{\cftfignumwidth}{2.55em}
+
+  
+  
+ % \renewcommand{ \pnumwidth}{6em}
 %\newgeometry{twoside}
 %\newpage
 %\thispagestyle{empty}
-\begin{tikzpicture}[remember picture, overlay] 
-\end{tikzpicture}
+%\begin{tikzpicture}[remember picture, overlay] 
+%\end{tikzpicture}
 %\newpage
 
 %\pagestyle{myheadings}
-\markright{} 
 
-%\setcounter{chapter}{0}             % to start with the chapter no 1 
-%\setcounter{page}{1}                % to start with the page number 
+
 %\setcounter{figure}{0}              % to start the numbering of figures 
-
-\input{introduction/introduction}
+%\clearpage
 %\newpage
+             % to start with the chapter no 1 
 
+%\printglossaries
 
-
-\tableofcontents*
-\printglossaries
-
-\mainmatter
 \normalsize 
 
+\markright{} 
+\mainmatter
+\input{Saclay_cover/Modele_These_UParisSaclay_2020}
+\renewcommand{\thefigure}{\thechapter.\arabic{figure}}
+\renewcommand{\thetable}{\thechapter.\arabic{figure}}
+\tableofcontents*
+\clearpage
+\markboth{}{}
+%\setcounter{chapter}{0}
+\setcounter{page}{1}                % to start with the page number 
+\pagenumbering{arabic}
+\input{introduction/introduction}
+\clearpage
 
-\newpage
-\thispagestyle{empty}
+
+\setcounter{chapter}{0}
+%\newpage
+%\thispagestyle{empty}
+
 \pagestyle{myheadings} % All pages have headers and footers
 \input{Chapitre_1/Chapitre_1.tex}
-%\printbibliography
 \input{Chapitre_2/Chapitre_2.tex}
-%\printbibliography
 \input{Chapitre_3/Chapitre_3.tex}
-%\printbibliography
 \input{Chapitre_4/Chapitre_4.tex}
-%\printbibliography
 \input{Chapitre_5/Chapitre_5.tex}
-%\printbibliography
 \input{Chapitre_6/Chapitre_6.tex}
-%\printbibliography
 \input{Chapitre_7/Chapitre_7.tex}
-%\printbibliography
-
 \input{Chapitre_8/Chapitre_8.tex}
-%\printbibliography
-
 \input{Chapitre_9/Chapitre_9.tex}
-%\printbibliography
-
 \input{Chapitre_10/Chapitre_10.tex}
-%\printbibliography
+\thispagestyle{plain}
 
 \input{conclusion/conclusion.tex}
-
 \clearpage
-
-\printbibliography
-
-%\backmatter
-%\input{conclusion/conclusion.tex}
 \input{Appendix_A/Appendix_A.tex}
+\clearpage
 \input{Appendix_B/Appendix_B.tex}
 \clearpage
-\listoffigures*
-\listoftables*
+\markboth{}{}
+%\listoffigures
+%\listoftables
+%\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography[heading=bibintoc]
+
+\clearpage
+\input{acknowledgment/acknowledgment.tex}
+\input{synthese/synthese.tex}
+
+%\clearpage
+%\backmatter
+
 \end{document}
