@@ -1,0 +1,103 @@
+%%%% Modèle proposé par frederic.mazaleyrat@ens-paris-saclay.fr %%%%
+%%%% 31/01/2017 %%%%
+
+
+%\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 4eme de couverture
+\ifthispageodd{\newpage\thispagestyle{empty}\null\newpage}{}
+\thispagestyle{empty}
+\newgeometry{top=1.5cm, bottom=1.25cm, left=2cm, right=2cm}
+\fontfamily{rm}\selectfont
+
+\lhead{}
+\rhead{}
+\rfoot{}
+\cfoot{}
+\lfoot{}
+
+\noindent 
+%*****************************************************
+%***** LOGO DE L'ED À CHANGER ÉVENTUELLEMENT *********
+%*****************************************************
+\includegraphics[height=2.45cm]{EDpic}
+\vspace{1cm}
+%*****************************************************
+
+\begin{mdframed}[linecolor=Prune,linewidth=1]
+
+\vspace{-.25cm}
+\paragraph*{Titre:} Calibration des cascades électromagnétiques, application de l’apprentissage profond à la reconstruction du recul hadronique et mesure de la distribution en impulsion transverse du boson W dans l'expérience ATLAS.
+
+\begin{small}
+\vspace{-.25cm}
+\paragraph*{Mots clés:} Interactions électrofaibles, Modèle standard, Grand collisionneur de hadrons, apprentissage profond, Bosons W
+
+\vspace{-.5cm}
+\begin{multicols}{2}
+\paragraph*{Résumé:} La première partie de la thèse contient une description de la méthode d'étalonnage du calorimètre électromagnétique, corrigeant les différences entre les données et la simulation pour ce qui concerne le développement des cascades électromagnétiques dans le calorimètre. La méthode améliore l'identification des électrons et réduit l'incertitude systématique associée.
+La majeure partie de la thèse est consacrée à la mesure précise du spectre en impulsion transverse (pT) du boson W à l'aide des données collectées par l'expérience ATLAS à des énergies dans le centre de masse de 5 et 13 TeV lors de deux prises de données spéciales, à faible taux d’empilement, en 2017 et en 2018.
+La motivation pour la mesure précise du spectre en impulsion transverse du boson W est double. Premièrement, elle sert de test pour les prédictions théoriques obtenues dans le cadre du Modèle Standard et permet de comparer les performances des générateurs Monte-Carlo (MC). La deuxième raison est que ce spectre est un ingrédient à la mesure de la masse du boson W, qui est un paramètre du Modèle Standard. L'utilisation de données à faible taux d'empilement permet de réduire significativement l'incertitude systématique due au recul hadronique et améliore de ce fait la précision sur la mesure du spectre.
+La thèse décrit la méthodologie de la mesure du spectre en pT du boson W ainsi que les étalonnages appliqués, les corrections et les incertitudes associées. Le résultat final est obtenu à partir du recul hadronique mesuré à l'aide d'une procédure de déconvolution des effets de détecteur et est comparé aux prédictions théoriques obtenues avec différents générateurs Monte-Carlo.
+Une méthode alternative pour la reconstruction du recul hadronique, avec l'utilisation de réseaux neuronaux profonds est proposée dans la thèse. Il y est montré que cette méthode améliore la résolution du recul hadronique mesuré d'environ 10\% dans la région la plus pertinente, de faible pT. Les observables obtenus par cette approche améliorent la sensibilité à la masse du boson W.
+\end{multicols}
+\end{small}
+\end{mdframed}
+
+
+%************************************
+\vspace{7cm} % ALIGNER EN BAS DE PAGE
+%***********************************
+\fontfamily{fvs}\fontseries{m}\selectfont
+\begin{tabular}{p{14cm}r}
+	\multirow{3}{16cm}[+0mm]{{\color{Prune} Université Paris-Saclay\\
+			Espace Technologique / Immeuble Discovery\\
+			Route de l’Orme aux Merisiers RD 128 / 91190 Saint-Aubin, France}} & \multirow{3}{2.19cm}[+9mm]{\includegraphics[height=2.19cm]{e.png}}\\
+\end{tabular}
+
+
+
+\newpage
+
+
+\noindent 
+%*****************************************************
+%***** LOGO DE L'ED À CHANGER ÉVENTUELLEMENT *********
+%*****************************************************
+\includegraphics[height=2.45cm]{EDpic}
+\vspace{1cm}
+%*****************************************************
+
+\thispagestyle{empty}
+\begin{mdframed}[linecolor=Prune,linewidth=1]
+\vspace{-.25cm}
+\paragraph*{Title:} Calibration of electron shower shapes, hadronic recoil reconstruction using deep learning algorithms and the measurement of W boson transverse momentum distribution with the ATLAS detector.
+
+\begin{small}
+\vspace{-.25cm}
+\paragraph*{Keywords:} electroweak interactions, Standard Model, Large Hadron Collider, deep learning, W boson
+
+\vspace{-.5cm}
+\begin{multicols}{2}
+\paragraph*{Abstract:} The initial part of the thesis contains the description of the method for electromagnetic calorimeter calibration, correcting for the Data-MC discrepancy in the development of the electromagnetic showers in the calorimeter. The method improves electron identification and reduces the associated systematic uncertainty. 
+The major part of the thesis is dedicated to the precise measurement of the W boson transverse spectrum using the data, collected by the ATLAS experiment at the energies of 5 and 13 TeV during two special low pile-up runs in 2017 and 2018. 
+The motivation for the precise measurement of the W boson transverse spectrum is twofold. First, it serves as a test for the theoretical predictions obtained within the Standard Model and allows to benchmark the performance of the Monte-Carlo (MC) generators. The second reason is because the W pT spectrum is an input component for the measurement of the W boson mass which is a Standard Model parameter. The use of low pile-up data allows to significantly reduce the hadronic recoil systematic uncertainty improving the precision of the spectrum measurement.
+The thesis describes the methodology of the W boson pT spectrum measurement as well as the imposed calibrations, corrections and the associated uncertainties. The final result is obtained from the measured hadronic recoil using an unfolding procedure and is compared to the theoretical predictions obtained with different Monte-Carlo generators. 
+An alternative method for the hadronic recoil reconstruction with the use of deep neural networks is proposed in the thesis. The method is shown to improve the resolution of the measured hadronic recoil by about 10\% in the most relevant region of low pT. The observables obtained using approach improve the sensitivity to the mass of the W boson.
+\end{multicols}
+\end{small}
+\end{mdframed}
+
+%************************************
+\vspace{6.8cm} % ALIGNER EN BAS DE PAGE
+%************************************
+\fontfamily{fvs}\fontseries{m}\selectfont
+\begin{tabular}{p{14cm}r}
+\multirow{3}{16cm}[+0mm]{{\color{Prune} Université Paris-Saclay\\
+Espace Technologique / Immeuble Discovery\\
+Route de l’Orme aux Merisiers RD 128 / 91190 Saint-Aubin, France}} & \multirow{3}{2.19cm}[+9mm]{\includegraphics[height=2.19cm]{e.png}}\\
+\end{tabular}
+\newpage
+
+%\end{document}
